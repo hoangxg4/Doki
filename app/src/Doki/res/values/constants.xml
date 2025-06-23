@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="account_type_sync" translatable="false">org.dokiteam.doki.sync</string>
+	<string name="sync_authority_history" translatable="false">org.dokiteam.doki.history</string>
+	<string name="sync_authority_favourites" translatable="false">org.dokiteam.doki.favourites</string>
+	<string name="github_updates_repo" translatable="false">DokiTeam/Doki</string>
+</resources>

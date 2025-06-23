@@ -13,14 +13,14 @@ plugins {
 android {
 	compileSdk = 35
 	buildToolsVersion = '35.0.0'
-	namespace = 'org.dokiteam.doki'
+	namespace = 'org.koitharu.kotatsu'
 
 	defaultConfig {
 		applicationId 'org.dokiteam.doki'
 		minSdk = 21
 		targetSdk = 35
-		versionCode = 1020
-		versionName = '8.2-a1'
+		versionCode = 1
+		versionName = '1.0'
 		generatedDensities = []
 		testInstrumentationRunner 'org.koitharu.kotatsu.HiltTestRunner'
 		ksp {
@@ -40,9 +40,10 @@ android {
 			shrinkResources true
 			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 		}
-		nightly {
-			initWith release
-			applicationIdSuffix = '.nightly'
+		Doki {
+			minifyEnabled true
+			shrinkResources true
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 		}
 	}
 	buildFeatures {

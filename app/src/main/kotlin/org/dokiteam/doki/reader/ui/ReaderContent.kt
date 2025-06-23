@@ -1,8 +1,0 @@
-package org.dokiteam.doki.reader.ui
-
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
-
-data class ReaderContent(
-	val pages: List<ReaderPage>,
-	val state: ReaderState?
-)
