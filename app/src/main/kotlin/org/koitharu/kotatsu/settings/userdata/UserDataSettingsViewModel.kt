@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.userdata
+package org.dokiteam.doki.settings.userdata
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -7,10 +7,10 @@ import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.local.data.LocalStorageManager
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.local.data.LocalStorageManager
 import javax.inject.Inject
 
 @HiltViewModel

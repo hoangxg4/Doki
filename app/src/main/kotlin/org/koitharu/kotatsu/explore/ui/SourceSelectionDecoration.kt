@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.explore.ui
+package org.dokiteam.doki.explore.ui
 
 import android.content.Context
 import android.graphics.Canvas
@@ -9,11 +9,11 @@ import android.view.View
 import androidx.core.graphics.ColorUtils
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.NO_ID
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.decor.AbstractSelectionItemDecoration
-import org.koitharu.kotatsu.core.util.ext.getItem
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.explore.ui.model.MangaSourceItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.decor.AbstractSelectionItemDecoration
+import org.dokiteam.doki.core.util.ext.getItem
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.explore.ui.model.MangaSourceItem
 import androidx.appcompat.R as appcompatR
 import com.google.android.material.R as materialR
 

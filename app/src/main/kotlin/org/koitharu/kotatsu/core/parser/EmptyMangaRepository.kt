@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.core.parser
+package org.dokiteam.doki.core.parser
 
-import org.koitharu.kotatsu.core.exceptions.UnsupportedSourceException
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaListFilterCapabilities
-import org.koitharu.kotatsu.parsers.model.MangaListFilterOptions
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.SortOrder
+import org.dokiteam.doki.core.exceptions.UnsupportedSourceException
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaListFilterCapabilities
+import org.dokiteam.doki.parsers.model.MangaListFilterOptions
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.SortOrder
 import java.util.EnumSet
 
 class EmptyMangaRepository(override val source: MangaSource) : MangaRepository {

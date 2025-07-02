@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.list.domain
+package org.dokiteam.doki.list.domain
 
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode.CHAPTERS_LEFT
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode.CHAPTERS_READ
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode.NONE
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode.PERCENT_LEFT
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode.PERCENT_READ
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode.CHAPTERS_LEFT
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode.CHAPTERS_READ
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode.NONE
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode.PERCENT_LEFT
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode.PERCENT_READ
 
 data class ReadingProgress(
 	val percent: Float,

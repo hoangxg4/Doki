@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.details.ui.adapter
+package org.dokiteam.doki.details.ui.adapter
 
 import android.content.Context
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.list.fastscroll.FastScroller
-import org.koitharu.kotatsu.details.ui.model.ChapterListItem
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.listHeaderAD
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.list.fastscroll.FastScroller
+import org.dokiteam.doki.details.ui.model.ChapterListItem
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.listHeaderAD
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
 
 class ChaptersAdapter(
 	onItemClickListener: OnListItemClickListener<ChapterListItem>,

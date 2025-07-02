@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.utils
+package org.dokiteam.doki.settings.utils
 
 import android.content.Context
 import android.util.AttributeSet
@@ -12,8 +12,8 @@ import androidx.annotation.StyleRes
 import androidx.annotation.WorkerThread
 import androidx.preference.EditTextPreference
 import kotlinx.coroutines.runBlocking
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.parsers.util.replaceWith
+import org.dokiteam.doki.R
+import org.dokiteam.doki.parsers.util.replaceWith
 
 class MultiAutoCompleteTextViewPreference @JvmOverloads constructor(
 	context: Context,

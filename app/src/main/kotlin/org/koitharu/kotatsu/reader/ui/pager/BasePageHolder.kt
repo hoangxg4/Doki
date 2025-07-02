@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager
+package org.dokiteam.doki.reader.ui.pager
 
 import android.content.ComponentCallbacks2
 import android.content.ComponentCallbacks2.TRIM_MEMORY_COMPLETE
@@ -15,22 +15,22 @@ import com.davemorrissey.labs.subscaleview.DefaultOnImageEventListener
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.core.ui.list.lifecycle.LifecycleAwareViewHolder
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.isLowRamDevice
-import org.koitharu.kotatsu.core.util.ext.isSerializable
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.databinding.LayoutPageInfoBinding
-import org.koitharu.kotatsu.parsers.util.ifZero
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.config.ReaderSettings
-import org.koitharu.kotatsu.reader.ui.pager.vm.PageState
-import org.koitharu.kotatsu.reader.ui.pager.vm.PageViewModel
-import org.koitharu.kotatsu.reader.ui.pager.webtoon.WebtoonHolder
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.core.ui.list.lifecycle.LifecycleAwareViewHolder
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.isLowRamDevice
+import org.dokiteam.doki.core.util.ext.isSerializable
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.databinding.LayoutPageInfoBinding
+import org.dokiteam.doki.parsers.util.ifZero
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.config.ReaderSettings
+import org.dokiteam.doki.reader.ui.pager.vm.PageState
+import org.dokiteam.doki.reader.ui.pager.vm.PageViewModel
+import org.dokiteam.doki.reader.ui.pager.webtoon.WebtoonHolder
 
 abstract class BasePageHolder<B : ViewBinding>(
 	protected val binding: B,

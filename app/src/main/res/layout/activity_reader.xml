@@ -12,7 +12,7 @@
 		android:layout_height="match_parent"
 		tools:background="@color/grey" />
 
-	<org.koitharu.kotatsu.core.ui.widgets.ZoomControl
+	<org.dokiteam.doki.core.ui.widgets.ZoomControl
 		android:id="@+id/zoomControl"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
 		app:layout_dodgeInsetEdges="bottom"
 		tools:visibility="visible" />
 
-	<org.koitharu.kotatsu.reader.ui.ReaderInfoBarView
+	<org.dokiteam.doki.reader.ui.ReaderInfoBarView
 		android:id="@+id/infoBar"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
 		android:visibility="gone"
 		tools:visibility="visible" />
 
-	<org.koitharu.kotatsu.reader.ui.ScrollTimerControlView
+	<org.dokiteam.doki.reader.ui.ScrollTimerControlView
 		android:id="@+id/timerControl"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
 		app:cardBackgroundColor="?colorSurfaceContainer"
 		app:layout_insetEdge="bottom">
 
-		<org.koitharu.kotatsu.reader.ui.ReaderActionsView
+		<org.dokiteam.doki.reader.ui.ReaderActionsView
 			android:id="@+id/actionsView"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
 
 	</com.google.android.material.dockedtoolbar.DockedToolbarLayout>
 
-	<org.koitharu.kotatsu.reader.ui.ReaderToastView
+	<org.dokiteam.doki.reader.ui.ReaderToastView
 		android:id="@+id/toastView"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

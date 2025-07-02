@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.history.domain
+package org.dokiteam.doki.history.domain
 
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.MangaListQuickFilter
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.MangaListQuickFilter
 import javax.inject.Inject
 
 class HistoryListQuickFilter @Inject constructor(

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling
+package org.dokiteam.doki.scrobbling
 
 import android.content.Context
 import dagger.Module
@@ -8,27 +8,27 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.ElementsIntoSet
 import okhttp3.OkHttpClient
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.network.BaseHttpClient
-import org.koitharu.kotatsu.core.network.CurlLoggingInterceptor
-import org.koitharu.kotatsu.scrobbling.anilist.data.AniListAuthenticator
-import org.koitharu.kotatsu.scrobbling.anilist.data.AniListInterceptor
-import org.koitharu.kotatsu.scrobbling.anilist.domain.AniListScrobbler
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblerStorage
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerType
-import org.koitharu.kotatsu.scrobbling.kitsu.data.KitsuAuthenticator
-import org.koitharu.kotatsu.scrobbling.kitsu.data.KitsuInterceptor
-import org.koitharu.kotatsu.scrobbling.kitsu.data.KitsuRepository
-import org.koitharu.kotatsu.scrobbling.kitsu.domain.KitsuScrobbler
-import org.koitharu.kotatsu.scrobbling.mal.data.MALAuthenticator
-import org.koitharu.kotatsu.scrobbling.mal.data.MALInterceptor
-import org.koitharu.kotatsu.scrobbling.mal.domain.MALScrobbler
-import org.koitharu.kotatsu.scrobbling.shikimori.data.ShikimoriAuthenticator
-import org.koitharu.kotatsu.scrobbling.shikimori.data.ShikimoriInterceptor
-import org.koitharu.kotatsu.scrobbling.shikimori.domain.ShikimoriScrobbler
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.network.BaseHttpClient
+import org.dokiteam.doki.core.network.CurlLoggingInterceptor
+import org.dokiteam.doki.scrobbling.anilist.data.AniListAuthenticator
+import org.dokiteam.doki.scrobbling.anilist.data.AniListInterceptor
+import org.dokiteam.doki.scrobbling.anilist.domain.AniListScrobbler
+import org.dokiteam.doki.scrobbling.common.data.ScrobblerStorage
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerType
+import org.dokiteam.doki.scrobbling.kitsu.data.KitsuAuthenticator
+import org.dokiteam.doki.scrobbling.kitsu.data.KitsuInterceptor
+import org.dokiteam.doki.scrobbling.kitsu.data.KitsuRepository
+import org.dokiteam.doki.scrobbling.kitsu.domain.KitsuScrobbler
+import org.dokiteam.doki.scrobbling.mal.data.MALAuthenticator
+import org.dokiteam.doki.scrobbling.mal.data.MALInterceptor
+import org.dokiteam.doki.scrobbling.mal.domain.MALScrobbler
+import org.dokiteam.doki.scrobbling.shikimori.data.ShikimoriAuthenticator
+import org.dokiteam.doki.scrobbling.shikimori.data.ShikimoriInterceptor
+import org.dokiteam.doki.scrobbling.shikimori.domain.ShikimoriScrobbler
 import javax.inject.Singleton
 
 @Module

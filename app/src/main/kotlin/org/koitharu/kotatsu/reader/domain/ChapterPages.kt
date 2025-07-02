@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.reader.domain
+package org.dokiteam.doki.reader.domain
 
 import androidx.collection.LongSparseArray
 import androidx.collection.contains
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 
 class ChapterPages private constructor(private val pages: ArrayDeque<ReaderPage>) : List<ReaderPage> by pages {
 

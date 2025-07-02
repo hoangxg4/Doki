@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.data
+package org.dokiteam.doki.local.data
 
 import androidx.annotation.WorkerThread
 import okio.FileSystem
@@ -8,28 +8,28 @@ import okio.buffer
 import org.jetbrains.annotations.Blocking
 import org.json.JSONArray
 import org.json.JSONObject
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.ContentRating
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaState
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.model.RATING_UNKNOWN
-import org.koitharu.kotatsu.parsers.util.json.getBooleanOrDefault
-import org.koitharu.kotatsu.parsers.util.json.getEnumValueOrNull
-import org.koitharu.kotatsu.parsers.util.json.getFloatOrDefault
-import org.koitharu.kotatsu.parsers.util.json.getIntOrDefault
-import org.koitharu.kotatsu.parsers.util.json.getLongOrDefault
-import org.koitharu.kotatsu.parsers.util.json.getStringOrNull
-import org.koitharu.kotatsu.parsers.util.json.mapJSONToSet
-import org.koitharu.kotatsu.parsers.util.json.toStringSet
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.parsers.util.toTitleCase
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaState
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.model.RATING_UNKNOWN
+import org.dokiteam.doki.parsers.util.json.getBooleanOrDefault
+import org.dokiteam.doki.parsers.util.json.getEnumValueOrNull
+import org.dokiteam.doki.parsers.util.json.getFloatOrDefault
+import org.dokiteam.doki.parsers.util.json.getIntOrDefault
+import org.dokiteam.doki.parsers.util.json.getLongOrDefault
+import org.dokiteam.doki.parsers.util.json.getStringOrNull
+import org.dokiteam.doki.parsers.util.json.mapJSONToSet
+import org.dokiteam.doki.parsers.util.json.toStringSet
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.parsers.util.toTitleCase
 import java.io.File
 
 class MangaIndex(source: String?) {
@@ -147,7 +147,7 @@ class MangaIndex(source: String?) {
 			item.put(KEY_ID, id)
 			list.add(item)
 		}
-		val comparator = org.koitharu.kotatsu.core.util.AlphanumComparator()
+		val comparator = org.dokiteam.doki.core.util.AlphanumComparator()
 		list.sortWith(compareBy(comparator) { it.getString(KEY_NAME) })
 		val newJo = JSONObject()
 		list.forEachIndexed { i, obj ->

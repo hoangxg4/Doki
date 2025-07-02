@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.container
+package org.dokiteam.doki.favourites.ui.container
 
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.AdapterListUpdateCallback
@@ -9,9 +9,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.asExecutor
 import kotlinx.coroutines.flow.FlowCollector
-import org.koitharu.kotatsu.core.util.ContinuationResumeRunnable
-import org.koitharu.kotatsu.favourites.ui.list.FavouritesListFragment
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.core.util.ContinuationResumeRunnable
+import org.dokiteam.doki.favourites.ui.list.FavouritesListFragment
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
 import kotlin.coroutines.suspendCoroutine
 
 class FavouritesContainerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment),

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.picker.ui.manga
+package org.dokiteam.doki.picker.ui.manga
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -9,16 +9,16 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.list.domain.MangaListMapper
-import org.koitharu.kotatsu.list.ui.MangaListViewModel
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.LoadingState
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.list.domain.MangaListMapper
+import org.dokiteam.doki.list.ui.MangaListViewModel
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.LoadingState
 import javax.inject.Inject
 
 @HiltViewModel

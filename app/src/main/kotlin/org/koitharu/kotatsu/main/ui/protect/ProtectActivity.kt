@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui.protect
+package org.dokiteam.doki.main.ui.protect
 
 import android.content.Context
 import android.content.Intent
@@ -21,16 +21,16 @@ import androidx.biometric.registerForAuthenticationResult
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputLayout
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.util.DefaultTextWatcher
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getParcelableExtraCompat
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityProtectBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.util.DefaultTextWatcher
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getParcelableExtraCompat
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityProtectBinding
 import com.google.android.material.R as materialR
 
 @AndroidEntryPoint

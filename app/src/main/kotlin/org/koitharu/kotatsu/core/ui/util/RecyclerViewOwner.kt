@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.util
+package org.dokiteam.doki.core.ui.util
 
 import androidx.recyclerview.widget.RecyclerView
 

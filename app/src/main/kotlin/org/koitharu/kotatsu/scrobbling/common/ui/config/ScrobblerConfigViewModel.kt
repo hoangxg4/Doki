@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.common.ui.config
+package org.dokiteam.doki.scrobbling.common.ui.config
 
 import android.net.Uri
 import androidx.lifecycle.SavedStateHandle
@@ -14,20 +14,20 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.onFirst
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerUser
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingInfo
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingStatus
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.onFirst
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerUser
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingInfo
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingStatus
 import javax.inject.Inject
 
 @HiltViewModel

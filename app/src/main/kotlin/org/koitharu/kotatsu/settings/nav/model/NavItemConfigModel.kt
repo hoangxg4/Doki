@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.settings.nav.model
+package org.dokiteam.doki.settings.nav.model
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.core.prefs.NavItem
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.prefs.NavItem
+import org.dokiteam.doki.list.ui.model.ListModel
 
 data class NavItemConfigModel(
 	val item: NavItem,

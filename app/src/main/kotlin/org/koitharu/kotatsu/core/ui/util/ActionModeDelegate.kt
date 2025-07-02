@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.util
+package org.dokiteam.doki.core.ui.util
 
 import android.graphics.Color
 import android.os.Build
@@ -14,8 +14,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.getThemeColor
 import com.google.android.material.R as materialR
 
 class ActionModeDelegate : OnBackPressedCallback(false) {

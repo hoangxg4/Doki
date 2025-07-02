@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.common.ui.selector
+package org.dokiteam.doki.scrobbling.common.ui.selector
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -12,27 +12,27 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.core.util.ext.requireValue
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.list.domain.ReadingProgress
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.LoadingFooter
-import org.koitharu.kotatsu.list.ui.model.LoadingState
-import org.koitharu.kotatsu.parsers.util.ifZero
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerManga
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingStatus
-import org.koitharu.kotatsu.scrobbling.common.ui.selector.model.ScrobblerHint
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.core.util.ext.requireValue
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.list.domain.ReadingProgress
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.LoadingFooter
+import org.dokiteam.doki.list.ui.model.LoadingState
+import org.dokiteam.doki.parsers.util.ifZero
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerManga
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingStatus
+import org.dokiteam.doki.scrobbling.common.ui.selector.model.ScrobblerHint
 import javax.inject.Inject
 
 @HiltViewModel

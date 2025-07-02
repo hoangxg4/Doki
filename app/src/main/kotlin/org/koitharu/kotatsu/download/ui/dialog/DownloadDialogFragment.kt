@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.dialog
+package org.dokiteam.doki.download.ui.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,24 +16,24 @@ import androidx.lifecycle.LifecycleOwner
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.prefs.DownloadFormat
-import org.koitharu.kotatsu.core.ui.AlertDialogFragment
-import org.koitharu.kotatsu.core.ui.widgets.TwoLinesItemView
-import org.koitharu.kotatsu.core.util.ext.findActivity
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.joinToStringWithLimit
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.parentView
-import org.koitharu.kotatsu.core.util.ext.showOrHide
-import org.koitharu.kotatsu.databinding.DialogDownloadBinding
-import org.koitharu.kotatsu.main.ui.owners.BottomNavOwner
-import org.koitharu.kotatsu.parsers.util.format
-import org.koitharu.kotatsu.settings.storage.DirectoryModel
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.prefs.DownloadFormat
+import org.dokiteam.doki.core.ui.AlertDialogFragment
+import org.dokiteam.doki.core.ui.widgets.TwoLinesItemView
+import org.dokiteam.doki.core.util.ext.findActivity
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.joinToStringWithLimit
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.parentView
+import org.dokiteam.doki.core.util.ext.showOrHide
+import org.dokiteam.doki.databinding.DialogDownloadBinding
+import org.dokiteam.doki.main.ui.owners.BottomNavOwner
+import org.dokiteam.doki.parsers.util.format
+import org.dokiteam.doki.settings.storage.DirectoryModel
 
 @AndroidEntryPoint
 class DownloadDialogFragment : AlertDialogFragment<DialogDownloadBinding>(), View.OnClickListener {

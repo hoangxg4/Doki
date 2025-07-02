@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.exceptions
+package org.dokiteam.doki.core.exceptions
 
-import org.koitharu.kotatsu.core.model.UnknownMangaSource
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.network.CloudFlareHelper
+import org.dokiteam.doki.core.model.UnknownMangaSource
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.network.CloudFlareHelper
 
 class CloudFlareBlockedException(
 	override val url: String,

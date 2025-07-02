@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.image.ui
+package org.dokiteam.doki.image.ui
 
 import android.content.Context
 import android.util.AttributeSet
@@ -14,22 +14,22 @@ import coil3.size.Dimension
 import coil3.size.Size
 import coil3.size.ViewSizeResolver
 import kotlinx.coroutines.suspendCancellableCoroutine
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.bookmarks.domain.Bookmark
-import org.koitharu.kotatsu.core.image.CoilImageView
-import org.koitharu.kotatsu.core.ui.image.AnimatedPlaceholderDrawable
-import org.koitharu.kotatsu.core.ui.image.TrimTransformation
-import org.koitharu.kotatsu.core.util.ext.bookmarkExtra
-import org.koitharu.kotatsu.core.util.ext.decodeRegion
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.core.util.ext.mangaExtra
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.favourites.domain.model.Cover
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.R
+import org.dokiteam.doki.bookmarks.domain.Bookmark
+import org.dokiteam.doki.core.image.CoilImageView
+import org.dokiteam.doki.core.ui.image.AnimatedPlaceholderDrawable
+import org.dokiteam.doki.core.ui.image.TrimTransformation
+import org.dokiteam.doki.core.util.ext.bookmarkExtra
+import org.dokiteam.doki.core.util.ext.decodeRegion
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.core.util.ext.mangaExtra
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.favourites.domain.model.Cover
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import kotlin.coroutines.resume
 import androidx.appcompat.R as appcompatR
 import com.google.android.material.R as materialR

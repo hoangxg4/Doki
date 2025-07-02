@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.local.data.output
+package org.dokiteam.doki.local.data.output
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import okio.Closeable
-import org.koitharu.kotatsu.core.prefs.DownloadFormat
-import org.koitharu.kotatsu.core.util.ext.MimeType
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.toFileNameSafe
-import org.koitharu.kotatsu.local.data.input.LocalMangaParser
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.prefs.DownloadFormat
+import org.dokiteam.doki.core.util.ext.MimeType
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.toFileNameSafe
+import org.dokiteam.doki.local.data.input.LocalMangaParser
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.io.File
 
 sealed class LocalMangaOutput(

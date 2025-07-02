@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.sources
+package org.dokiteam.doki.settings.sources
 
 import android.view.inputmethod.EditorInfo
 import androidx.preference.EditTextPreference
@@ -6,18 +6,18 @@ import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.EmptyMangaRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.parsers.config.ConfigKey
-import org.koitharu.kotatsu.parsers.network.UserAgents
-import org.koitharu.kotatsu.parsers.util.mapToArray
-import org.koitharu.kotatsu.settings.utils.AutoCompleteTextViewPreference
-import org.koitharu.kotatsu.settings.utils.EditTextBindListener
-import org.koitharu.kotatsu.settings.utils.EditTextDefaultSummaryProvider
-import org.koitharu.kotatsu.settings.utils.validation.DomainValidator
-import org.koitharu.kotatsu.settings.utils.validation.HeaderValidator
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.EmptyMangaRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.parsers.config.ConfigKey
+import org.dokiteam.doki.parsers.network.UserAgents
+import org.dokiteam.doki.parsers.util.mapToArray
+import org.dokiteam.doki.settings.utils.AutoCompleteTextViewPreference
+import org.dokiteam.doki.settings.utils.EditTextBindListener
+import org.dokiteam.doki.settings.utils.EditTextDefaultSummaryProvider
+import org.dokiteam.doki.settings.utils.validation.DomainValidator
+import org.dokiteam.doki.settings.utils.validation.HeaderValidator
 
 fun PreferenceFragmentCompat.addPreferencesFromRepository(repository: MangaRepository) = when (repository) {
 	is ParserMangaRepository -> addPreferencesFromParserRepository(repository)

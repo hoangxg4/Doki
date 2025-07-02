@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.search.ui.suggestion.adapter
+package org.dokiteam.doki.search.ui.suggestion.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.model.getSummary
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.databinding.ItemSearchSuggestionSourceBinding
-import org.koitharu.kotatsu.search.ui.suggestion.SearchSuggestionListener
-import org.koitharu.kotatsu.search.ui.suggestion.model.SearchSuggestionItem
+import org.dokiteam.doki.core.model.getSummary
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.databinding.ItemSearchSuggestionSourceBinding
+import org.dokiteam.doki.search.ui.suggestion.SearchSuggestionListener
+import org.dokiteam.doki.search.ui.suggestion.model.SearchSuggestionItem
 
 fun searchSuggestionSourceAD(
 	listener: SearchSuggestionListener,

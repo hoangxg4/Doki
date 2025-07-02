@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.related
+package org.dokiteam.doki.details.ui.related
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -11,21 +11,21 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.list.domain.MangaListMapper
-import org.koitharu.kotatsu.list.ui.MangaListViewModel
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.LoadingState
-import org.koitharu.kotatsu.list.ui.model.toErrorState
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.list.domain.MangaListMapper
+import org.dokiteam.doki.list.ui.MangaListViewModel
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.LoadingState
+import org.dokiteam.doki.list.ui.model.toErrorState
+import org.dokiteam.doki.parsers.model.Manga
 import javax.inject.Inject
 
 @HiltViewModel

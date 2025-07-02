@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.favourites.ui.categories.adapter
+package org.dokiteam.doki.favourites.ui.categories.adapter
 
-import org.koitharu.kotatsu.core.ui.ReorderableListAdapter
-import org.koitharu.kotatsu.favourites.ui.categories.FavouriteCategoriesListListener
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.ListStateHolderListener
-import org.koitharu.kotatsu.list.ui.adapter.emptyStateListAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingStateAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.ui.ReorderableListAdapter
+import org.dokiteam.doki.favourites.ui.categories.FavouriteCategoriesListListener
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.ListStateHolderListener
+import org.dokiteam.doki.list.ui.adapter.emptyStateListAD
+import org.dokiteam.doki.list.ui.adapter.loadingStateAD
+import org.dokiteam.doki.list.ui.model.ListModel
 
 class CategoriesAdapter(
 	onItemClickListener: FavouriteCategoriesListListener,

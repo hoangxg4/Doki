@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import android.view.View
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaTag
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaTag
 
 interface MangaDetailsClickListener : OnListItemClickListener<Manga> {
 

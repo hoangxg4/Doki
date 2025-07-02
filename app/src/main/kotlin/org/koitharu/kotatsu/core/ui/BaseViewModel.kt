@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui
+package org.dokiteam.doki.core.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -18,10 +18,10 @@ import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.core.util.ext.EventFlow
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.EventFlow
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
 import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 

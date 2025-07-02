@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.prefs
+package org.dokiteam.doki.core.prefs
 
 import android.appwidget.AppWidgetProvider
 import android.content.Context

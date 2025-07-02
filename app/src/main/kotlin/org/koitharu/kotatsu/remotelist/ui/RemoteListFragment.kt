@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.remotelist.ui
+package org.dokiteam.doki.remotelist.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,22 +11,22 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.distinctUntilChangedBy
 import kotlinx.coroutines.flow.drop
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.ui.util.MenuInvalidator
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.core.util.ext.getCauseUrl
-import org.koitharu.kotatsu.core.util.ext.isHttpUrl
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.withArgs
-import org.koitharu.kotatsu.databinding.FragmentListBinding
-import org.koitharu.kotatsu.filter.ui.FilterCoordinator
-import org.koitharu.kotatsu.list.ui.MangaListFragment
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.search.domain.SearchKind
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.ui.util.MenuInvalidator
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.core.util.ext.getCauseUrl
+import org.dokiteam.doki.core.util.ext.isHttpUrl
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.withArgs
+import org.dokiteam.doki.databinding.FragmentListBinding
+import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.list.ui.MangaListFragment
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.search.domain.SearchKind
 
 @AndroidEntryPoint
 class RemoteListFragment : MangaListFragment(), FilterCoordinator.Owner {

@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.bookmarks.data
+package org.dokiteam.doki.bookmarks.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
-import org.koitharu.kotatsu.core.db.entity.MangaEntity
+import org.dokiteam.doki.core.db.entity.MangaEntity
 
 @Entity(
 	tableName = "bookmarks",

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -12,8 +12,8 @@ import okio.FileSystem
 import okio.IOException
 import okio.Path
 import okio.Source
-import org.koitharu.kotatsu.core.util.CancellableSource
-import org.koitharu.kotatsu.core.util.progress.ProgressResponseBody
+import org.dokiteam.doki.core.util.CancellableSource
+import org.dokiteam.doki.core.util.progress.ProgressResponseBody
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 import java.nio.ByteBuffer

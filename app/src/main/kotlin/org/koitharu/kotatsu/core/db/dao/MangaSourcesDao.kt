@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.db.dao
+package org.dokiteam.doki.core.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -13,11 +13,11 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.isActive
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.db.entity.MangaSourceEntity
-import org.koitharu.kotatsu.explore.data.SourcesSortOrder
-import org.koitharu.kotatsu.parsers.network.CloudFlareHelper
-import org.koitharu.kotatsu.parsers.network.CloudFlareHelper.PROTECTION_CAPTCHA
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.db.entity.MangaSourceEntity
+import org.dokiteam.doki.explore.data.SourcesSortOrder
+import org.dokiteam.doki.parsers.network.CloudFlareHelper
+import org.dokiteam.doki.parsers.network.CloudFlareHelper.PROTECTION_CAPTCHA
 
 @Dao
 abstract class MangaSourcesDao {

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.widgets
+package org.dokiteam.doki.core.ui.widgets
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import androidx.core.content.withStyledAttributes
 import androidx.recyclerview.widget.RecyclerView
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class NestedRecyclerView @JvmOverloads constructor(
 	context: Context,

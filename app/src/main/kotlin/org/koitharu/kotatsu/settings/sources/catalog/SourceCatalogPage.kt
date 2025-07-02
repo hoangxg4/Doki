@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.settings.sources.catalog
+package org.dokiteam.doki.settings.sources.catalog
 
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.model.ContentType
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.model.ContentType
 
 data class SourceCatalogPage(
 	val type: ContentType,

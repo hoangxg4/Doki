@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.tracker.ui.feed.model
+package org.dokiteam.doki.tracker.ui.feed.model
 
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.MangaListModel
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaListModel
 
 data class UpdatedMangaHeader(
 	val list: List<MangaListModel>,

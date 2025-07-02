@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.FragmentResultListener
 import androidx.preference.Preference
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.sync.data.SyncSettings
-import org.koitharu.kotatsu.sync.ui.SyncHostDialogFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.sync.data.SyncSettings
+import org.dokiteam.doki.sync.ui.SyncHostDialogFragment
 import javax.inject.Inject
 
 @AndroidEntryPoint

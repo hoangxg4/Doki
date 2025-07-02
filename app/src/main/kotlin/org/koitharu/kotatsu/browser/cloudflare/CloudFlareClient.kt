@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.browser.cloudflare
+package org.dokiteam.doki.browser.cloudflare
 
 import android.graphics.Bitmap
 import android.webkit.WebView
-import org.koitharu.kotatsu.browser.BrowserClient
-import org.koitharu.kotatsu.core.network.cookies.MutableCookieJar
-import org.koitharu.kotatsu.core.network.webview.adblock.AdBlock
-import org.koitharu.kotatsu.parsers.network.CloudFlareHelper
+import org.dokiteam.doki.browser.BrowserClient
+import org.dokiteam.doki.core.network.cookies.MutableCookieJar
+import org.dokiteam.doki.core.network.webview.adblock.AdBlock
+import org.dokiteam.doki.parsers.network.CloudFlareHelper
 
 private const val LOOP_COUNTER = 3
 

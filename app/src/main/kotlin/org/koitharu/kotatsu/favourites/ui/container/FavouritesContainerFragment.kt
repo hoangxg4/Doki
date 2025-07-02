@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.container
+package org.dokiteam.doki.favourites.ui.container
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,21 +14,21 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.util.ActionModeListener
-import org.koitharu.kotatsu.core.ui.util.RecyclerViewOwner
-import org.koitharu.kotatsu.core.ui.util.ReversibleActionObserver
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.core.util.ext.findCurrentPagerFragment
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.recyclerView
-import org.koitharu.kotatsu.core.util.ext.setTabsEnabled
-import org.koitharu.kotatsu.core.util.ext.setTextAndVisible
-import org.koitharu.kotatsu.databinding.FragmentFavouritesContainerBinding
-import org.koitharu.kotatsu.databinding.ItemEmptyStateBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.util.ActionModeListener
+import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
+import org.dokiteam.doki.core.ui.util.ReversibleActionObserver
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.core.util.ext.findCurrentPagerFragment
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.recyclerView
+import org.dokiteam.doki.core.util.ext.setTabsEnabled
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
+import org.dokiteam.doki.databinding.FragmentFavouritesContainerBinding
+import org.dokiteam.doki.databinding.ItemEmptyStateBinding
 
 @AndroidEntryPoint
 class FavouritesContainerFragment : BaseFragment<FragmentFavouritesContainerBinding>(),

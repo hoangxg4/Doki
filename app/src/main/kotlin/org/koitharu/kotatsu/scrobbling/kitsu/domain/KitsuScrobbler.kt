@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.scrobbling.kitsu.domain
+package org.dokiteam.doki.scrobbling.kitsu.domain
 
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingStatus
-import org.koitharu.kotatsu.scrobbling.kitsu.data.KitsuRepository
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingStatus
+import org.dokiteam.doki.scrobbling.kitsu.data.KitsuRepository
 import javax.inject.Inject
 
 class KitsuScrobbler @Inject constructor(

@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.download.ui.list
+package org.dokiteam.doki.download.ui.list
 
 import androidx.lifecycle.LifecycleOwner
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.emptyStateListAD
-import org.koitharu.kotatsu.list.ui.adapter.listHeaderAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingStateAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.emptyStateListAD
+import org.dokiteam.doki.list.ui.adapter.listHeaderAD
+import org.dokiteam.doki.list.ui.adapter.loadingStateAD
+import org.dokiteam.doki.list.ui.model.ListModel
 
 class DownloadsAdapter(
 	lifecycleOwner: LifecycleOwner,

@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import android.view.View
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.setTextAndVisible
-import org.koitharu.kotatsu.databinding.ItemErrorStateBinding
-import org.koitharu.kotatsu.list.ui.model.ErrorState
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
+import org.dokiteam.doki.databinding.ItemErrorStateBinding
+import org.dokiteam.doki.list.ui.model.ErrorState
+import org.dokiteam.doki.list.ui.model.ListModel
 
 fun errorStateListAD(
 	listener: ListStateHolderListener?,

@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.main.ui.owners
+package org.dokiteam.doki.main.ui.owners
 
-import org.koitharu.kotatsu.core.ui.widgets.SlidingBottomNavigationView
+import org.dokiteam.doki.core.ui.widgets.SlidingBottomNavigationView
 
 interface BottomNavOwner {
 

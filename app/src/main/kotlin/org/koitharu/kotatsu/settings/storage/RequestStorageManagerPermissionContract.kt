@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.storage
+package org.dokiteam.doki.settings.storage
 
 import android.content.Context
 import android.content.Intent

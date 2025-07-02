@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.suggestions.data
+package org.dokiteam.doki.suggestions.data
 
 import androidx.annotation.FloatRange
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
-import org.koitharu.kotatsu.core.db.entity.MangaEntity
+import org.dokiteam.doki.core.db.entity.MangaEntity
 
 @Entity(
 	tableName = "suggestions",

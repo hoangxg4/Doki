@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui
+package org.dokiteam.doki.core.ui
 
 import android.content.Context
 import android.content.Intent
@@ -22,13 +22,13 @@ import androidx.viewbinding.ViewBinding
 import dagger.hilt.android.EntryPointAccessors
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.util.ActionModeDelegate
-import org.koitharu.kotatsu.core.util.ext.isWebViewUnavailable
-import org.koitharu.kotatsu.main.ui.protect.ScreenshotPolicyHelper
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.util.ActionModeDelegate
+import org.dokiteam.doki.core.util.ext.isWebViewUnavailable
+import org.dokiteam.doki.main.ui.protect.ScreenshotPolicyHelper
 import androidx.appcompat.R as appcompatR
 
 abstract class BaseActivity<B : ViewBinding> :

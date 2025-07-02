@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.dialog
+package org.dokiteam.doki.core.ui.dialog
 
 import android.widget.CompoundButton
 import android.widget.CompoundButton.OnCheckedChangeListener

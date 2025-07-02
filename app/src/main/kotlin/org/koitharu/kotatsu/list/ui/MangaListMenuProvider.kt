@@ -1,17 +1,17 @@
-package org.koitharu.kotatsu.list.ui
+package org.dokiteam.doki.list.ui
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.favourites.ui.list.FavouritesListFragment
-import org.koitharu.kotatsu.history.ui.HistoryListFragment
-import org.koitharu.kotatsu.list.ui.config.ListConfigSection
-import org.koitharu.kotatsu.suggestions.ui.SuggestionsFragment
-import org.koitharu.kotatsu.tracker.ui.updates.UpdatesFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.favourites.ui.list.FavouritesListFragment
+import org.dokiteam.doki.history.ui.HistoryListFragment
+import org.dokiteam.doki.list.ui.config.ListConfigSection
+import org.dokiteam.doki.suggestions.ui.SuggestionsFragment
+import org.dokiteam.doki.tracker.ui.updates.UpdatesFragment
 
 class MangaListMenuProvider(
 	private val fragment: Fragment,

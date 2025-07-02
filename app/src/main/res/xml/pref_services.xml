@@ -13,12 +13,12 @@
 
 	<PreferenceScreen
 		android:enabled="false"
-		android:fragment="org.koitharu.kotatsu.settings.SyncSettingsFragment"
+		android:fragment="org.dokiteam.doki.settings.SyncSettingsFragment"
 		android:key="sync_settings"
 		android:title="@string/sync_settings" />
 
 	<PreferenceScreen
-		android:fragment="org.koitharu.kotatsu.settings.SuggestionsSettingsFragment"
+		android:fragment="org.dokiteam.doki.settings.SuggestionsSettingsFragment"
 		android:key="suggestions"
 		android:title="@string/suggestions"
 		app:allowDividerAbove="true" />
@@ -29,7 +29,7 @@
 		android:summary="@string/related_manga_summary"
 		android:title="@string/related_manga" />
 
-	<org.koitharu.kotatsu.settings.utils.SplitSwitchPreference
+	<org.dokiteam.doki.settings.utils.SplitSwitchPreference
 		android:defaultValue="false"
 		android:key="stats_on"
 		android:title="@string/reading_stats"

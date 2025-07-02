@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.browser
+package org.dokiteam.doki.browser
 
 import android.content.Context
 import android.content.Intent
@@ -10,14 +10,14 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.InteractiveActionRequiredException
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.InteractiveActionRequiredException
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.MangaSource
 
 @AndroidEntryPoint
 class BrowserActivity : BaseBrowserActivity() {

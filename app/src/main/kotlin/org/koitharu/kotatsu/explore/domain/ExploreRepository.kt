@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.explore.domain
+package org.dokiteam.doki.explore.domain
 
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.asArrayList
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.almostEquals
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.suggestions.domain.TagsBlacklist
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.asArrayList
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.almostEquals
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.suggestions.domain.TagsBlacklist
 import javax.inject.Inject
 
 class ExploreRepository @Inject constructor(

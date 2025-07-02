@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.image
+package org.dokiteam.doki.core.ui.image
 
 import android.content.res.ColorStateList
 import android.graphics.Canvas
@@ -10,7 +10,7 @@ import android.os.Build
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.graphics.PaintCompat
-import org.koitharu.kotatsu.core.util.ext.hasFocusStateSpecified
+import org.dokiteam.doki.core.util.ext.hasFocusStateSpecified
 
 class TextDrawable(
 	val text: String,

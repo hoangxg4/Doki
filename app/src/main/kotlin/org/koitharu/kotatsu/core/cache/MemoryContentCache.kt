@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.core.cache
+package org.dokiteam.doki.core.cache
 
 import android.app.Application
 import android.content.ComponentCallbacks2
 import android.content.res.Configuration
-import org.koitharu.kotatsu.core.util.ext.isLowRamDevice
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.util.ext.isLowRamDevice
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.model.MangaSource
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Singleton

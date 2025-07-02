@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network
+package org.dokiteam.doki.core.network
 
 import androidx.collection.ArraySet
 import dagger.Lazy
@@ -12,11 +12,11 @@ import okhttp3.ResponseBody.Companion.toResponseBody
 import okhttp3.internal.canParseAsIpAddress
 import okhttp3.internal.closeQuietly
 import okhttp3.internal.publicsuffix.PublicSuffixDatabase
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.parsers.model.MangaSource
 import java.util.EnumMap
 import javax.inject.Inject
 import javax.inject.Singleton

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.config
+package org.dokiteam.doki.reader.ui.config
 
 import android.graphics.Bitmap
 import android.view.View
@@ -19,15 +19,15 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.core.model.ZoomMode
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ReaderBackground
-import org.koitharu.kotatsu.core.prefs.ReaderMode
-import org.koitharu.kotatsu.core.util.MediatorStateFlow
-import org.koitharu.kotatsu.core.util.ext.isLowRamDevice
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
-import org.koitharu.kotatsu.reader.domain.ReaderColorFilter
+import org.dokiteam.doki.core.model.ZoomMode
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ReaderBackground
+import org.dokiteam.doki.core.prefs.ReaderMode
+import org.dokiteam.doki.core.util.MediatorStateFlow
+import org.dokiteam.doki.core.util.ext.isLowRamDevice
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.reader.domain.ReaderColorFilter
 
 data class ReaderSettings(
 	val zoomMode: ZoomMode,

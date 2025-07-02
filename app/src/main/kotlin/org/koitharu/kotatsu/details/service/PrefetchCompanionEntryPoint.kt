@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.details.service
+package org.dokiteam.doki.details.service
 
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import org.koitharu.kotatsu.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.AppSettings
 
 @EntryPoint
 @InstallIn(SingletonComponent::class)

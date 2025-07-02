@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.widget
+package org.dokiteam.doki.widget
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
@@ -6,10 +6,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.room.InvalidationTracker
 import dagger.hilt.android.qualifiers.ApplicationContext
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITES
-import org.koitharu.kotatsu.core.db.TABLE_HISTORY
-import org.koitharu.kotatsu.widget.recent.RecentWidgetProvider
-import org.koitharu.kotatsu.widget.shelf.ShelfWidgetProvider
+import org.dokiteam.doki.core.db.TABLE_FAVOURITES
+import org.dokiteam.doki.core.db.TABLE_HISTORY
+import org.dokiteam.doki.widget.recent.RecentWidgetProvider
+import org.dokiteam.doki.widget.shelf.ShelfWidgetProvider
 import javax.inject.Inject
 import javax.inject.Singleton
 

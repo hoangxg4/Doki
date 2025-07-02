@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.reader.ui.tapgrid
+package org.dokiteam.doki.reader.ui.tapgrid
 
 import android.content.Context
 import android.view.GestureDetector
 import android.view.MotionEvent
-import org.koitharu.kotatsu.reader.domain.TapGridArea
+import org.dokiteam.doki.reader.domain.TapGridArea
 import kotlin.math.roundToInt
 
 class TapGridDispatcher(

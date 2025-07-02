@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.domain
+package org.dokiteam.doki.reader.domain
 
 import android.graphics.ColorMatrix
 import android.graphics.ColorMatrixColorFilter

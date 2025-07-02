@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.image
+package org.dokiteam.doki.core.image
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -25,10 +25,10 @@ import coil3.size.ViewSizeResolver
 import coil3.util.CoilUtils
 import com.google.android.material.imageview.ShapeableImageView
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.decodeRegion
-import org.koitharu.kotatsu.core.util.ext.getAnimationDuration
-import org.koitharu.kotatsu.core.util.ext.isAnimationsEnabled
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.decodeRegion
+import org.dokiteam.doki.core.util.ext.getAnimationDuration
+import org.dokiteam.doki.core.util.ext.isAnimationsEnabled
 import java.util.LinkedList
 import javax.inject.Inject
 

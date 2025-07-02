@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.categories.select
+package org.dokiteam.doki.favourites.ui.categories.select
 
 import androidx.collection.MutableLongObjectMap
 import androidx.collection.MutableLongSet
@@ -12,20 +12,20 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.model.ids
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.favourites.ui.categories.select.model.MangaCategoryItem
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.LoadingState
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.model.ids
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.favourites.ui.categories.select.model.MangaCategoryItem
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.LoadingState
 import javax.inject.Inject
 
 @HiltViewModel

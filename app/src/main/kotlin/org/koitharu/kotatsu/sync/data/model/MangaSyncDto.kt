@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.sync.data.model
+package org.dokiteam.doki.sync.data.model
 
 import android.database.Cursor
 import androidx.core.database.getStringOrNull
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.koitharu.kotatsu.core.util.ext.buildContentValues
+import org.dokiteam.doki.core.util.ext.buildContentValues
 
 @Serializable
 data class MangaSyncDto(

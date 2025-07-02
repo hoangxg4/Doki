@@ -1,20 +1,20 @@
-package org.koitharu.kotatsu.suggestions.domain
+package org.dokiteam.doki.suggestions.domain
 
 import androidx.room.withTransaction
 import kotlinx.coroutines.flow.Flow
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.entity.toEntities
-import org.koitharu.kotatsu.core.db.entity.toEntity
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.db.entity.toMangaTagsList
-import org.koitharu.kotatsu.core.model.toMangaSources
-import org.koitharu.kotatsu.core.util.ext.mapItems
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.suggestions.data.SuggestionEntity
-import org.koitharu.kotatsu.suggestions.data.SuggestionWithManga
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.entity.toEntities
+import org.dokiteam.doki.core.db.entity.toEntity
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.db.entity.toMangaTagsList
+import org.dokiteam.doki.core.model.toMangaSources
+import org.dokiteam.doki.core.util.ext.mapItems
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.suggestions.data.SuggestionEntity
+import org.dokiteam.doki.suggestions.data.SuggestionWithManga
 import javax.inject.Inject
 
 class SuggestionRepository @Inject constructor(

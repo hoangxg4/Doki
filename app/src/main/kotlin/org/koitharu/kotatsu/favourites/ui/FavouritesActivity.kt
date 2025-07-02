@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.favourites.ui
+package org.dokiteam.doki.favourites.ui
 
 import android.os.Bundle
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.FragmentContainerActivity
-import org.koitharu.kotatsu.favourites.ui.list.FavouritesListFragment
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.FragmentContainerActivity
+import org.dokiteam.doki.favourites.ui.list.FavouritesListFragment
 
 class FavouritesActivity : FragmentContainerActivity(FavouritesListFragment::class.java) {
 

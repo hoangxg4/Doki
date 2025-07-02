@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.local.data.output
+package org.dokiteam.doki.local.data.output
 
 import androidx.core.net.toFile
 import androidx.core.net.toUri
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.parsers.model.Manga
 
 class LocalMangaUtil(
 	private val manga: Manga,

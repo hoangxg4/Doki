@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.scrobbling.common.data
+package org.dokiteam.doki.scrobbling.common.data
 
 import android.content.Context
 import androidx.core.content.edit
 import org.jsoup.internal.StringUtil.StringJoiner
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerUser
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerUser
 
 private const val KEY_ACCESS_TOKEN = "access_token"
 private const val KEY_REFRESH_TOKEN = "refresh_token"

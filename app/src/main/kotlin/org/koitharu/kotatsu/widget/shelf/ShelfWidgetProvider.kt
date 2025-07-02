@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.widget.shelf
+package org.dokiteam.doki.widget.shelf
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -8,11 +8,11 @@ import android.graphics.Color
 import android.widget.RemoteViews
 import androidx.core.app.PendingIntentCompat
 import androidx.core.net.toUri
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.ReaderIntent
-import org.koitharu.kotatsu.core.prefs.AppWidgetConfig
-import org.koitharu.kotatsu.core.ui.BaseAppWidgetProvider
-import org.koitharu.kotatsu.reader.ui.ReaderActivity
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.ReaderIntent
+import org.dokiteam.doki.core.prefs.AppWidgetConfig
+import org.dokiteam.doki.core.ui.BaseAppWidgetProvider
+import org.dokiteam.doki.reader.ui.ReaderActivity
 
 class ShelfWidgetProvider : BaseAppWidgetProvider() {
 

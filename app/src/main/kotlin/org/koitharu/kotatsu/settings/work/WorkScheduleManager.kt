@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.settings.work
+package org.dokiteam.doki.settings.work
 
 import android.content.SharedPreferences
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
-import org.koitharu.kotatsu.suggestions.ui.SuggestionsWorker
-import org.koitharu.kotatsu.tracker.work.TrackWorker
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.suggestions.ui.SuggestionsWorker
+import org.dokiteam.doki.tracker.work.TrackWorker
 import javax.inject.Inject
 import javax.inject.Singleton
 

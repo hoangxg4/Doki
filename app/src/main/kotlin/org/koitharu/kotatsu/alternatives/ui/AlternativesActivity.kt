@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.alternatives.ui
+package org.dokiteam.doki.alternatives.ui
 
 import android.os.Bundle
 import android.view.View
@@ -8,28 +8,28 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import coil3.ImageLoader
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityAlternativesBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.ListStateHolderListener
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
-import org.koitharu.kotatsu.list.ui.adapter.buttonFooterAD
-import org.koitharu.kotatsu.list.ui.adapter.emptyStateListAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingFooterAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingStateAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityAlternativesBinding
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.ListStateHolderListener
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.list.ui.adapter.buttonFooterAD
+import org.dokiteam.doki.list.ui.adapter.emptyStateListAD
+import org.dokiteam.doki.list.ui.adapter.loadingFooterAD
+import org.dokiteam.doki.list.ui.adapter.loadingStateAD
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.model.Manga
 import javax.inject.Inject
 
 @AndroidEntryPoint

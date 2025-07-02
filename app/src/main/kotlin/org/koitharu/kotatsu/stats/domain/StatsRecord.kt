@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.stats.domain
+package org.dokiteam.doki.stats.domain
 
-import org.koitharu.kotatsu.details.data.ReadingTime
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.details.data.ReadingTime
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.model.Manga
 import java.util.concurrent.TimeUnit
 
 data class StatsRecord(

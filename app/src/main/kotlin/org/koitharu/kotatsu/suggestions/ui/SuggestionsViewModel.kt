@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.suggestions.ui
+package org.dokiteam.doki.suggestions.ui
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,19 +10,19 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.util.ext.onFirst
-import org.koitharu.kotatsu.list.domain.MangaListMapper
-import org.koitharu.kotatsu.list.domain.QuickFilterListener
-import org.koitharu.kotatsu.list.ui.MangaListViewModel
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.LoadingState
-import org.koitharu.kotatsu.list.ui.model.toErrorState
-import org.koitharu.kotatsu.suggestions.domain.SuggestionRepository
-import org.koitharu.kotatsu.suggestions.domain.SuggestionsListQuickFilter
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.util.ext.onFirst
+import org.dokiteam.doki.list.domain.MangaListMapper
+import org.dokiteam.doki.list.domain.QuickFilterListener
+import org.dokiteam.doki.list.ui.MangaListViewModel
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.LoadingState
+import org.dokiteam.doki.list.ui.model.toErrorState
+import org.dokiteam.doki.suggestions.domain.SuggestionRepository
+import org.dokiteam.doki.suggestions.domain.SuggestionsListQuickFilter
 import javax.inject.Inject
 
 @HiltViewModel

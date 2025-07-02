@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.reader
+package org.dokiteam.doki.settings.reader
 
 import android.content.DialogInterface
 import android.graphics.drawable.Drawable
@@ -16,16 +16,16 @@ import androidx.core.text.buildSpannedString
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.findKeyByValue
-import org.koitharu.kotatsu.core.util.ext.getThemeDrawable
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityReaderTapActionsBinding
-import org.koitharu.kotatsu.reader.domain.TapGridArea
-import org.koitharu.kotatsu.reader.ui.tapgrid.TapAction
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.findKeyByValue
+import org.dokiteam.doki.core.util.ext.getThemeDrawable
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityReaderTapActionsBinding
+import org.dokiteam.doki.reader.domain.TapGridArea
+import org.dokiteam.doki.reader.ui.tapgrid.TapAction
 import java.util.EnumMap
 import androidx.appcompat.R as appcompatR
 

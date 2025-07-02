@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.stats.ui
+package org.dokiteam.doki.stats.ui
 
 import android.content.res.ColorStateList
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.KotatsuColors
-import org.koitharu.kotatsu.databinding.ItemStatsBinding
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.stats.domain.StatsRecord
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.KotatsuColors
+import org.dokiteam.doki.databinding.ItemStatsBinding
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.stats.domain.StatsRecord
 
 fun statsAD(
 	listener: OnListItemClickListener<Manga>,

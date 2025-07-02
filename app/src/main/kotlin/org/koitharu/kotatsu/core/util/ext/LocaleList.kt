@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.content.Context
 import androidx.core.os.LocaleListCompat
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.parsers.util.Set
-import org.koitharu.kotatsu.parsers.util.toTitleCase
+import org.dokiteam.doki.R
+import org.dokiteam.doki.parsers.util.Set
+import org.dokiteam.doki.parsers.util.toTitleCase
 import java.util.Locale
 
 operator fun LocaleListCompat.iterator(): ListIterator<Locale> = LocaleListCompatIterator(this)

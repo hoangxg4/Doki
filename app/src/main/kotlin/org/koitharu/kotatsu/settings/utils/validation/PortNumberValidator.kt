@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.settings.utils.validation
+package org.dokiteam.doki.settings.utils.validation
 
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.EditTextValidator
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.EditTextValidator
 
 class PortNumberValidator : EditTextValidator() {
 

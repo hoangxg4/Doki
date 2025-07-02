@@ -1,16 +1,16 @@
-package org.koitharu.kotatsu.search.ui.suggestion
+package org.dokiteam.doki.search.ui.suggestion
 
 import android.text.Editable
 import android.view.KeyEvent
 import android.widget.TextView
 import androidx.core.net.toUri
 import com.google.android.material.search.SearchView
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.parser.MangaLinkResolver
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.search.domain.SearchKind
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.parser.MangaLinkResolver
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.search.domain.SearchKind
 
 class SearchSuggestionListenerImpl(
 	private val router: AppRouter,

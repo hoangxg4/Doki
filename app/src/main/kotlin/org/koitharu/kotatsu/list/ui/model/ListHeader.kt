@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
 import android.content.Context
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.core.model.getLocalizedTitle
-import org.koitharu.kotatsu.core.ui.model.DateTimeAgo
-import org.koitharu.kotatsu.parsers.model.MangaChapter
+import org.dokiteam.doki.core.model.getLocalizedTitle
+import org.dokiteam.doki.core.ui.model.DateTimeAgo
+import org.dokiteam.doki.parsers.model.MangaChapter
 
 data class ListHeader private constructor(
 	private val textRaw: Any,

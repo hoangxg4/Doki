@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.local.domain
+package org.dokiteam.doki.local.domain
 
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.io.IOException
 import javax.inject.Inject
 

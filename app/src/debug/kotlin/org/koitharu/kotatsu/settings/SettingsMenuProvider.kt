@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.Context
 import android.view.Menu
@@ -7,16 +7,16 @@ import android.view.MenuItem
 import androidx.core.view.MenuProvider
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import leakcanary.LeakCanary
-import org.koitharu.kotatsu.KotatsuApp
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.DokiApp
+import org.dokiteam.doki.R
 import org.koitharu.workinspector.WorkInspector
 
 class SettingsMenuProvider(
 	private val context: Context,
 ) : MenuProvider {
 
-	private val application: KotatsuApp
-		get() = context.applicationContext as KotatsuApp
+	private val application: DokiApp
+		get() = context.applicationContext as DokiApp
 
 	override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
 		menuInflater.inflate(R.menu.opt_settings, menu)

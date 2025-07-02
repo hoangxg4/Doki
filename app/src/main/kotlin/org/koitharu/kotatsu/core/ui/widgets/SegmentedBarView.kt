@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.widgets
+package org.dokiteam.doki.core.ui.widgets
 
 import android.animation.Animator
 import android.animation.ValueAnimator
@@ -13,10 +13,10 @@ import androidx.annotation.ColorInt
 import androidx.annotation.FloatRange
 import androidx.collection.MutableFloatList
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
-import org.koitharu.kotatsu.core.util.ext.getAnimationDuration
-import org.koitharu.kotatsu.core.util.ext.isAnimationsEnabled
-import org.koitharu.kotatsu.core.util.ext.resolveDp
-import org.koitharu.kotatsu.parsers.util.replaceWith
+import org.dokiteam.doki.core.util.ext.getAnimationDuration
+import org.dokiteam.doki.core.util.ext.isAnimationsEnabled
+import org.dokiteam.doki.core.util.ext.resolveDp
+import org.dokiteam.doki.parsers.util.replaceWith
 
 class SegmentedBarView @JvmOverloads constructor(
 	context: Context,

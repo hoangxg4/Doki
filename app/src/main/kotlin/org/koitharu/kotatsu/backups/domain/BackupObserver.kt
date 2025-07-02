@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.backups.domain
+package org.dokiteam.doki.backups.domain
 
 import android.app.backup.BackupManager
 import android.content.Context
 import androidx.room.InvalidationTracker
 import dagger.hilt.android.qualifiers.ApplicationContext
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITES
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITE_CATEGORIES
-import org.koitharu.kotatsu.core.db.TABLE_HISTORY
+import org.dokiteam.doki.core.db.TABLE_FAVOURITES
+import org.dokiteam.doki.core.db.TABLE_FAVOURITE_CATEGORIES
+import org.dokiteam.doki.core.db.TABLE_HISTORY
 import javax.inject.Inject
 import javax.inject.Singleton
 

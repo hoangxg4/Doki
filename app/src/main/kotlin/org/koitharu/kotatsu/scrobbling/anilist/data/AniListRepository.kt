@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.anilist.data
+package org.dokiteam.doki.scrobbling.anilist.data
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -8,27 +8,27 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.parsers.exception.GraphQLException
-import org.koitharu.kotatsu.parsers.util.await
-import org.koitharu.kotatsu.parsers.util.json.getStringOrNull
-import org.koitharu.kotatsu.parsers.util.json.mapJSON
-import org.koitharu.kotatsu.parsers.util.parseJson
-import org.koitharu.kotatsu.parsers.util.toIntUp
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblerRepository
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblerStorage
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblingEntity
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerManga
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerMangaInfo
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerType
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerUser
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.parsers.exception.GraphQLException
+import org.dokiteam.doki.parsers.util.await
+import org.dokiteam.doki.parsers.util.json.getStringOrNull
+import org.dokiteam.doki.parsers.util.json.mapJSON
+import org.dokiteam.doki.parsers.util.parseJson
+import org.dokiteam.doki.parsers.util.toIntUp
+import org.dokiteam.doki.scrobbling.common.data.ScrobblerRepository
+import org.dokiteam.doki.scrobbling.common.data.ScrobblerStorage
+import org.dokiteam.doki.scrobbling.common.data.ScrobblingEntity
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerManga
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerMangaInfo
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerType
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerUser
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.math.roundToInt
 
-private const val REDIRECT_URI = "kotatsu://anilist-auth"
+private const val REDIRECT_URI = "doki://anilist-auth"
 private const val BASE_URL = "https://anilist.co/api/v2/"
 private const val ENDPOINT = "https://graphql.anilist.co"
 private const val MANGA_PAGE_SIZE = 10

@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.suggestions.domain
+package org.dokiteam.doki.suggestions.domain
 
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.MangaListQuickFilter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.MangaListQuickFilter
 import javax.inject.Inject
 
 class SuggestionsListQuickFilter @Inject constructor(

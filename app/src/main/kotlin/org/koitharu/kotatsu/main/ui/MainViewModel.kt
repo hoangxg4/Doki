@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui
+package org.dokiteam.doki.main.ui
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -7,19 +7,19 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.exceptions.EmptyHistoryException
-import org.koitharu.kotatsu.core.github.AppUpdateRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.prefs.observeAsStateFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.main.domain.ReadingResumeEnabledUseCase
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.tracker.domain.TrackingRepository
+import org.dokiteam.doki.core.exceptions.EmptyHistoryException
+import org.dokiteam.doki.core.github.AppUpdateRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.prefs.observeAsStateFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.main.domain.ReadingResumeEnabledUseCase
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.tracker.domain.TrackingRepository
 import javax.inject.Inject
 
 @HiltViewModel

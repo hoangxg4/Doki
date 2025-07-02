@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.image.ui
+package org.dokiteam.doki.image.ui
 
 import android.graphics.drawable.Drawable
 import android.net.Uri
@@ -22,27 +22,27 @@ import com.davemorrissey.labs.subscaleview.ImageSource
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.image.CoilMemoryCacheKey
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.util.PopupMenuMediator
-import org.koitharu.kotatsu.core.util.ShareHelper
-import org.koitharu.kotatsu.core.util.ext.consumeAll
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.enqueueWith
-import org.koitharu.kotatsu.core.util.ext.getDisplayIcon
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getParcelableExtraCompat
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.databinding.ActivityImageBinding
-import org.koitharu.kotatsu.databinding.ItemErrorStateBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.image.CoilMemoryCacheKey
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.util.PopupMenuMediator
+import org.dokiteam.doki.core.util.ShareHelper
+import org.dokiteam.doki.core.util.ext.consumeAll
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.enqueueWith
+import org.dokiteam.doki.core.util.ext.getDisplayIcon
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getParcelableExtraCompat
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.databinding.ActivityImageBinding
+import org.dokiteam.doki.databinding.ItemErrorStateBinding
 import javax.inject.Inject
 import androidx.appcompat.R as appcompatR
 

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.search.ui.multi.adapter
+package org.dokiteam.doki.search.ui.multi.adapter
 
 import android.annotation.SuppressLint
 import androidx.core.view.isGone
@@ -6,20 +6,20 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.UnknownMangaSource
-import org.koitharu.kotatsu.core.ui.list.AdapterDelegateClickListenerAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.list.decor.SpacingItemDecoration
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ItemListGroupBinding
-import org.koitharu.kotatsu.list.ui.MangaSelectionDecoration
-import org.koitharu.kotatsu.list.ui.adapter.mangaGridItemAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.size.ItemSizeResolver
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.search.ui.multi.SearchResultsListModel
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.UnknownMangaSource
+import org.dokiteam.doki.core.ui.list.AdapterDelegateClickListenerAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.list.decor.SpacingItemDecoration
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ItemListGroupBinding
+import org.dokiteam.doki.list.ui.MangaSelectionDecoration
+import org.dokiteam.doki.list.ui.adapter.mangaGridItemAD
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.size.ItemSizeResolver
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.search.ui.multi.SearchResultsListModel
 
 @SuppressLint("NotifyDataSetChanged")
 fun searchResultsAD(

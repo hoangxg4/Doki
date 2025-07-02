@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.search.ui.suggestion
+package org.dokiteam.doki.search.ui.suggestion
 
 import android.content.Context
 import android.view.Menu
@@ -6,10 +6,10 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.activity.result.ActivityResultLauncher
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.util.ext.resolve
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.util.ext.resolve
+import org.dokiteam.doki.core.util.ext.tryLaunch
 
 class SearchSuggestionMenuProvider(
 	private val context: Context,

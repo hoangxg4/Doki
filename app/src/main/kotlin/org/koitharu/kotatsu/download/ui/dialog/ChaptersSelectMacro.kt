@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.download.ui.dialog
+package org.dokiteam.doki.download.ui.dialog
 
 import androidx.collection.ArraySet
 import androidx.collection.LongLongMap
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.util.mapNotNullToSet
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.util.mapNotNullToSet
 
 interface ChaptersSelectMacro {
 

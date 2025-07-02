@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.core.ui.list
+package org.dokiteam.doki.core.ui.list
 
 import android.view.View
 import android.view.View.OnClickListener
 import android.view.View.OnLongClickListener
 import androidx.core.util.Function
 import com.hannesdorfmann.adapterdelegates4.dsl.AdapterDelegateViewBindingViewHolder
-import org.koitharu.kotatsu.core.ui.OnContextClickListenerCompat
-import org.koitharu.kotatsu.core.util.ext.setOnContextClickListenerCompat
+import org.dokiteam.doki.core.ui.OnContextClickListenerCompat
+import org.dokiteam.doki.core.util.ext.setOnContextClickListenerCompat
 
 class AdapterDelegateClickListenerAdapter<I, O>(
 	private val adapterDelegate: AdapterDelegateViewBindingViewHolder<out I, *>,

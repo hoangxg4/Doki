@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.bookmarks.ui.adapter
+package org.dokiteam.doki.bookmarks.ui.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.bookmarks.domain.Bookmark
-import org.koitharu.kotatsu.core.ui.list.AdapterDelegateClickListenerAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.databinding.ItemBookmarkLargeBinding
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.bookmarks.domain.Bookmark
+import org.dokiteam.doki.core.ui.list.AdapterDelegateClickListenerAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.databinding.ItemBookmarkLargeBinding
+import org.dokiteam.doki.list.ui.model.ListModel
 
 fun bookmarkLargeAD(
 	clickListener: OnListItemClickListener<Bookmark>,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.search.ui.suggestion.adapter
+package org.dokiteam.doki.search.ui.suggestion.adapter
 
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.view.updatePadding
@@ -7,13 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.decor.SpacingItemDecoration
-import org.koitharu.kotatsu.core.util.RecyclerViewScrollCallback
-import org.koitharu.kotatsu.databinding.ItemSearchSuggestionMangaGridBinding
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.search.ui.suggestion.SearchSuggestionListener
-import org.koitharu.kotatsu.search.ui.suggestion.model.SearchSuggestionItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.decor.SpacingItemDecoration
+import org.dokiteam.doki.core.util.RecyclerViewScrollCallback
+import org.dokiteam.doki.databinding.ItemSearchSuggestionMangaGridBinding
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.search.ui.suggestion.SearchSuggestionListener
+import org.dokiteam.doki.search.ui.suggestion.model.SearchSuggestionItem
 
 fun searchSuggestionMangaListAD(
 	listener: SearchSuggestionListener,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.list
+package org.dokiteam.doki.core.ui.list
 
 import android.content.Context
 import android.util.AttributeSet

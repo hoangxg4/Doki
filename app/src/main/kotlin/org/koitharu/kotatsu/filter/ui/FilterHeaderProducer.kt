@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.filter.ui
+package org.dokiteam.doki.filter.ui
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.titleResId
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.filter.ui.model.FilterHeaderModel
-import org.koitharu.kotatsu.filter.ui.model.FilterProperty
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaListFilterCapabilities
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.util.toTitleCase
-import org.koitharu.kotatsu.search.domain.MangaSearchRepository
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.titleResId
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.filter.ui.model.FilterHeaderModel
+import org.dokiteam.doki.filter.ui.model.FilterProperty
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaListFilterCapabilities
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.util.toTitleCase
+import org.dokiteam.doki.search.domain.MangaSearchRepository
 import javax.inject.Inject
 import androidx.appcompat.R as appcompatR
 

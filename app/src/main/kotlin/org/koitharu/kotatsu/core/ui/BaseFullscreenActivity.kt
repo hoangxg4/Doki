@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui
+package org.dokiteam.doki.core.ui
 
 import android.graphics.Color
 import android.os.Build
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import androidx.viewbinding.ViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.util.SystemUiController
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.util.SystemUiController
 
 abstract class BaseFullscreenActivity<B : ViewBinding> :
 	BaseActivity<B>() {

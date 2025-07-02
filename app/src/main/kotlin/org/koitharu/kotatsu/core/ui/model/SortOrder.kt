@@ -1,27 +1,27 @@
-package org.koitharu.kotatsu.core.ui.model
+package org.dokiteam.doki.core.ui.model
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.SortDirection
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.model.SortOrder.ADDED
-import org.koitharu.kotatsu.parsers.model.SortOrder.ADDED_ASC
-import org.koitharu.kotatsu.parsers.model.SortOrder.ALPHABETICAL
-import org.koitharu.kotatsu.parsers.model.SortOrder.ALPHABETICAL_DESC
-import org.koitharu.kotatsu.parsers.model.SortOrder.NEWEST
-import org.koitharu.kotatsu.parsers.model.SortOrder.NEWEST_ASC
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_ASC
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_HOUR
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_MONTH
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_TODAY
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_WEEK
-import org.koitharu.kotatsu.parsers.model.SortOrder.POPULARITY_YEAR
-import org.koitharu.kotatsu.parsers.model.SortOrder.RATING
-import org.koitharu.kotatsu.parsers.model.SortOrder.RATING_ASC
-import org.koitharu.kotatsu.parsers.model.SortOrder.RELEVANCE
-import org.koitharu.kotatsu.parsers.model.SortOrder.UPDATED
-import org.koitharu.kotatsu.parsers.model.SortOrder.UPDATED_ASC
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.SortDirection
+import org.dokiteam.doki.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.model.SortOrder.ADDED
+import org.dokiteam.doki.parsers.model.SortOrder.ADDED_ASC
+import org.dokiteam.doki.parsers.model.SortOrder.ALPHABETICAL
+import org.dokiteam.doki.parsers.model.SortOrder.ALPHABETICAL_DESC
+import org.dokiteam.doki.parsers.model.SortOrder.NEWEST
+import org.dokiteam.doki.parsers.model.SortOrder.NEWEST_ASC
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_ASC
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_HOUR
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_MONTH
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_TODAY
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_WEEK
+import org.dokiteam.doki.parsers.model.SortOrder.POPULARITY_YEAR
+import org.dokiteam.doki.parsers.model.SortOrder.RATING
+import org.dokiteam.doki.parsers.model.SortOrder.RATING_ASC
+import org.dokiteam.doki.parsers.model.SortOrder.RELEVANCE
+import org.dokiteam.doki.parsers.model.SortOrder.UPDATED
+import org.dokiteam.doki.parsers.model.SortOrder.UPDATED_ASC
 
 @get:StringRes
 val SortOrder.titleRes: Int

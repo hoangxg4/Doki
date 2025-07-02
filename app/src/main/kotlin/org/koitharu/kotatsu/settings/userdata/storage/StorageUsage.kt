@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.userdata.storage
+package org.dokiteam.doki.settings.userdata.storage
 
 data class StorageUsage(
 	val savedManga: Item,

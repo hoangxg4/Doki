@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.util.ext.getDisplayIcon
-import org.koitharu.kotatsu.parsers.util.ifZero
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.util.ext.getDisplayIcon
+import org.dokiteam.doki.parsers.util.ifZero
 
 fun Throwable.toErrorState(canRetry: Boolean = true, @StringRes secondaryAction: Int = 0) = ErrorState(
 	exception = this,

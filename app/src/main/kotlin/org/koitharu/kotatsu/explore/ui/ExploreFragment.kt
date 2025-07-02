@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.explore.ui
+package org.dokiteam.doki.explore.ui
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -18,32 +18,32 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.model.LocalMangaSource
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.parser.external.ExternalMangaSource
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.dialog.BigButtonsAlertDialog
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.util.RecyclerViewOwner
-import org.koitharu.kotatsu.core.ui.util.ReversibleActionObserver
-import org.koitharu.kotatsu.core.ui.util.SpanSizeResolver
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.findAppCompatDelegate
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.FragmentExploreBinding
-import org.koitharu.kotatsu.explore.ui.adapter.ExploreAdapter
-import org.koitharu.kotatsu.explore.ui.adapter.ExploreListEventListener
-import org.koitharu.kotatsu.explore.ui.model.MangaSourceItem
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.model.LocalMangaSource
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.parser.external.ExternalMangaSource
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.dialog.BigButtonsAlertDialog
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
+import org.dokiteam.doki.core.ui.util.ReversibleActionObserver
+import org.dokiteam.doki.core.ui.util.SpanSizeResolver
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.findAppCompatDelegate
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.FragmentExploreBinding
+import org.dokiteam.doki.explore.ui.adapter.ExploreAdapter
+import org.dokiteam.doki.explore.ui.adapter.ExploreListEventListener
+import org.dokiteam.doki.explore.ui.model.MangaSourceItem
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaParserSource
 
 @AndroidEntryPoint
 class ExploreFragment :

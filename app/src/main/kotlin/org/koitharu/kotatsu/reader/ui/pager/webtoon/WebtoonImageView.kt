@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.webtoon
+package org.dokiteam.doki.reader.ui.pager.webtoon
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,7 +8,7 @@ import android.util.AttributeSet
 import androidx.core.view.ancestors
 import androidx.recyclerview.widget.RecyclerView
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
-import org.koitharu.kotatsu.core.util.ext.resolveDp
+import org.dokiteam.doki.core.util.ext.resolveDp
 import kotlin.math.roundToInt
 
 class WebtoonImageView @JvmOverloads constructor(

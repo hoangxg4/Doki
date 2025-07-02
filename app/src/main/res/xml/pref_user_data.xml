@@ -48,7 +48,7 @@
 			android:title="@string/restore_backup" />
 
 		<PreferenceScreen
-			android:fragment="org.koitharu.kotatsu.backups.ui.periodical.PeriodicalBackupSettingsFragment"
+			android:fragment="org.dokiteam.doki.backups.ui.periodical.PeriodicalBackupSettingsFragment"
 			android:key="backup_periodic"
 			android:persistent="false"
 			android:title="@string/periodic_backups" />
@@ -56,7 +56,7 @@
 	</PreferenceCategory>
 
 	<PreferenceScreen
-		android:fragment="org.koitharu.kotatsu.settings.userdata.storage.StorageManageSettingsFragment"
+		android:fragment="org.dokiteam.doki.settings.userdata.storage.StorageManageSettingsFragment"
 		android:key="storage_usage"
 		android:title="@string/storage_usage"
 		app:allowDividerAbove="true" />

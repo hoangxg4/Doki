@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import androidx.annotation.Px
 import androidx.recyclerview.widget.LinearLayoutManager

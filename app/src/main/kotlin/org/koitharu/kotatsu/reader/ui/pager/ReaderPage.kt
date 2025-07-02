@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.reader.ui.pager
+package org.dokiteam.doki.reader.ui.pager
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.TypeParceler
-import org.koitharu.kotatsu.core.model.parcelable.MangaSourceParceler
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.model.parcelable.MangaSourceParceler
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.model.MangaSource
 
 @Parcelize
 @TypeParceler<MangaSource, MangaSourceParceler>

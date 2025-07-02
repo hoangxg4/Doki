@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.core.ui.model
+package org.dokiteam.doki.core.ui.model
 
-import org.koitharu.kotatsu.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.ContentRating
 
 data class MangaOverride(
 	val coverUrl: String?,

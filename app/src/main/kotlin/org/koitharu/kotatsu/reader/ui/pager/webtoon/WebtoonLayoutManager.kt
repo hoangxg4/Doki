@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.webtoon
+package org.dokiteam.doki.reader.ui.pager.webtoon
 
 import android.content.Context
 import android.util.AttributeSet

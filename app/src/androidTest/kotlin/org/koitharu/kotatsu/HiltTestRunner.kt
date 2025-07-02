@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu
+package org.dokiteam.doki
 
 import android.app.Application
 import android.content.Context

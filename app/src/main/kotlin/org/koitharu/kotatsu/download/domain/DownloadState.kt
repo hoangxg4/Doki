@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.download.domain
+package org.dokiteam.doki.download.domain
 
 import androidx.work.Data
-import org.koitharu.kotatsu.list.domain.ReadingProgress.Companion.PROGRESS_NONE
-import org.koitharu.kotatsu.local.domain.model.LocalManga
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.list.domain.ReadingProgress.Companion.PROGRESS_NONE
+import org.dokiteam.doki.local.domain.model.LocalManga
+import org.dokiteam.doki.parsers.model.Manga
 import java.time.Instant
 
 data class DownloadState(

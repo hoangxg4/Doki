@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.backups.domain
+package org.dokiteam.doki.backups.domain
 
 import android.content.Context
 import androidx.annotation.CheckResult
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
 import java.io.File
 import java.text.ParseException
 import java.text.SimpleDateFormat

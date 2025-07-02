@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.databinding.ItemQuickFilterBinding
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.QuickFilter
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.databinding.ItemQuickFilterBinding
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.QuickFilter
 
 fun quickFilterAD(
 	listener: QuickFilterClickListener,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.cache
+package org.dokiteam.doki.core.cache
 
 import kotlinx.coroutines.Deferred
 

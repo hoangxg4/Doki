@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.details.ui.pager.pages
+package org.dokiteam.doki.details.ui.pager.pages
 
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 
 data class PageThumbnail(
 	val isCurrent: Boolean,

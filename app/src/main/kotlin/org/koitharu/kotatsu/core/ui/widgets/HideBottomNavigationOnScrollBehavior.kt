@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.widgets
+package org.dokiteam.doki.core.ui.widgets
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -9,9 +9,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.navigation.NavigationBarView
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.getAnimationDuration
-import org.koitharu.kotatsu.core.util.ext.measureHeight
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.getAnimationDuration
+import org.dokiteam.doki.core.util.ext.measureHeight
 
 class HideBottomNavigationOnScrollBehavior @JvmOverloads constructor(
 	context: Context? = null,

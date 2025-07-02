@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.favourites.ui.categories.select.adapter
+package org.dokiteam.doki.favourites.ui.categories.select.adapter
 
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.favourites.ui.categories.select.model.MangaCategoryItem
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.emptyStateListAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingStateAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.favourites.ui.categories.select.model.MangaCategoryItem
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.emptyStateListAD
+import org.dokiteam.doki.list.ui.adapter.loadingStateAD
+import org.dokiteam.doki.list.ui.model.ListModel
 
 class MangaCategoriesAdapter(
 	clickListener: OnListItemClickListener<MangaCategoryItem>,

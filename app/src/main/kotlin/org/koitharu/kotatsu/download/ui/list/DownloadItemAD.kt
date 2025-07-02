@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.list
+package org.dokiteam.doki.download.ui.list
 
 import android.view.View
 import androidx.core.view.isGone
@@ -11,18 +11,18 @@ import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.setContentDescriptionAndTooltip
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ItemDownloadBinding
-import org.koitharu.kotatsu.download.ui.list.chapters.DownloadChapter
-import org.koitharu.kotatsu.download.ui.list.chapters.downloadChapterAD
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.util.format
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.setContentDescriptionAndTooltip
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ItemDownloadBinding
+import org.dokiteam.doki.download.ui.list.chapters.DownloadChapter
+import org.dokiteam.doki.download.ui.list.chapters.downloadChapterAD
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.util.format
 
 fun downloadItemAD(
 	lifecycleOwner: LifecycleOwner,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.search
+package org.dokiteam.doki.settings.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,13 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.AsyncListDiffer.ListListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.consumeAll
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.databinding.FragmentSearchSuggestionBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.consumeAll
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.databinding.FragmentSearchSuggestionBinding
+import org.dokiteam.doki.list.ui.adapter.ListItemType
 
 @AndroidEntryPoint
 class SettingsSearchFragment : BaseFragment<FragmentSearchSuggestionBinding>(),

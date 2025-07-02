@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu
+package org.dokiteam.doki
 
 import androidx.test.platform.app.InstrumentationRegistry
 import com.squareup.moshi.FromJson
@@ -10,10 +10,10 @@ import com.squareup.moshi.ToJson
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okio.buffer
 import okio.source
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
 import java.time.Instant
 import java.util.Date
 import kotlin.reflect.KClass

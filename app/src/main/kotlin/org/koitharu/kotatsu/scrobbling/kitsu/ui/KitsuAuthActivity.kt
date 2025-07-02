@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.kitsu.ui
+package org.dokiteam.doki.scrobbling.kitsu.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,12 +12,12 @@ import androidx.core.net.toUri
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.util.DefaultTextWatcher
-import org.koitharu.kotatsu.core.util.ext.consume
-import org.koitharu.kotatsu.databinding.ActivityKitsuAuthBinding
-import org.koitharu.kotatsu.parsers.util.urlEncoded
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.util.DefaultTextWatcher
+import org.dokiteam.doki.core.util.ext.consume
+import org.dokiteam.doki.databinding.ActivityKitsuAuthBinding
+import org.dokiteam.doki.parsers.util.urlEncoded
 
 class KitsuAuthActivity : BaseActivity<ActivityKitsuAuthBinding>(),
 	View.OnClickListener,
@@ -103,7 +103,7 @@ class KitsuAuthActivity : BaseActivity<ActivityKitsuAuthBinding>(),
 	private fun continueAuth() {
 		val email = viewBinding.editEmail.text?.toString()?.trim().orEmpty()
 		val password = viewBinding.editPassword.text?.toString()?.trim().orEmpty()
-		val url = "kotatsu://kitsu-auth?code=" + "$email;$password".urlEncoded()
+		val url = "doki://kitsu-auth?code=" + "$email;$password".urlEncoded()
 		val intent = Intent(Intent.ACTION_VIEW, url.toUri())
 		startActivity(intent)
 		finishAfterTransition()

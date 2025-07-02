@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.ui
+package org.dokiteam.doki.core.ui
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.widget.RemoteViews
 import androidx.annotation.CallSuper
-import org.koitharu.kotatsu.core.prefs.AppWidgetConfig
+import org.dokiteam.doki.core.prefs.AppWidgetConfig
 
 abstract class BaseAppWidgetProvider : AppWidgetProvider() {
 

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.graphics.Rect
 import android.os.Build
@@ -25,7 +25,7 @@ import com.google.android.material.progressindicator.BaseProgressIndicator
 import com.google.android.material.slider.RangeSlider
 import com.google.android.material.slider.Slider
 import com.google.android.material.tabs.TabLayout
-import org.koitharu.kotatsu.core.ui.OnContextClickListenerCompat
+import org.dokiteam.doki.core.ui.OnContextClickListenerCompat
 import kotlin.math.roundToInt
 
 fun View.hasGlobalPoint(x: Int, y: Int): Boolean {

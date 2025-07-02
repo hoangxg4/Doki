@@ -1,15 +1,15 @@
-package org.koitharu.kotatsu.details.ui
+package org.dokiteam.doki.details.ui
 
 import com.google.android.material.snackbar.Snackbar
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.UnsupportedSourceException
-import org.koitharu.kotatsu.core.exceptions.resolve.ErrorObserver
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.isNetworkError
-import org.koitharu.kotatsu.core.util.ext.isSerializable
-import org.koitharu.kotatsu.parsers.exception.NotFoundException
-import org.koitharu.kotatsu.parsers.exception.ParseException
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.UnsupportedSourceException
+import org.dokiteam.doki.core.exceptions.resolve.ErrorObserver
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.isNetworkError
+import org.dokiteam.doki.core.util.ext.isSerializable
+import org.dokiteam.doki.parsers.exception.NotFoundException
+import org.dokiteam.doki.parsers.exception.ParseException
 
 class DetailsErrorObserver(
 	override val activity: DetailsActivity,

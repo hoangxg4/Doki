@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.image
+package org.dokiteam.doki.core.ui.image
 
 import android.graphics.ColorFilter
 import android.graphics.Paint

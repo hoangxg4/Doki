@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.stats.ui.views
+package org.dokiteam.doki.stats.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,9 +13,9 @@ import androidx.appcompat.widget.TooltipCompat
 import androidx.core.graphics.ColorUtils
 import androidx.core.view.PointerIconCompat
 import androidx.core.view.ViewCompat
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.core.util.ext.resolveDp
-import org.koitharu.kotatsu.parsers.util.replaceWith
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.core.util.ext.resolveDp
+import org.dokiteam.doki.parsers.util.replaceWith
 import kotlin.math.atan2
 import kotlin.math.sqrt
 

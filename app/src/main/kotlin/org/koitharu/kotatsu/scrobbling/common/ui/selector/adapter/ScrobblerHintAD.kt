@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.scrobbling.common.ui.selector.adapter
+package org.dokiteam.doki.scrobbling.common.ui.selector.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.setTextAndVisible
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ItemEmptyHintBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListStateHolderListener
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.scrobbling.common.ui.selector.model.ScrobblerHint
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ItemEmptyHintBinding
+import org.dokiteam.doki.list.ui.adapter.ListStateHolderListener
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.scrobbling.common.ui.selector.model.ScrobblerHint
 
 fun scrobblerHintAD(
 	listener: ListStateHolderListener,

@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.reader.ui.pager.webtoon
+package org.dokiteam.doki.reader.ui.pager.webtoon
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
 import androidx.annotation.AttrRes
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class WebtoonFrameLayout @JvmOverloads constructor(
 	context: Context,

@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.explore.domain
+package org.dokiteam.doki.explore.domain
 
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 
 class RecoverMangaUseCase @Inject constructor(

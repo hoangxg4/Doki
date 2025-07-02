@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.config
+package org.dokiteam.doki.reader.ui.config
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,21 +15,21 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ReaderMode
-import org.koitharu.kotatsu.core.ui.sheet.BaseAdaptiveSheet
-import org.koitharu.kotatsu.core.util.ext.consume
-import org.koitharu.kotatsu.core.util.ext.findParentCallback
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.viewLifecycleScope
-import org.koitharu.kotatsu.databinding.SheetReaderConfigBinding
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.ReaderViewModel
-import org.koitharu.kotatsu.reader.ui.ScreenOrientationHelper
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ReaderMode
+import org.dokiteam.doki.core.ui.sheet.BaseAdaptiveSheet
+import org.dokiteam.doki.core.util.ext.consume
+import org.dokiteam.doki.core.util.ext.findParentCallback
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.viewLifecycleScope
+import org.dokiteam.doki.databinding.SheetReaderConfigBinding
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.ReaderViewModel
+import org.dokiteam.doki.reader.ui.ScreenOrientationHelper
 import javax.inject.Inject
 
 @AndroidEntryPoint

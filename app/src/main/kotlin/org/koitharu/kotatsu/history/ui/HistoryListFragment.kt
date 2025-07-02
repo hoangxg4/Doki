@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.history.ui
+package org.dokiteam.doki.history.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -7,17 +7,17 @@ import android.view.MenuItem
 import androidx.appcompat.view.ActionMode
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.ui.list.RecyclerScrollKeeper
-import org.koitharu.kotatsu.core.ui.util.MenuInvalidator
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.databinding.FragmentListBinding
-import org.koitharu.kotatsu.list.ui.MangaListFragment
-import org.koitharu.kotatsu.list.ui.size.DynamicItemSizeResolver
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.ui.list.RecyclerScrollKeeper
+import org.dokiteam.doki.core.ui.util.MenuInvalidator
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.databinding.FragmentListBinding
+import org.dokiteam.doki.list.ui.MangaListFragment
+import org.dokiteam.doki.list.ui.size.DynamicItemSizeResolver
 
 @AndroidEntryPoint
 class HistoryListFragment : MangaListFragment() {

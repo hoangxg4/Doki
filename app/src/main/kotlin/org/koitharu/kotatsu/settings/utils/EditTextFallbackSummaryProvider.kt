@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.settings.utils
+package org.dokiteam.doki.settings.utils
 
 import androidx.annotation.StringRes
 import androidx.preference.EditTextPreference
 import androidx.preference.Preference
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
 
 class EditTextFallbackSummaryProvider(
 	@StringRes private val fallbackResId: Int,

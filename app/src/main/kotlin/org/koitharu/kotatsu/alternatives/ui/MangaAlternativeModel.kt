@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.alternatives.ui
+package org.dokiteam.doki.alternatives.ui
 
-import org.koitharu.kotatsu.core.model.chaptersCount
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.MangaGridModel
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.core.model.chaptersCount
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaGridModel
+import org.dokiteam.doki.parsers.model.Manga
 
 data class MangaAlternativeModel(
 	val mangaModel: MangaGridModel,

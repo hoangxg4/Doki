@@ -23,7 +23,7 @@
 		app:useSimpleSummaryProvider="true" />
 
 	<PreferenceScreen
-		android:fragment="org.koitharu.kotatsu.settings.ProxySettingsFragment"
+		android:fragment="org.dokiteam.doki.settings.ProxySettingsFragment"
 		android:key="proxy"
 		android:title="@string/proxy"
 		app:allowDividerAbove="true" />

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.util
+package org.dokiteam.doki.util
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancelAndJoin
@@ -11,7 +11,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Ignore
 import org.junit.Test
-import org.koitharu.kotatsu.core.util.MultiMutex
+import org.dokiteam.doki.core.util.MultiMutex
 
 class MultiMutexTest {
 

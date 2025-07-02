@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui.welcome
+package org.dokiteam.doki.main.ui.welcome
 
 import android.accounts.AccountManager
 import android.net.Uri
@@ -15,18 +15,18 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.titleResId
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.sheet.BaseAdaptiveSheet
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.core.util.ext.consume
-import org.koitharu.kotatsu.core.util.ext.getDisplayName
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.databinding.SheetWelcomeBinding
-import org.koitharu.kotatsu.filter.ui.model.FilterProperty
-import org.koitharu.kotatsu.parsers.model.ContentType
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.titleResId
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.sheet.BaseAdaptiveSheet
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.core.util.ext.consume
+import org.dokiteam.doki.core.util.ext.getDisplayName
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.databinding.SheetWelcomeBinding
+import org.dokiteam.doki.filter.ui.model.FilterProperty
+import org.dokiteam.doki.parsers.model.ContentType
 import java.util.Locale
 
 @AndroidEntryPoint

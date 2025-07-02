@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.settings.utils
+package org.dokiteam.doki.settings.utils
 
 import javax.inject.Inject
-import org.koitharu.kotatsu.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.MangaDatabase
 
 class TagsAutoCompleteProvider @Inject constructor(
 	private val db: MangaDatabase,

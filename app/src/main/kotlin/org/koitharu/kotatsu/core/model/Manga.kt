@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.model
+package org.dokiteam.doki.core.model
 
 import android.content.res.Resources
 import android.net.Uri
@@ -10,19 +10,19 @@ import androidx.core.net.toUri
 import androidx.core.os.LocaleListCompat
 import androidx.core.text.buildSpannedString
 import androidx.core.text.strikeThrough
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.model.MangaOverride
-import org.koitharu.kotatsu.core.util.ext.iterator
-import org.koitharu.kotatsu.details.ui.model.ChapterListItem
-import org.koitharu.kotatsu.parsers.model.ContentRating
-import org.koitharu.kotatsu.parsers.model.Demographic
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaState
-import org.koitharu.kotatsu.parsers.util.findById
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.mapToSet
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.model.MangaOverride
+import org.dokiteam.doki.core.util.ext.iterator
+import org.dokiteam.doki.details.ui.model.ChapterListItem
+import org.dokiteam.doki.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.Demographic
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaState
+import org.dokiteam.doki.parsers.util.findById
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.mapToSet
 import com.google.android.material.R as materialR
 
 @JvmName("mangaIds")

@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.tracker.data
+package org.dokiteam.doki.tracker.data
 
 import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
-import org.koitharu.kotatsu.core.db.entity.MangaEntity
-import org.koitharu.kotatsu.core.db.entity.MangaTagsEntity
-import org.koitharu.kotatsu.core.db.entity.TagEntity
+import org.dokiteam.doki.core.db.entity.MangaEntity
+import org.dokiteam.doki.core.db.entity.MangaTagsEntity
+import org.dokiteam.doki.core.db.entity.TagEntity
 
 class TrackLogWithManga(
 	@Embedded val trackLog: TrackLogEntity,

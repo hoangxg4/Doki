@@ -1,17 +1,17 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.AdapterDelegateClickListenerAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.databinding.ItemMangaGridBinding
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback.Companion.PAYLOAD_PROGRESS_CHANGED
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.MangaGridModel
-import org.koitharu.kotatsu.list.ui.size.ItemSizeResolver
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.AdapterDelegateClickListenerAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.databinding.ItemMangaGridBinding
+import org.dokiteam.doki.list.ui.ListModelDiffCallback.Companion.PAYLOAD_PROGRESS_CHANGED
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaGridModel
+import org.dokiteam.doki.list.ui.size.ItemSizeResolver
+import org.dokiteam.doki.parsers.model.Manga
 
 fun mangaGridItemAD(
 	sizeResolver: ItemSizeResolver,

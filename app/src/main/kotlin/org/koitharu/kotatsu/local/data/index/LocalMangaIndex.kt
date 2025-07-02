@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.data.index
+package org.dokiteam.doki.local.data.index
 
 import android.content.Context
 import androidx.core.content.edit
@@ -7,13 +7,13 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.local.data.input.LocalMangaParser
-import org.koitharu.kotatsu.local.domain.model.LocalManga
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.local.data.input.LocalMangaParser
+import org.dokiteam.doki.local.domain.model.LocalManga
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Provider

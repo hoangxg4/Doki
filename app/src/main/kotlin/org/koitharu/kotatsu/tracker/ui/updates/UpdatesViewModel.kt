@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.tracker.ui.updates
+package org.dokiteam.doki.tracker.ui.updates
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,26 +10,26 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ListMode
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.ui.model.DateTimeAgo
-import org.koitharu.kotatsu.core.util.ext.calculateTimeAgo
-import org.koitharu.kotatsu.core.util.ext.onFirst
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.MangaListMapper
-import org.koitharu.kotatsu.list.domain.QuickFilterListener
-import org.koitharu.kotatsu.list.ui.MangaListViewModel
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.LoadingState
-import org.koitharu.kotatsu.list.ui.model.toErrorState
-import org.koitharu.kotatsu.tracker.domain.TrackingRepository
-import org.koitharu.kotatsu.tracker.domain.UpdatesListQuickFilter
-import org.koitharu.kotatsu.tracker.domain.model.MangaTracking
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ListMode
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.ui.model.DateTimeAgo
+import org.dokiteam.doki.core.util.ext.calculateTimeAgo
+import org.dokiteam.doki.core.util.ext.onFirst
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.MangaListMapper
+import org.dokiteam.doki.list.domain.QuickFilterListener
+import org.dokiteam.doki.list.ui.MangaListViewModel
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.LoadingState
+import org.dokiteam.doki.list.ui.model.toErrorState
+import org.dokiteam.doki.tracker.domain.TrackingRepository
+import org.dokiteam.doki.tracker.domain.UpdatesListQuickFilter
+import org.dokiteam.doki.tracker.domain.model.MangaTracking
 import javax.inject.Inject
 
 @HiltViewModel

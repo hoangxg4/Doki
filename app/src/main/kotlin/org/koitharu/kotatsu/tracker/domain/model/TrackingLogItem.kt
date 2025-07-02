@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.tracker.domain.model
+package org.dokiteam.doki.tracker.domain.model
 
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.Manga
 import java.time.Instant
 
 data class TrackingLogItem(

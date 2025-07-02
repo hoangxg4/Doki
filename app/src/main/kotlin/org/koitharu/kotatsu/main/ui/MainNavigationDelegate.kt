@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui
+package org.dokiteam.doki.main.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -26,22 +26,22 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.bookmarks.ui.AllBookmarksFragment
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.NavItem
-import org.koitharu.kotatsu.core.ui.util.RecyclerViewOwner
-import org.koitharu.kotatsu.core.ui.widgets.SlidingBottomNavigationView
-import org.koitharu.kotatsu.core.util.ext.setContentDescriptionAndTooltip
-import org.koitharu.kotatsu.core.util.ext.smoothScrollToTop
-import org.koitharu.kotatsu.databinding.NavigationRailFabBinding
-import org.koitharu.kotatsu.explore.ui.ExploreFragment
-import org.koitharu.kotatsu.favourites.ui.container.FavouritesContainerFragment
-import org.koitharu.kotatsu.history.ui.HistoryListFragment
-import org.koitharu.kotatsu.local.ui.LocalListFragment
-import org.koitharu.kotatsu.suggestions.ui.SuggestionsFragment
-import org.koitharu.kotatsu.tracker.ui.feed.FeedFragment
-import org.koitharu.kotatsu.tracker.ui.updates.UpdatesFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.bookmarks.ui.AllBookmarksFragment
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.NavItem
+import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
+import org.dokiteam.doki.core.ui.widgets.SlidingBottomNavigationView
+import org.dokiteam.doki.core.util.ext.setContentDescriptionAndTooltip
+import org.dokiteam.doki.core.util.ext.smoothScrollToTop
+import org.dokiteam.doki.databinding.NavigationRailFabBinding
+import org.dokiteam.doki.explore.ui.ExploreFragment
+import org.dokiteam.doki.favourites.ui.container.FavouritesContainerFragment
+import org.dokiteam.doki.history.ui.HistoryListFragment
+import org.dokiteam.doki.local.ui.LocalListFragment
+import org.dokiteam.doki.suggestions.ui.SuggestionsFragment
+import org.dokiteam.doki.tracker.ui.feed.FeedFragment
+import org.dokiteam.doki.tracker.ui.updates.UpdatesFragment
 import java.util.LinkedList
 import com.google.android.material.R as materialR
 

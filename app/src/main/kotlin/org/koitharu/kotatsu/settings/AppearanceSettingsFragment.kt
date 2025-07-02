@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -12,24 +12,24 @@ import androidx.preference.ListPreference
 import androidx.preference.MultiSelectListPreference
 import androidx.preference.Preference
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ListMode
-import org.koitharu.kotatsu.core.prefs.ProgressIndicatorMode
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.ui.util.ActivityRecreationHandle
-import org.koitharu.kotatsu.core.util.LocaleComparator
-import org.koitharu.kotatsu.core.util.ext.getLocalesConfig
-import org.koitharu.kotatsu.core.util.ext.postDelayed
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.core.util.ext.sortedWithSafe
-import org.koitharu.kotatsu.core.util.ext.toList
-import org.koitharu.kotatsu.parsers.util.names
-import org.koitharu.kotatsu.parsers.util.toTitleCase
-import org.koitharu.kotatsu.settings.utils.ActivityListPreference
-import org.koitharu.kotatsu.settings.utils.MultiSummaryProvider
-import org.koitharu.kotatsu.settings.utils.PercentSummaryProvider
-import org.koitharu.kotatsu.settings.utils.SliderPreference
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ListMode
+import org.dokiteam.doki.core.prefs.ProgressIndicatorMode
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.ui.util.ActivityRecreationHandle
+import org.dokiteam.doki.core.util.LocaleComparator
+import org.dokiteam.doki.core.util.ext.getLocalesConfig
+import org.dokiteam.doki.core.util.ext.postDelayed
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.core.util.ext.sortedWithSafe
+import org.dokiteam.doki.core.util.ext.toList
+import org.dokiteam.doki.parsers.util.names
+import org.dokiteam.doki.parsers.util.toTitleCase
+import org.dokiteam.doki.settings.utils.ActivityListPreference
+import org.dokiteam.doki.settings.utils.MultiSummaryProvider
+import org.dokiteam.doki.settings.utils.PercentSummaryProvider
+import org.dokiteam.doki.settings.utils.SliderPreference
 import javax.inject.Inject
 
 @AndroidEntryPoint

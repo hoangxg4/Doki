@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.vertical
+package org.dokiteam.doki.reader.ui.pager.vertical
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2

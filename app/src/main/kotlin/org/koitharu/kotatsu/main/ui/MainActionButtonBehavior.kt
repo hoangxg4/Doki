@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui
+package org.dokiteam.doki.main.ui
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,8 +6,8 @@ import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-import org.koitharu.kotatsu.core.ui.util.ShrinkOnScrollBehavior
-import org.koitharu.kotatsu.core.ui.widgets.SlidingBottomNavigationView
+import org.dokiteam.doki.core.ui.util.ShrinkOnScrollBehavior
+import org.dokiteam.doki.core.ui.widgets.SlidingBottomNavigationView
 
 class MainActionButtonBehavior : ShrinkOnScrollBehavior {
 

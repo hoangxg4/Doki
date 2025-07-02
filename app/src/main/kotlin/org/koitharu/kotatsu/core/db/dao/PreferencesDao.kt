@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.db.dao
+package org.dokiteam.doki.core.db.dao
 
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
-import org.koitharu.kotatsu.core.db.entity.MangaPrefsEntity
+import org.dokiteam.doki.core.db.entity.MangaPrefsEntity
 
 @Dao
 abstract class PreferencesDao {

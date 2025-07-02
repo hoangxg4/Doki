@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.content.res.Resources
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.model.DateTimeAgo
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.model.DateTimeAgo
 import java.time.Instant
 import java.time.LocalDate
 import java.time.LocalDateTime

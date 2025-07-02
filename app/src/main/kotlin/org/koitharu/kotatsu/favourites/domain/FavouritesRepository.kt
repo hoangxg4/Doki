@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.domain
+package org.dokiteam.doki.favourites.domain
 
 import androidx.room.withTransaction
 import dagger.Reusable
@@ -8,27 +8,27 @@ import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapLatest
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITES
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITE_CATEGORIES
-import org.koitharu.kotatsu.core.db.entity.toEntities
-import org.koitharu.kotatsu.core.db.entity.toEntity
-import org.koitharu.kotatsu.core.db.entity.toMangaList
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.model.toMangaSources
-import org.koitharu.kotatsu.core.ui.util.ReversibleHandle
-import org.koitharu.kotatsu.core.util.ext.mapItems
-import org.koitharu.kotatsu.favourites.data.FavouriteCategoryEntity
-import org.koitharu.kotatsu.favourites.data.FavouriteEntity
-import org.koitharu.kotatsu.favourites.data.toFavouriteCategory
-import org.koitharu.kotatsu.favourites.data.toMangaList
-import org.koitharu.kotatsu.favourites.domain.model.Cover
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.ListSortOrder
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.levenshteinDistance
-import org.koitharu.kotatsu.search.domain.SearchKind
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.TABLE_FAVOURITES
+import org.dokiteam.doki.core.db.TABLE_FAVOURITE_CATEGORIES
+import org.dokiteam.doki.core.db.entity.toEntities
+import org.dokiteam.doki.core.db.entity.toEntity
+import org.dokiteam.doki.core.db.entity.toMangaList
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.model.toMangaSources
+import org.dokiteam.doki.core.ui.util.ReversibleHandle
+import org.dokiteam.doki.core.util.ext.mapItems
+import org.dokiteam.doki.favourites.data.FavouriteCategoryEntity
+import org.dokiteam.doki.favourites.data.FavouriteEntity
+import org.dokiteam.doki.favourites.data.toFavouriteCategory
+import org.dokiteam.doki.favourites.data.toMangaList
+import org.dokiteam.doki.favourites.domain.model.Cover
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.ListSortOrder
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.levenshteinDistance
+import org.dokiteam.doki.search.domain.SearchKind
 import javax.inject.Inject
 
 @Reusable

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.picker.ui.page
+package org.dokiteam.doki.picker.ui.page
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,26 +12,26 @@ import androidx.lifecycle.Lifecycle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.list.BoundsScrollListener
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.util.PagerNestedScrollHelper
-import org.koitharu.kotatsu.core.util.ext.consumeAll
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.showOrHide
-import org.koitharu.kotatsu.databinding.FragmentPagesBinding
-import org.koitharu.kotatsu.details.ui.pager.pages.PageThumbnail
-import org.koitharu.kotatsu.details.ui.pager.pages.PageThumbnailAdapter
-import org.koitharu.kotatsu.list.ui.GridSpanResolver
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.picker.ui.PageImagePickActivity
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.list.BoundsScrollListener
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.util.PagerNestedScrollHelper
+import org.dokiteam.doki.core.util.ext.consumeAll
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.showOrHide
+import org.dokiteam.doki.databinding.FragmentPagesBinding
+import org.dokiteam.doki.details.ui.pager.pages.PageThumbnail
+import org.dokiteam.doki.details.ui.pager.pages.PageThumbnailAdapter
+import org.dokiteam.doki.list.ui.GridSpanResolver
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.picker.ui.PageImagePickActivity
 import javax.inject.Inject
 
 @AndroidEntryPoint

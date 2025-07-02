@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.db.entity
+package org.dokiteam.doki.core.db.entity
 
 import androidx.room.Embedded
 import androidx.room.Junction

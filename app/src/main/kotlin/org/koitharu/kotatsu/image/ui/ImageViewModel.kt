@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.image.ui
+package org.dokiteam.doki.image.ui
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -12,14 +12,14 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runInterruptible
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.getDrawableOrThrow
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.core.util.ext.require
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.getDrawableOrThrow
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.core.util.ext.require
 import javax.inject.Inject
 
 @HiltViewModel

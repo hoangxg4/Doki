@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.tracker.ui.debug
+package org.dokiteam.doki.tracker.ui.debug
 
 import android.os.Bundle
 import android.view.View
@@ -6,16 +6,16 @@ import androidx.activity.viewModels
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityTrackerDebugBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityTrackerDebugBinding
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
 
 @AndroidEntryPoint
 class TrackerDebugActivity : BaseActivity<ActivityTrackerDebugBinding>(), OnListItemClickListener<TrackDebugItem> {

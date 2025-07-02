@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.webtoon
+package org.dokiteam.doki.reader.ui.pager.webtoon
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,18 +11,18 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.take
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.yield
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.core.ui.list.lifecycle.RecyclerViewLifecycleDispatcher
-import org.koitharu.kotatsu.core.util.ext.firstVisibleItemPosition
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.removeItemDecoration
-import org.koitharu.kotatsu.databinding.FragmentReaderWebtoonBinding
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.ReaderState
-import org.koitharu.kotatsu.reader.ui.pager.BaseReaderAdapter
-import org.koitharu.kotatsu.reader.ui.pager.BaseReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.core.ui.list.lifecycle.RecyclerViewLifecycleDispatcher
+import org.dokiteam.doki.core.util.ext.firstVisibleItemPosition
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.removeItemDecoration
+import org.dokiteam.doki.databinding.FragmentReaderWebtoonBinding
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.ReaderState
+import org.dokiteam.doki.reader.ui.pager.BaseReaderAdapter
+import org.dokiteam.doki.reader.ui.pager.BaseReaderFragment
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import javax.inject.Inject
 
 @AndroidEntryPoint

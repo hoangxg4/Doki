@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.sync.ui
+package org.dokiteam.doki.sync.ui
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -11,14 +11,14 @@ import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.AlertDialogFragment
-import org.koitharu.kotatsu.core.util.ext.isHttpUrl
-import org.koitharu.kotatsu.core.util.ext.withArgs
-import org.koitharu.kotatsu.databinding.PreferenceDialogAutocompletetextviewBinding
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.settings.utils.validation.UrlValidator
-import org.koitharu.kotatsu.sync.data.SyncSettings
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.AlertDialogFragment
+import org.dokiteam.doki.core.util.ext.isHttpUrl
+import org.dokiteam.doki.core.util.ext.withArgs
+import org.dokiteam.doki.databinding.PreferenceDialogAutocompletetextviewBinding
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.settings.utils.validation.UrlValidator
+import org.dokiteam.doki.sync.data.SyncSettings
 import javax.inject.Inject
 
 @AndroidEntryPoint

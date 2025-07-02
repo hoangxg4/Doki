@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.ui.preview
+package org.dokiteam.doki.list.ui.preview
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,18 +11,18 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.google.android.material.chip.Chip
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.FragmentPreviewBinding
-import org.koitharu.kotatsu.filter.ui.FilterCoordinator
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.search.ui.MangaListActivity
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.FragmentPreviewBinding
+import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.search.ui.MangaListActivity
 
 @AndroidEntryPoint
 class PreviewFragment : BaseFragment<FragmentPreviewBinding>(), View.OnClickListener, ChipsView.OnChipClickListener {

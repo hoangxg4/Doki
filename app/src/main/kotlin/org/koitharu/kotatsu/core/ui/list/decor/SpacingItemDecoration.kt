@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.list.decor
+package org.dokiteam.doki.core.ui.list.decor
 
 import android.graphics.Rect
 import android.view.View

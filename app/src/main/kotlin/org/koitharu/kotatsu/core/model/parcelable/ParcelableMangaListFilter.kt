@@ -1,19 +1,19 @@
-package org.koitharu.kotatsu.core.model.parcelable
+package org.dokiteam.doki.core.model.parcelable
 
 import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.parcelize.Parceler
 import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.TypeParceler
-import org.koitharu.kotatsu.core.util.ext.readEnumSet
-import org.koitharu.kotatsu.core.util.ext.readParcelableCompat
-import org.koitharu.kotatsu.core.util.ext.readSerializableCompat
-import org.koitharu.kotatsu.core.util.ext.writeEnumSet
-import org.koitharu.kotatsu.parsers.model.ContentRating
-import org.koitharu.kotatsu.parsers.model.ContentType
-import org.koitharu.kotatsu.parsers.model.Demographic
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaState
+import org.dokiteam.doki.core.util.ext.readEnumSet
+import org.dokiteam.doki.core.util.ext.readParcelableCompat
+import org.dokiteam.doki.core.util.ext.readSerializableCompat
+import org.dokiteam.doki.core.util.ext.writeEnumSet
+import org.dokiteam.doki.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.ContentType
+import org.dokiteam.doki.parsers.model.Demographic
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaState
 
 object MangaListFilterParceler : Parceler<MangaListFilter> {
 

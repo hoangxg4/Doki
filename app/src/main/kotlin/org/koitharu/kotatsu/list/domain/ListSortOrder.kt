@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.list.domain
+package org.dokiteam.doki.list.domain
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.parsers.util.find
+import org.dokiteam.doki.R
+import org.dokiteam.doki.parsers.util.find
 import java.util.EnumSet
 
 enum class ListSortOrder(

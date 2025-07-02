@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.domain
+package org.dokiteam.doki.reader.domain
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -22,8 +22,8 @@ import kotlinx.coroutines.runInterruptible
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
-import org.koitharu.kotatsu.core.util.SynchronizedSieveCache
-import org.koitharu.kotatsu.core.util.ext.use
+import org.dokiteam.doki.core.util.SynchronizedSieveCache
+import org.dokiteam.doki.core.util.ext.use
 import kotlin.math.abs
 
 class EdgeDetector(private val context: Context) {

@@ -1,21 +1,21 @@
-package org.koitharu.kotatsu.main.domain
+package org.dokiteam.doki.main.domain
 
 import androidx.collection.ArraySet
 import coil3.intercept.Interceptor
 import coil3.request.ErrorResult
 import coil3.request.ImageResult
-import org.koitharu.kotatsu.bookmarks.domain.Bookmark
-import org.koitharu.kotatsu.bookmarks.domain.BookmarksRepository
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.ext.bookmarkKey
-import org.koitharu.kotatsu.core.util.ext.mangaKey
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.findById
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.bookmarks.domain.Bookmark
+import org.dokiteam.doki.bookmarks.domain.BookmarksRepository
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.ext.bookmarkKey
+import org.dokiteam.doki.core.util.ext.mangaKey
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.findById
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.util.Collections
 import javax.inject.Inject
 

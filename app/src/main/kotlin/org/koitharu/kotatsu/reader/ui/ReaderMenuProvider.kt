@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.reader.ui
+package org.dokiteam.doki.reader.ui
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class ReaderMenuProvider(
 	private val viewModel: ReaderViewModel,

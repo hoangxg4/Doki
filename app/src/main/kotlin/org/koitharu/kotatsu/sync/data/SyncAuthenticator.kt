@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.sync.data
+package org.dokiteam.doki.sync.data
 
 import android.accounts.Account
 import android.accounts.AccountManager
@@ -8,8 +8,8 @@ import okhttp3.Authenticator
 import okhttp3.Request
 import okhttp3.Response
 import okhttp3.Route
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.network.CommonHeaders
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.network.CommonHeaders
 
 class SyncAuthenticator(
 	context: Context,

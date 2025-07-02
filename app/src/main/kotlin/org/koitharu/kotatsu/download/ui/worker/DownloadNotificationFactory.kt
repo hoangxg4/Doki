@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.worker
+package org.dokiteam.doki.download.ui.worker
 
 import android.app.Notification
 import android.app.PendingIntent
@@ -21,22 +21,22 @@ import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ErrorReporterReceiver
-import org.koitharu.kotatsu.core.LocalizedAppContext
-import org.koitharu.kotatsu.core.model.LocalMangaSource
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.util.ext.getDrawableOrThrow
-import org.koitharu.kotatsu.core.util.ext.getNotificationIconSize
-import org.koitharu.kotatsu.core.util.ext.isReportable
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.download.domain.DownloadState
-import org.koitharu.kotatsu.download.ui.list.DownloadsActivity
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.format
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ErrorReporterReceiver
+import org.dokiteam.doki.core.LocalizedAppContext
+import org.dokiteam.doki.core.model.LocalMangaSource
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.util.ext.getDrawableOrThrow
+import org.dokiteam.doki.core.util.ext.getNotificationIconSize
+import org.dokiteam.doki.core.util.ext.isReportable
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.download.domain.DownloadState
+import org.dokiteam.doki.download.ui.list.DownloadsActivity
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.format
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.util.UUID
 import androidx.appcompat.R as appcompatR
 

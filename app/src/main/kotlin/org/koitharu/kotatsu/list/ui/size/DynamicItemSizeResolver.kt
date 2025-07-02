@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.ui.size
+package org.dokiteam.doki.list.ui.size
 
 import android.content.SharedPreferences
 import android.content.res.Resources
@@ -8,9 +8,9 @@ import androidx.annotation.StyleRes
 import androidx.core.widget.TextViewCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.history.ui.util.ReadingProgressView
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.history.ui.util.ReadingProgressView
 import kotlin.math.roundToInt
 
 class DynamicItemSizeResolver(

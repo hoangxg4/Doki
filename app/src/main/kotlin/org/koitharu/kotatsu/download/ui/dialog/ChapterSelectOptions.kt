@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.dialog
+package org.dokiteam.doki.download.ui.dialog
 
 data class ChapterSelectOptions(
 	val wholeManga: ChaptersSelectMacro.WholeManga,

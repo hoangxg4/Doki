@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.stats.data
+package org.dokiteam.doki.stats.data
 
 import androidx.room.withTransaction
 import kotlinx.coroutines.flow.Flow
@@ -6,12 +6,12 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.stats.domain.StatsPeriod
-import org.koitharu.kotatsu.stats.domain.StatsRecord
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.stats.domain.StatsPeriod
+import org.dokiteam.doki.stats.domain.StatsRecord
 import java.util.NavigableMap
 import java.util.TreeMap
 import java.util.concurrent.TimeUnit

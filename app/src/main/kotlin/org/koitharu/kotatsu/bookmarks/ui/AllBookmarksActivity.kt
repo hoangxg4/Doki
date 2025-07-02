@@ -1,5 +1,5 @@
-package org.koitharu.kotatsu.bookmarks.ui
+package org.dokiteam.doki.bookmarks.ui
 
-import org.koitharu.kotatsu.core.ui.FragmentContainerActivity
+import org.dokiteam.doki.core.ui.FragmentContainerActivity
 
 class AllBookmarksActivity : FragmentContainerActivity(AllBookmarksFragment::class.java)

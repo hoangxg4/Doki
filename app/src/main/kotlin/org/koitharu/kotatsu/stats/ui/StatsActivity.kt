@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.stats.ui
+package org.dokiteam.doki.stats.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -19,28 +19,28 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipDrawable
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.util.ReversibleActionObserver
-import org.koitharu.kotatsu.core.util.KotatsuColors
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.setTextAndVisible
-import org.koitharu.kotatsu.core.util.ext.showOrHide
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.databinding.ActivityStatsBinding
-import org.koitharu.kotatsu.databinding.ItemEmptyStateBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.stats.domain.StatsPeriod
-import org.koitharu.kotatsu.stats.domain.StatsRecord
-import org.koitharu.kotatsu.stats.ui.views.PieChartView
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.util.ReversibleActionObserver
+import org.dokiteam.doki.core.util.KotatsuColors
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
+import org.dokiteam.doki.core.util.ext.showOrHide
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.databinding.ActivityStatsBinding
+import org.dokiteam.doki.databinding.ItemEmptyStateBinding
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.stats.domain.StatsPeriod
+import org.dokiteam.doki.stats.domain.StatsRecord
+import org.dokiteam.doki.stats.ui.views.PieChartView
 
 @AndroidEntryPoint
 class StatsActivity : BaseActivity<ActivityStatsBinding>(),

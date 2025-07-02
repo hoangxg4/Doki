@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.pager.pages
+package org.dokiteam.doki.details.ui.pager.pages
 
 import android.net.Uri
 import androidx.lifecycle.viewModelScope
@@ -8,20 +8,20 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsStateFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.firstNotNull
-import org.koitharu.kotatsu.core.util.ext.requireValue
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.reader.domain.ChaptersLoader
-import org.koitharu.kotatsu.reader.ui.PageSaveHelper
-import org.koitharu.kotatsu.reader.ui.ReaderState
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsStateFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.firstNotNull
+import org.dokiteam.doki.core.util.ext.requireValue
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.reader.domain.ChaptersLoader
+import org.dokiteam.doki.reader.ui.PageSaveHelper
+import org.dokiteam.doki.reader.ui.ReaderState
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.sheet
+package org.dokiteam.doki.core.ui.sheet
 
 import android.view.View
 

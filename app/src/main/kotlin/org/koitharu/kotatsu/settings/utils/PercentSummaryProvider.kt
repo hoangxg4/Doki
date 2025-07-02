@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.settings.utils
+package org.dokiteam.doki.settings.utils
 
 import androidx.preference.Preference
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class PercentSummaryProvider : Preference.SummaryProvider<SliderPreference> {
 

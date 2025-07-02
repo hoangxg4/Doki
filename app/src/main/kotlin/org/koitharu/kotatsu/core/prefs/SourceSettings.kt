@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.core.prefs
+package org.dokiteam.doki.core.prefs
 
 import android.content.Context
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import androidx.core.content.edit
-import org.koitharu.kotatsu.core.util.ext.getEnumValue
-import org.koitharu.kotatsu.core.util.ext.putEnumValue
-import org.koitharu.kotatsu.core.util.ext.sanitizeHeaderValue
-import org.koitharu.kotatsu.parsers.config.ConfigKey
-import org.koitharu.kotatsu.parsers.config.MangaSourceConfig
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.settings.utils.validation.DomainValidator
+import org.dokiteam.doki.core.util.ext.getEnumValue
+import org.dokiteam.doki.core.util.ext.putEnumValue
+import org.dokiteam.doki.core.util.ext.sanitizeHeaderValue
+import org.dokiteam.doki.parsers.config.ConfigKey
+import org.dokiteam.doki.parsers.config.MangaSourceConfig
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.settings.utils.validation.DomainValidator
 
 class SourceSettings(context: Context, source: MangaSource) : MangaSourceConfig {
 

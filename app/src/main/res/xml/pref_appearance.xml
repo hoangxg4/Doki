@@ -4,7 +4,7 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:title="@string/appearance">
 
-	<org.koitharu.kotatsu.settings.utils.ThemeChooserPreference
+	<org.dokiteam.doki.settings.utils.ThemeChooserPreference
 		android:key="color_theme"
 		android:title="@string/color_theme"
 		app:isPreferenceVisible="@bool/is_color_themes_available" />
@@ -31,7 +31,7 @@
 			android:title="@string/list_mode"
 			app:useSimpleSummaryProvider="true" />
 
-		<org.koitharu.kotatsu.settings.utils.SliderPreference
+		<org.dokiteam.doki.settings.utils.SliderPreference
 			android:key="grid_size"
 			android:stepSize="5"
 			android:title="@string/grid_size"
@@ -85,7 +85,7 @@
 	</PreferenceCategory>
 
 	<PreferenceScreen
-		android:fragment="org.koitharu.kotatsu.settings.nav.NavConfigFragment"
+		android:fragment="org.dokiteam.doki.settings.nav.NavConfigFragment"
 		android:key="nav_main"
 		android:title="@string/main_screen_sections"
 		app:allowDividerAbove="true" />
@@ -101,7 +101,7 @@
 		android:summary="@string/pin_navigation_ui_summary"
 		android:title="@string/pin_navigation_ui" />
 
-	<org.koitharu.kotatsu.settings.utils.ActivityListPreference
+	<org.dokiteam.doki.settings.utils.ActivityListPreference
 		android:key="app_locale"
 		android:title="@string/language" />
 

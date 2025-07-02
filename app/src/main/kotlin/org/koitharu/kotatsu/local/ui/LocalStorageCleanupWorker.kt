@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.ui
+package org.dokiteam.doki.local.ui
 
 import android.content.Context
 import androidx.hilt.work.HiltWorker
@@ -12,10 +12,10 @@ import androidx.work.WorkerParameters
 import androidx.work.await
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.local.domain.DeleteReadChaptersUseCase
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.local.domain.DeleteReadChaptersUseCase
 import java.util.concurrent.TimeUnit
 
 @HiltWorker

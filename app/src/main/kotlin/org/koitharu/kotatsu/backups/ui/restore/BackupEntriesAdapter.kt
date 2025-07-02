@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.backups.ui.restore
+package org.dokiteam.doki.backups.ui.restore
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.setChecked
-import org.koitharu.kotatsu.databinding.ItemCheckableMultipleBinding
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback.Companion.PAYLOAD_CHECKED_CHANGED
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.setChecked
+import org.dokiteam.doki.databinding.ItemCheckableMultipleBinding
+import org.dokiteam.doki.list.ui.ListModelDiffCallback.Companion.PAYLOAD_CHECKED_CHANGED
+import org.dokiteam.doki.list.ui.adapter.ListItemType
 
 class BackupSectionsAdapter(
 	clickListener: OnListItemClickListener<BackupSectionModel>,

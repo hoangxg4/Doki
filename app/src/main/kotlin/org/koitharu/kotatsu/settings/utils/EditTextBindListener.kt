@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.settings.utils
+package org.dokiteam.doki.settings.utils
 
 import android.widget.EditText
 import androidx.preference.EditTextPreference
-import org.koitharu.kotatsu.core.util.EditTextValidator
+import org.dokiteam.doki.core.util.EditTextValidator
 
 class EditTextBindListener(
 	private val inputType: Int,

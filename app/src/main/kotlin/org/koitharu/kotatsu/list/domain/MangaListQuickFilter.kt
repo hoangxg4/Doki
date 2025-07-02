@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.list.domain
+package org.dokiteam.doki.list.domain
 
 import androidx.collection.ArraySet
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import org.koitharu.kotatsu.core.model.toChipModel
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.list.ui.model.QuickFilter
-import org.koitharu.kotatsu.parsers.util.suspendlazy.getOrNull
-import org.koitharu.kotatsu.parsers.util.suspendlazy.suspendLazy
+import org.dokiteam.doki.core.model.toChipModel
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.list.ui.model.QuickFilter
+import org.dokiteam.doki.parsers.util.suspendlazy.getOrNull
+import org.dokiteam.doki.parsers.util.suspendlazy.suspendLazy
 
 abstract class MangaListQuickFilter(
 	private val settings: AppSettings,

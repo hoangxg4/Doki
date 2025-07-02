@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.domain
+package org.dokiteam.doki.list.domain
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,23 +8,23 @@ import androidx.collection.MutableScatterSet
 import androidx.collection.ScatterSet
 import dagger.Reusable
 import dagger.hilt.android.qualifiers.ApplicationContext
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ListMode
-import org.koitharu.kotatsu.core.ui.model.MangaOverride
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.list.ui.model.MangaCompactListModel
-import org.koitharu.kotatsu.list.ui.model.MangaDetailedListModel
-import org.koitharu.kotatsu.list.ui.model.MangaGridModel
-import org.koitharu.kotatsu.list.ui.model.MangaListModel
-import org.koitharu.kotatsu.local.data.index.LocalMangaIndex
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.tracker.domain.TrackingRepository
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ListMode
+import org.dokiteam.doki.core.ui.model.MangaOverride
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.list.ui.model.MangaCompactListModel
+import org.dokiteam.doki.list.ui.model.MangaDetailedListModel
+import org.dokiteam.doki.list.ui.model.MangaGridModel
+import org.dokiteam.doki.list.ui.model.MangaListModel
+import org.dokiteam.doki.local.data.index.LocalMangaIndex
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.tracker.domain.TrackingRepository
 import javax.inject.Inject
 
 @Reusable

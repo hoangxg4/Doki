@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.alternatives.domain
+package org.dokiteam.doki.alternatives.domain
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
@@ -11,13 +11,13 @@ import kotlinx.coroutines.flow.transformWhile
 import kotlinx.coroutines.flow.withIndex
 import kotlinx.coroutines.launch
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
-import org.koitharu.kotatsu.core.model.chaptersCount
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.ext.concat
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.model.chaptersCount
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.ext.concat
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import kotlin.coroutines.cancellation.CancellationException

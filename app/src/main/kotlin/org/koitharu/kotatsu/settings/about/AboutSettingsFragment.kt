@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.about
+package org.dokiteam.doki.settings.about
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,16 +10,16 @@ import androidx.preference.SwitchPreferenceCompat
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.combine
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.github.AppVersion
-import org.koitharu.kotatsu.core.github.VersionId
-import org.koitharu.kotatsu.core.github.isStable
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.github.AppVersion
+import org.dokiteam.doki.core.github.VersionId
+import org.dokiteam.doki.core.github.isStable
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
 
 @AndroidEntryPoint
 class AboutSettingsFragment : BasePreferenceFragment(R.string.about) {

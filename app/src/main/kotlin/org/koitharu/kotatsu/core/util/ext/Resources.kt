@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.annotation.SuppressLint
 import android.content.Context

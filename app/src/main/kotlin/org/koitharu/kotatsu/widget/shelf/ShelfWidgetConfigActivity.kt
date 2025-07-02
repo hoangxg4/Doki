@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.widget.shelf
+package org.dokiteam.doki.widget.shelf
 
 import android.appwidget.AppWidgetManager
 import android.content.Intent
@@ -8,18 +8,18 @@ import androidx.activity.viewModels
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.prefs.AppWidgetConfig
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityAppwidgetShelfBinding
-import org.koitharu.kotatsu.widget.shelf.adapter.CategorySelectAdapter
-import org.koitharu.kotatsu.widget.shelf.model.CategoryItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.prefs.AppWidgetConfig
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityAppwidgetShelfBinding
+import org.dokiteam.doki.widget.shelf.adapter.CategorySelectAdapter
+import org.dokiteam.doki.widget.shelf.model.CategoryItem
 
 @AndroidEntryPoint
 class ShelfWidgetConfigActivity :

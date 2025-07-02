@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.settings.sources.catalog
+package org.dokiteam.doki.settings.sources.catalog
 
-import org.koitharu.kotatsu.parsers.model.ContentType
+import org.dokiteam.doki.parsers.model.ContentType
 
 data class SourcesCatalogFilter(
 	val types: Set<ContentType>,

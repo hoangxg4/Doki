@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui.welcome
+package org.dokiteam.doki.main.ui.welcome
 
 import android.content.Context
 import androidx.core.os.ConfigurationCompat
@@ -6,18 +6,18 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
-import org.koitharu.kotatsu.core.LocalizedAppContext
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.LocaleComparator
-import org.koitharu.kotatsu.core.util.ext.mapSortedByCount
-import org.koitharu.kotatsu.core.util.ext.sortedWithSafe
-import org.koitharu.kotatsu.core.util.ext.toList
-import org.koitharu.kotatsu.core.util.ext.toLocale
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.filter.ui.model.FilterProperty
-import org.koitharu.kotatsu.parsers.model.ContentType
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.util.mapToSet
+import org.dokiteam.doki.core.LocalizedAppContext
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.LocaleComparator
+import org.dokiteam.doki.core.util.ext.mapSortedByCount
+import org.dokiteam.doki.core.util.ext.sortedWithSafe
+import org.dokiteam.doki.core.util.ext.toList
+import org.dokiteam.doki.core.util.ext.toLocale
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.filter.ui.model.FilterProperty
+import org.dokiteam.doki.parsers.model.ContentType
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.parsers.util.mapToSet
 import java.util.EnumSet
 import java.util.Locale
 import javax.inject.Inject

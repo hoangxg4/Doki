@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.tracker
+package org.dokiteam.doki.settings.tracker
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -17,18 +17,18 @@ import androidx.preference.MultiSelectListPreference
 import androidx.preference.Preference
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.TrackerDownloadStrategy
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.parsers.util.names
-import org.koitharu.kotatsu.settings.utils.DozeHelper
-import org.koitharu.kotatsu.settings.utils.MultiSummaryProvider
-import org.koitharu.kotatsu.tracker.ui.debug.TrackerDebugActivity
-import org.koitharu.kotatsu.tracker.work.TrackerNotificationHelper
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.TrackerDownloadStrategy
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.parsers.util.names
+import org.dokiteam.doki.settings.utils.DozeHelper
+import org.dokiteam.doki.settings.utils.MultiSummaryProvider
+import org.dokiteam.doki.tracker.ui.debug.TrackerDebugActivity
+import org.dokiteam.doki.tracker.work.TrackerNotificationHelper
 import javax.inject.Inject
 
 @AndroidEntryPoint

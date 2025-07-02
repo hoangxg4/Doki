@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.reader.ui.pager.webtoon
+package org.dokiteam.doki.reader.ui.pager.webtoon
 
 import android.content.Context
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class WebtoonGapsDecoration : RecyclerView.ItemDecoration() {
 

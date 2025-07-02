@@ -1,17 +1,17 @@
-package org.koitharu.kotatsu.reader.ui.pager
+package org.dokiteam.doki.reader.ui.pager
 
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.activityViewModels
 import androidx.viewbinding.ViewBinding
-import org.koitharu.kotatsu.core.prefs.ReaderAnimation
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.widgets.ZoomControl
-import org.koitharu.kotatsu.core.util.ext.isAnimationsEnabled
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.reader.ui.ReaderState
-import org.koitharu.kotatsu.reader.ui.ReaderViewModel
+import org.dokiteam.doki.core.prefs.ReaderAnimation
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.widgets.ZoomControl
+import org.dokiteam.doki.core.util.ext.isAnimationsEnabled
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.reader.ui.ReaderState
+import org.dokiteam.doki.reader.ui.ReaderViewModel
 
 abstract class BaseReaderFragment<B : ViewBinding> : BaseFragment<B>(), ZoomControl.ZoomControlListener {
 

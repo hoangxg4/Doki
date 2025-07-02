@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.favourites.domain.model
+package org.dokiteam.doki.favourites.domain.model
 
-import org.koitharu.kotatsu.core.model.MangaSource
+import org.dokiteam.doki.core.model.MangaSource
 
 data class Cover(
 	val url: String?,

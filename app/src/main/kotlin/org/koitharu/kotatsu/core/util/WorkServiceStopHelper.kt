@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import android.annotation.SuppressLint
 import androidx.work.WorkInfo
@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
 import javax.inject.Provider
 
 /**

@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.stats.data
+package org.dokiteam.doki.stats.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
-import org.koitharu.kotatsu.history.data.HistoryEntity
+import org.dokiteam.doki.history.data.HistoryEntity
 
 @Entity(
 	tableName = "stats",

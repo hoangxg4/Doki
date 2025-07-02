@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.local.domain.model
+package org.dokiteam.doki.local.domain.model
 
 import android.net.Uri
 import androidx.core.net.toFile
 import androidx.core.net.toUri
-import org.koitharu.kotatsu.core.util.ext.contains
-import org.koitharu.kotatsu.core.util.ext.creationTime
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaTag
+import org.dokiteam.doki.core.util.ext.contains
+import org.dokiteam.doki.core.util.ext.creationTime
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaTag
 import java.io.File
 
 data class LocalManga(

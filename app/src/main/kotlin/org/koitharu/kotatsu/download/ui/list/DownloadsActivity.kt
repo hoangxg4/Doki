@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.list
+package org.dokiteam.doki.download.ui.list
 
 import android.os.Bundle
 import android.view.Menu
@@ -12,18 +12,18 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import coil3.ImageLoader
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.ui.list.RecyclerScrollKeeper
-import org.koitharu.kotatsu.core.ui.util.MenuInvalidator
-import org.koitharu.kotatsu.core.ui.util.ReversibleActionObserver
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.databinding.ActivityDownloadsBinding
-import org.koitharu.kotatsu.download.ui.worker.DownloadWorker
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.ui.list.RecyclerScrollKeeper
+import org.dokiteam.doki.core.ui.util.MenuInvalidator
+import org.dokiteam.doki.core.ui.util.ReversibleActionObserver
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.databinding.ActivityDownloadsBinding
+import org.dokiteam.doki.download.ui.worker.DownloadWorker
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
 import javax.inject.Inject
 
 @AndroidEntryPoint

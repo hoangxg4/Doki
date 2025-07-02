@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.search.ui.suggestion.adapter
+package org.dokiteam.doki.search.ui.suggestion.adapter
 
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.search.ui.suggestion.SearchSuggestionListener
-import org.koitharu.kotatsu.search.ui.suggestion.model.SearchSuggestionItem
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.search.ui.suggestion.SearchSuggestionListener
+import org.dokiteam.doki.search.ui.suggestion.model.SearchSuggestionItem
 
 const val SEARCH_SUGGESTION_ITEM_TYPE_QUERY = 0
 

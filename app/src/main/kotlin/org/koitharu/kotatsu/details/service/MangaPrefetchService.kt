@@ -1,25 +1,25 @@
-package org.koitharu.kotatsu.details.service
+package org.dokiteam.doki.details.service
 
 import android.content.Context
 import android.content.Intent
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.EntryPointAccessors
-import org.koitharu.kotatsu.core.cache.MemoryContentCache
-import org.koitharu.kotatsu.core.model.LocalMangaSource
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableChapter
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.ui.CoroutineIntentService
-import org.koitharu.kotatsu.core.util.ext.getParcelableExtraCompat
-import org.koitharu.kotatsu.core.util.ext.isPowerSaveMode
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.findById
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.cache.MemoryContentCache
+import org.dokiteam.doki.core.model.LocalMangaSource
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.model.parcelable.ParcelableChapter
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.ui.CoroutineIntentService
+import org.dokiteam.doki.core.util.ext.getParcelableExtraCompat
+import org.dokiteam.doki.core.util.ext.isPowerSaveMode
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.findById
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 
 @AndroidEntryPoint

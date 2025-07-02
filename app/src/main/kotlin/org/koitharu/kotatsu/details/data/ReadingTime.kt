@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.details.data
+package org.dokiteam.doki.details.data
 
 import android.content.res.Resources
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
 
 data class ReadingTime(
 	val minutes: Int,

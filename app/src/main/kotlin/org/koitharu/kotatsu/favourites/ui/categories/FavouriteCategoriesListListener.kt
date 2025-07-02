@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.favourites.ui.categories
+package org.dokiteam.doki.favourites.ui.categories
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
 
 interface FavouriteCategoriesListListener : OnListItemClickListener<FavouriteCategory?> {
 

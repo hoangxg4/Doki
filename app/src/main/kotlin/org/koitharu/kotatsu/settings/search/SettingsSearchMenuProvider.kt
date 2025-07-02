@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.settings.search
+package org.dokiteam.doki.settings.search
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class SettingsSearchMenuProvider(
 	private val viewModel: SettingsSearchViewModel,

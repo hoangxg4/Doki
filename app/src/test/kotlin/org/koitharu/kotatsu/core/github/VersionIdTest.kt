@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.core.github
+package org.dokiteam.doki.core.github
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.koitharu.kotatsu.BuildConfig
+import org.dokiteam.doki.BuildConfig
 
 class VersionIdTest {
 

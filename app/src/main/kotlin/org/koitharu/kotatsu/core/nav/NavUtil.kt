@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.nav
+package org.dokiteam.doki.core.nav
 
 import android.app.ActivityOptions
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.View
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import org.koitharu.kotatsu.core.util.ext.isAnimationsEnabled
+import org.dokiteam.doki.core.util.ext.isAnimationsEnabled
 
 inline val FragmentActivity.router: AppRouter
 	get() = AppRouter(this)

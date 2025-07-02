@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.settings.sources.adapter
+package org.dokiteam.doki.settings.sources.adapter
 
-import org.koitharu.kotatsu.core.ui.list.OnTipCloseListener
-import org.koitharu.kotatsu.settings.sources.model.SourceConfigItem
+import org.dokiteam.doki.core.ui.list.OnTipCloseListener
+import org.dokiteam.doki.settings.sources.model.SourceConfigItem
 
 interface SourceConfigListener : OnTipCloseListener<SourceConfigItem.Tip> {
 

@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.details.ui
+package org.dokiteam.doki.details.ui
 
 import android.content.Context
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.bookmarks.domain.Bookmark
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.details.ui.model.ChapterListItem
-import org.koitharu.kotatsu.details.ui.model.toListItem
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.util.mapToSet
+import org.dokiteam.doki.R
+import org.dokiteam.doki.bookmarks.domain.Bookmark
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.details.ui.model.ChapterListItem
+import org.dokiteam.doki.details.ui.model.toListItem
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.util.mapToSet
 
 fun MangaDetails.mapChapters(
 	currentChapterId: Long,

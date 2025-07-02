@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.backups.ui.backup
+package org.dokiteam.doki.backups.ui.backup
 
 import android.content.ContentResolver
 import android.content.Context
@@ -8,13 +8,13 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import org.koitharu.kotatsu.backups.data.BackupRepository
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.core.util.progress.Progress
+import org.dokiteam.doki.backups.data.BackupRepository
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.core.util.progress.Progress
 import java.util.zip.Deflater
 import java.util.zip.ZipOutputStream
 import javax.inject.Inject

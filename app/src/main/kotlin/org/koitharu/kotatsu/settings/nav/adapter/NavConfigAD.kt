@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.settings.nav.adapter
+package org.dokiteam.doki.settings.nav.adapter
 
 import android.annotation.SuppressLint
 import android.view.MotionEvent
 import android.view.View
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.NavItem
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.setTextAndVisible
-import org.koitharu.kotatsu.databinding.ItemNavAvailableBinding
-import org.koitharu.kotatsu.databinding.ItemNavConfigBinding
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.settings.nav.model.NavItemAddModel
-import org.koitharu.kotatsu.settings.nav.model.NavItemConfigModel
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.NavItem
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
+import org.dokiteam.doki.databinding.ItemNavAvailableBinding
+import org.dokiteam.doki.databinding.ItemNavConfigBinding
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.settings.nav.model.NavItemAddModel
+import org.dokiteam.doki.settings.nav.model.NavItemConfigModel
 
 @SuppressLint("ClickableViewAccessibility")
 fun navConfigAD(

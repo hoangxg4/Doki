@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.core.db
+package org.dokiteam.doki.core.db
 
 import androidx.sqlite.db.SimpleSQLiteQuery
-import org.koitharu.kotatsu.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.ListFilterOption
 import java.util.LinkedList
 
 class MangaQueryBuilder(

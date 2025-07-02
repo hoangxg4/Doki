@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.ui.info
+package org.dokiteam.doki.local.ui.info
 
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -11,16 +11,16 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.combine
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.AlertDialogFragment
-import org.koitharu.kotatsu.core.ui.widgets.SegmentedBarView
-import org.koitharu.kotatsu.core.util.FileSize
-import org.koitharu.kotatsu.core.util.KotatsuColors
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.setProgressIcon
-import org.koitharu.kotatsu.databinding.DialogLocalInfoBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.AlertDialogFragment
+import org.dokiteam.doki.core.ui.widgets.SegmentedBarView
+import org.dokiteam.doki.core.util.FileSize
+import org.dokiteam.doki.core.util.KotatsuColors
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.setProgressIcon
+import org.dokiteam.doki.databinding.DialogLocalInfoBinding
 import androidx.appcompat.R as appcompatR
 
 @AndroidEntryPoint

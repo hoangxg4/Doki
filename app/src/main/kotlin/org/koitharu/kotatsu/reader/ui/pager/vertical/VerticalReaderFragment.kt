@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.reader.ui.pager.vertical
+package org.dokiteam.doki.reader.ui.pager.vertical
 
 import androidx.viewpager2.widget.ViewPager2
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.reader.ui.pager.BasePagerReaderFragment
+import org.dokiteam.doki.reader.ui.pager.BasePagerReaderFragment
 
 @AndroidEntryPoint
 class VerticalReaderFragment : BasePagerReaderFragment() {

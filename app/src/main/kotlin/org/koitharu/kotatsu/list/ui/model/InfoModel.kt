@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

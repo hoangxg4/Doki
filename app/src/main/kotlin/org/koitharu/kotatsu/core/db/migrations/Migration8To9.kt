@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.db.migrations
+package org.dokiteam.doki.core.db.migrations
 
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import org.koitharu.kotatsu.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.model.SortOrder
 
 class Migration8To9 : Migration(8, 9) {
 

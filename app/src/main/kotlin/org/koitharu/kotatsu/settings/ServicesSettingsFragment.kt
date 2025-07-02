@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.accounts.AccountManager
 import android.content.SharedPreferences
@@ -10,18 +10,18 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.viewLifecycleScope
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.ui.ScrobblerAuthHelper
-import org.koitharu.kotatsu.settings.utils.SplitSwitchPreference
-import org.koitharu.kotatsu.sync.domain.SyncController
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.viewLifecycleScope
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.ui.ScrobblerAuthHelper
+import org.dokiteam.doki.settings.utils.SplitSwitchPreference
+import org.dokiteam.doki.sync.domain.SyncController
 import javax.inject.Inject
 
 @AndroidEntryPoint

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network.webview
+package org.dokiteam.doki.core.network.webview
 
 import android.webkit.WebView
 import android.webkit.WebViewClient

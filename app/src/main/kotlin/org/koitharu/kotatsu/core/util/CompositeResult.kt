@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 class CompositeResult private constructor(
 	private var successCount: Int,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.sources.manage
+package org.dokiteam.doki.settings.sources.manage
 
 import android.content.Context
 import androidx.room.InvalidationTracker
@@ -13,19 +13,19 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.LocalizedAppContext
-import org.koitharu.kotatsu.core.db.TABLE_SOURCES
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.model.unwrap
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.lifecycleScope
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.explore.data.SourcesSortOrder
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.util.mapToSet
-import org.koitharu.kotatsu.settings.sources.model.SourceConfigItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.LocalizedAppContext
+import org.dokiteam.doki.core.db.TABLE_SOURCES
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.model.unwrap
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.lifecycleScope
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.explore.data.SourcesSortOrder
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.parsers.util.mapToSet
+import org.dokiteam.doki.settings.sources.model.SourceConfigItem
 import javax.inject.Inject
 
 @ViewModelScoped

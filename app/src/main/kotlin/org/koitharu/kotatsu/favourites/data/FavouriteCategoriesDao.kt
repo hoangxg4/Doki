@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.data
+package org.dokiteam.doki.favourites.data
 
 import androidx.room.Dao
 import androidx.room.Insert

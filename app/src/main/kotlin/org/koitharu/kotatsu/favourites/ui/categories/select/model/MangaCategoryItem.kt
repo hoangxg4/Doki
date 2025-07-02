@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.favourites.ui.categories.select.model
+package org.dokiteam.doki.favourites.ui.categories.select.model
 
 import com.google.android.material.checkbox.MaterialCheckBox.CheckedState
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.model.ListModel
 
 data class MangaCategoryItem(
 	val category: FavouriteCategory,

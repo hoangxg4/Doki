@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 enum class ListItemType {
 

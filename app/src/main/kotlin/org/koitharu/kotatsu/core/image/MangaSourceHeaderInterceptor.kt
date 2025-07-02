@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.image
+package org.dokiteam.doki.core.image
 
 import coil3.intercept.Interceptor
 import coil3.network.httpHeaders
 import coil3.request.ImageResult
-import org.koitharu.kotatsu.core.network.CommonHeaders
-import org.koitharu.kotatsu.core.util.ext.mangaSourceKey
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
+import org.dokiteam.doki.core.network.CommonHeaders
+import org.dokiteam.doki.core.util.ext.mangaSourceKey
+import org.dokiteam.doki.parsers.model.MangaParserSource
 
 class MangaSourceHeaderInterceptor : Interceptor {
 

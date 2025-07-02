@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.prefs
+package org.dokiteam.doki.core.prefs
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.IdRes
 import androidx.annotation.Keep
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 @Keep
 enum class NavItem(

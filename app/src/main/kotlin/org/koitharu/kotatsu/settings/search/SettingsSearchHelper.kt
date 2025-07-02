@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.search
+package org.dokiteam.doki.settings.search
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,21 +8,21 @@ import androidx.preference.PreferenceManager
 import androidx.preference.PreferenceScreen
 import androidx.preference.get
 import dagger.Reusable
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.backups.ui.periodical.PeriodicalBackupSettingsFragment
-import org.koitharu.kotatsu.core.LocalizedAppContext
-import org.koitharu.kotatsu.settings.AppearanceSettingsFragment
-import org.koitharu.kotatsu.settings.DownloadsSettingsFragment
-import org.koitharu.kotatsu.settings.NetworkSettingsFragment
-import org.koitharu.kotatsu.settings.ProxySettingsFragment
-import org.koitharu.kotatsu.settings.ReaderSettingsFragment
-import org.koitharu.kotatsu.settings.ServicesSettingsFragment
-import org.koitharu.kotatsu.settings.SuggestionsSettingsFragment
-import org.koitharu.kotatsu.settings.about.AboutSettingsFragment
-import org.koitharu.kotatsu.settings.sources.SourcesSettingsFragment
-import org.koitharu.kotatsu.settings.tracker.TrackerSettingsFragment
-import org.koitharu.kotatsu.settings.userdata.UserDataSettingsFragment
-import org.koitharu.kotatsu.settings.userdata.storage.StorageManageSettingsFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.backups.ui.periodical.PeriodicalBackupSettingsFragment
+import org.dokiteam.doki.core.LocalizedAppContext
+import org.dokiteam.doki.settings.AppearanceSettingsFragment
+import org.dokiteam.doki.settings.DownloadsSettingsFragment
+import org.dokiteam.doki.settings.NetworkSettingsFragment
+import org.dokiteam.doki.settings.ProxySettingsFragment
+import org.dokiteam.doki.settings.ReaderSettingsFragment
+import org.dokiteam.doki.settings.ServicesSettingsFragment
+import org.dokiteam.doki.settings.SuggestionsSettingsFragment
+import org.dokiteam.doki.settings.about.AboutSettingsFragment
+import org.dokiteam.doki.settings.sources.SourcesSettingsFragment
+import org.dokiteam.doki.settings.tracker.TrackerSettingsFragment
+import org.dokiteam.doki.settings.userdata.UserDataSettingsFragment
+import org.dokiteam.doki.settings.userdata.storage.StorageManageSettingsFragment
 import javax.inject.Inject
 
 @Reusable

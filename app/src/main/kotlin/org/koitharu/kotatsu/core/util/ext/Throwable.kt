@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.content.ActivityNotFoundException
 import android.content.res.Resources
@@ -13,36 +13,36 @@ import okio.ProtocolException
 import org.acra.ktx.sendSilentlyWithAcra
 import org.acra.ktx.sendWithAcra
 import org.jsoup.HttpStatusException
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.BadBackupFormatException
-import org.koitharu.kotatsu.core.exceptions.CaughtException
-import org.koitharu.kotatsu.core.exceptions.CloudFlareBlockedException
-import org.koitharu.kotatsu.core.exceptions.CloudFlareProtectedException
-import org.koitharu.kotatsu.core.exceptions.EmptyHistoryException
-import org.koitharu.kotatsu.core.exceptions.IncompatiblePluginException
-import org.koitharu.kotatsu.core.exceptions.InteractiveActionRequiredException
-import org.koitharu.kotatsu.core.exceptions.NoDataReceivedException
-import org.koitharu.kotatsu.core.exceptions.NonFileUriException
-import org.koitharu.kotatsu.core.exceptions.ProxyConfigException
-import org.koitharu.kotatsu.core.exceptions.SyncApiException
-import org.koitharu.kotatsu.core.exceptions.UnsupportedFileException
-import org.koitharu.kotatsu.core.exceptions.UnsupportedSourceException
-import org.koitharu.kotatsu.core.exceptions.WrapperIOException
-import org.koitharu.kotatsu.core.exceptions.WrongPasswordException
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.parsers.ErrorMessages.FILTER_BOTH_LOCALE_GENRES_NOT_SUPPORTED
-import org.koitharu.kotatsu.parsers.ErrorMessages.FILTER_BOTH_STATES_GENRES_NOT_SUPPORTED
-import org.koitharu.kotatsu.parsers.ErrorMessages.FILTER_MULTIPLE_GENRES_NOT_SUPPORTED
-import org.koitharu.kotatsu.parsers.ErrorMessages.FILTER_MULTIPLE_STATES_NOT_SUPPORTED
-import org.koitharu.kotatsu.parsers.ErrorMessages.SEARCH_NOT_SUPPORTED
-import org.koitharu.kotatsu.parsers.exception.AuthRequiredException
-import org.koitharu.kotatsu.parsers.exception.ContentUnavailableException
-import org.koitharu.kotatsu.parsers.exception.NotFoundException
-import org.koitharu.kotatsu.parsers.exception.ParseException
-import org.koitharu.kotatsu.parsers.exception.TooManyRequestExceptions
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.scrobbling.common.domain.ScrobblerAuthRequiredException
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.BadBackupFormatException
+import org.dokiteam.doki.core.exceptions.CaughtException
+import org.dokiteam.doki.core.exceptions.CloudFlareBlockedException
+import org.dokiteam.doki.core.exceptions.CloudFlareProtectedException
+import org.dokiteam.doki.core.exceptions.EmptyHistoryException
+import org.dokiteam.doki.core.exceptions.IncompatiblePluginException
+import org.dokiteam.doki.core.exceptions.InteractiveActionRequiredException
+import org.dokiteam.doki.core.exceptions.NoDataReceivedException
+import org.dokiteam.doki.core.exceptions.NonFileUriException
+import org.dokiteam.doki.core.exceptions.ProxyConfigException
+import org.dokiteam.doki.core.exceptions.SyncApiException
+import org.dokiteam.doki.core.exceptions.UnsupportedFileException
+import org.dokiteam.doki.core.exceptions.UnsupportedSourceException
+import org.dokiteam.doki.core.exceptions.WrapperIOException
+import org.dokiteam.doki.core.exceptions.WrongPasswordException
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.parsers.ErrorMessages.FILTER_BOTH_LOCALE_GENRES_NOT_SUPPORTED
+import org.dokiteam.doki.parsers.ErrorMessages.FILTER_BOTH_STATES_GENRES_NOT_SUPPORTED
+import org.dokiteam.doki.parsers.ErrorMessages.FILTER_MULTIPLE_GENRES_NOT_SUPPORTED
+import org.dokiteam.doki.parsers.ErrorMessages.FILTER_MULTIPLE_STATES_NOT_SUPPORTED
+import org.dokiteam.doki.parsers.ErrorMessages.SEARCH_NOT_SUPPORTED
+import org.dokiteam.doki.parsers.exception.AuthRequiredException
+import org.dokiteam.doki.parsers.exception.ContentUnavailableException
+import org.dokiteam.doki.parsers.exception.NotFoundException
+import org.dokiteam.doki.parsers.exception.ParseException
+import org.dokiteam.doki.parsers.exception.TooManyRequestExceptions
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.scrobbling.common.domain.ScrobblerAuthRequiredException
 import java.io.File
 import java.net.ConnectException
 import java.net.NoRouteToHostException
@@ -244,8 +244,8 @@ fun FileNotFoundException.parseMessage(resources: Resources): String? {
 	/*
 	Examples:
 	/storage/0000-0000/Android/media/d1f08350-0c25-460b-8f50-008e49de3873.jpg.tmp: open failed: EROFS (Read-only file system)
-	 /storage/emulated/0/Android/data/org.koitharu.kotatsu/cache/pages/fe06e192fa371e55918980f7a24c91ea.jpg: open failed: ENOENT (No such file or directory)
-	 /storage/0000-0000/Android/data/org.koitharu.kotatsu/files/manga/e57d3af4-216e-48b2-8432-1541d58eea1e.tmp (I/O error)
+	 /storage/emulated/0/Android/data/org.dokiteam.doki/cache/pages/fe06e192fa371e55918980f7a24c91ea.jpg: open failed: ENOENT (No such file or directory)
+	 /storage/0000-0000/Android/data/org.dokiteam.doki/files/manga/e57d3af4-216e-48b2-8432-1541d58eea1e.tmp (I/O error)
 	 */
 	val groups = FNFE_MESSAGE_REGEX.matchEntire(message ?: return null)?.groupValues ?: return null
 	val path = groups.getOrNull(1)

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.sync.ui.favourites
+package org.dokiteam.doki.sync.ui.favourites
 
 import android.accounts.Account
 import android.content.AbstractThreadedSyncAdapter
@@ -7,11 +7,11 @@ import android.content.Context
 import android.content.SyncResult
 import android.os.Bundle
 import dagger.hilt.android.EntryPointAccessors
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.onError
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.sync.domain.SyncController
-import org.koitharu.kotatsu.sync.ui.SyncAdapterEntryPoint
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.onError
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.sync.domain.SyncController
+import org.dokiteam.doki.sync.ui.SyncAdapterEntryPoint
 
 class FavouritesSyncAdapter(context: Context) : AbstractThreadedSyncAdapter(context, true) {
 

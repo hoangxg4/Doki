@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.parser.favicon
+package org.dokiteam.doki.core.parser.favicon
 
 import android.graphics.Color
 import android.graphics.drawable.AdaptiveIconDrawable
@@ -19,15 +19,15 @@ import coil3.toAndroidUri
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.runInterruptible
 import okio.IOException
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.CloudFlareProtectedException
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.parser.EmptyMangaRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.parser.external.ExternalMangaRepository
-import org.koitharu.kotatsu.core.util.ext.fetch
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.CloudFlareProtectedException
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.parser.EmptyMangaRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.parser.external.ExternalMangaRepository
+import org.dokiteam.doki.core.util.ext.fetch
+import org.dokiteam.doki.local.data.LocalMangaRepository
 import kotlin.coroutines.coroutineContext
 import coil3.Uri as CoilUri
 

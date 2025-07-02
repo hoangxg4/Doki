@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.list.ui
+package org.dokiteam.doki.list.ui
 
 import androidx.recyclerview.widget.DiffUtil
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.ListModel
 
 open class ListModelDiffCallback<T : ListModel> : DiffUtil.ItemCallback<T>() {
 

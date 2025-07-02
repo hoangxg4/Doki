@@ -1,25 +1,25 @@
-package org.koitharu.kotatsu.core.parser
+package org.dokiteam.doki.core.parser
 
 import kotlinx.coroutines.Dispatchers
 import okhttp3.Interceptor
 import okhttp3.Response
-import org.koitharu.kotatsu.core.cache.MemoryContentCache
-import org.koitharu.kotatsu.core.network.MirrorSwitchInterceptor
-import org.koitharu.kotatsu.core.prefs.SourceSettings
-import org.koitharu.kotatsu.parsers.MangaParser
-import org.koitharu.kotatsu.parsers.MangaParserAuthProvider
-import org.koitharu.kotatsu.parsers.config.ConfigKey
-import org.koitharu.kotatsu.parsers.model.Favicons
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaListFilterCapabilities
-import org.koitharu.kotatsu.parsers.model.MangaListFilterOptions
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.parsers.util.suspendlazy.suspendLazy
+import org.dokiteam.doki.core.cache.MemoryContentCache
+import org.dokiteam.doki.core.network.MirrorSwitchInterceptor
+import org.dokiteam.doki.core.prefs.SourceSettings
+import org.dokiteam.doki.parsers.MangaParser
+import org.dokiteam.doki.parsers.MangaParserAuthProvider
+import org.dokiteam.doki.parsers.config.ConfigKey
+import org.dokiteam.doki.parsers.model.Favicons
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaListFilterCapabilities
+import org.dokiteam.doki.parsers.model.MangaListFilterOptions
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.parsers.util.suspendlazy.suspendLazy
 
 class ParserMangaRepository(
 	private val parser: MangaParser,

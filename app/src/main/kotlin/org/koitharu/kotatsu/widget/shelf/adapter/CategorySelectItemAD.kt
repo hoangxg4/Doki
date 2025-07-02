@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.widget.shelf.adapter
+package org.dokiteam.doki.widget.shelf.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.databinding.ItemCategoryCheckableSingleBinding
-import org.koitharu.kotatsu.widget.shelf.model.CategoryItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.databinding.ItemCategoryCheckableSingleBinding
+import org.dokiteam.doki.widget.shelf.model.CategoryItem
 
 fun categorySelectItemAD(
 	clickListener: OnListItemClickListener<CategoryItem>

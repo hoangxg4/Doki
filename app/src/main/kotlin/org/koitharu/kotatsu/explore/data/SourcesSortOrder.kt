@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.explore.data
+package org.dokiteam.doki.explore.data
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 enum class SourcesSortOrder(
 	@StringRes val titleResId: Int,

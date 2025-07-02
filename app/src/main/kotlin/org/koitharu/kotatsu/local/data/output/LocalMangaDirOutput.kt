@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.data.output
+package org.dokiteam.doki.local.data.output
 
 import androidx.core.net.toFile
 import androidx.core.net.toUri
@@ -7,18 +7,18 @@ import kotlinx.coroutines.runInterruptible
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import okhttp3.internal.closeQuietly
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.util.MimeTypes
-import org.koitharu.kotatsu.core.util.ext.MimeType
-import org.koitharu.kotatsu.core.util.ext.deleteAwait
-import org.koitharu.kotatsu.core.util.ext.takeIfReadable
-import org.koitharu.kotatsu.core.util.ext.toFileNameSafe
-import org.koitharu.kotatsu.core.zip.ZipOutput
-import org.koitharu.kotatsu.local.data.MangaIndex
-import org.koitharu.kotatsu.local.data.input.LocalMangaParser
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.util.MimeTypes
+import org.dokiteam.doki.core.util.ext.MimeType
+import org.dokiteam.doki.core.util.ext.deleteAwait
+import org.dokiteam.doki.core.util.ext.takeIfReadable
+import org.dokiteam.doki.core.util.ext.toFileNameSafe
+import org.dokiteam.doki.core.zip.ZipOutput
+import org.dokiteam.doki.local.data.MangaIndex
+import org.dokiteam.doki.local.data.input.LocalMangaParser
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.util.nullIfEmpty
 import java.io.File
 
 class LocalMangaDirOutput(

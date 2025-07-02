@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.suggestions.ui
+package org.dokiteam.doki.suggestions.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -7,12 +7,12 @@ import android.view.MenuItem
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.viewModels
 import com.google.android.material.snackbar.Snackbar
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.databinding.FragmentListBinding
-import org.koitharu.kotatsu.list.ui.MangaListFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.databinding.FragmentListBinding
+import org.dokiteam.doki.list.ui.MangaListFragment
 
 class SuggestionsFragment : MangaListFragment() {
 
@@ -73,7 +73,7 @@ class SuggestionsFragment : MangaListFragment() {
 			"",
 			ReplaceWith(
 				"SuggestionsFragment()",
-				"org.koitharu.kotatsu.suggestions.ui.SuggestionsFragment",
+				"org.dokiteam.doki.suggestions.ui.SuggestionsFragment",
 			),
 		)
 		fun newInstance() = SuggestionsFragment()

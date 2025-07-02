@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.data.index
+package org.dokiteam.doki.local.data.index
 
 import androidx.room.Dao
 import androidx.room.Query

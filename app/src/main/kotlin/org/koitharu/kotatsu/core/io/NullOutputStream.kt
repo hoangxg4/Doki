@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.io
+package org.dokiteam.doki.core.io
 
 import java.io.OutputStream
 import java.util.Objects

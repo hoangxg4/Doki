@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.backups.ui.periodical
+package org.dokiteam.doki.backups.ui.periodical
 
 import android.content.Intent
 import android.net.Uri
@@ -11,16 +11,16 @@ import androidx.preference.EditTextPreference
 import androidx.preference.Preference
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.os.OpenDocumentTreeHelper
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.settings.utils.EditTextFallbackSummaryProvider
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.os.OpenDocumentTreeHelper
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.settings.utils.EditTextFallbackSummaryProvider
 import java.util.Date
 import javax.inject.Inject
 

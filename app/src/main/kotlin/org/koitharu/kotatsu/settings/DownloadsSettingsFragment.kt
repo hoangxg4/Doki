@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -13,23 +13,23 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.os.OpenDocumentTreeHelper
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.DownloadFormat
-import org.koitharu.kotatsu.core.prefs.TriStateOption
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.resolveFile
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.core.util.ext.viewLifecycleScope
-import org.koitharu.kotatsu.download.ui.worker.DownloadWorker
-import org.koitharu.kotatsu.local.data.LocalStorageManager
-import org.koitharu.kotatsu.parsers.util.names
-import org.koitharu.kotatsu.settings.utils.DozeHelper
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.os.OpenDocumentTreeHelper
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.DownloadFormat
+import org.dokiteam.doki.core.prefs.TriStateOption
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.resolveFile
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.core.util.ext.viewLifecycleScope
+import org.dokiteam.doki.download.ui.worker.DownloadWorker
+import org.dokiteam.doki.local.data.LocalStorageManager
+import org.dokiteam.doki.parsers.util.names
+import org.dokiteam.doki.settings.utils.DozeHelper
 import javax.inject.Inject
 
 @AndroidEntryPoint

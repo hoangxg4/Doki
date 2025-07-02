@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.suggestions.domain
+package org.dokiteam.doki.suggestions.domain
 
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.util.almostEquals
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.util.almostEquals
 
 class TagsBlacklist(
 	private val tags: Set<String>,

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.storage
+package org.dokiteam.doki.settings.storage
 
 import android.Manifest
 import android.content.Intent
@@ -13,15 +13,15 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ToastErrorObserver
-import org.koitharu.kotatsu.core.os.OpenDocumentTreeHelper
-import org.koitharu.kotatsu.core.ui.AlertDialogFragment
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.databinding.DialogDirectorySelectBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ToastErrorObserver
+import org.dokiteam.doki.core.os.OpenDocumentTreeHelper
+import org.dokiteam.doki.core.ui.AlertDialogFragment
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.databinding.DialogDirectorySelectBinding
 
 @AndroidEntryPoint
 class MangaDirectorySelectDialog : AlertDialogFragment<DialogDirectorySelectBinding>(),

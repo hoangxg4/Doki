@@ -1,22 +1,22 @@
-package org.koitharu.kotatsu.bookmarks.domain
+package org.dokiteam.doki.bookmarks.domain
 
 import android.database.SQLException
 import androidx.room.withTransaction
 import dagger.Reusable
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import org.koitharu.kotatsu.bookmarks.data.BookmarkEntity
-import org.koitharu.kotatsu.bookmarks.data.toBookmark
-import org.koitharu.kotatsu.bookmarks.data.toBookmarks
-import org.koitharu.kotatsu.bookmarks.data.toEntity
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.entity.toEntities
-import org.koitharu.kotatsu.core.db.entity.toEntity
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.ui.util.ReversibleHandle
-import org.koitharu.kotatsu.core.util.ext.mapItems
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.bookmarks.data.BookmarkEntity
+import org.dokiteam.doki.bookmarks.data.toBookmark
+import org.dokiteam.doki.bookmarks.data.toBookmarks
+import org.dokiteam.doki.bookmarks.data.toEntity
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.entity.toEntities
+import org.dokiteam.doki.core.db.entity.toEntity
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.ui.util.ReversibleHandle
+import org.dokiteam.doki.core.util.ext.mapItems
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.Manga
 import javax.inject.Inject
 
 @Reusable

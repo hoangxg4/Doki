@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import android.view.View
-import org.koitharu.kotatsu.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListHeader
 
 interface ListHeaderClickListener {
 

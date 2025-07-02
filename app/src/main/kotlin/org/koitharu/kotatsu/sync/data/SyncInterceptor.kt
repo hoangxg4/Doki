@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.sync.data
+package org.dokiteam.doki.sync.data
 
 import android.accounts.Account
 import android.accounts.AccountManager
 import android.content.Context
 import okhttp3.Interceptor
 import okhttp3.Response
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.db.DATABASE_VERSION
-import org.koitharu.kotatsu.core.network.CommonHeaders
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.db.DATABASE_VERSION
+import org.dokiteam.doki.core.network.CommonHeaders
 
 class SyncInterceptor(
 	context: Context,

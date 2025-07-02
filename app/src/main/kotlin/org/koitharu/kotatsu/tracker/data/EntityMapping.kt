@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.tracker.data
+package org.dokiteam.doki.tracker.data
 
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.db.entity.toMangaTags
-import org.koitharu.kotatsu.tracker.domain.model.TrackingLogItem
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.db.entity.toMangaTags
+import org.dokiteam.doki.tracker.domain.model.TrackingLogItem
 import java.time.Instant
 
 fun TrackLogWithManga.toTrackingLogItem(): TrackingLogItem {

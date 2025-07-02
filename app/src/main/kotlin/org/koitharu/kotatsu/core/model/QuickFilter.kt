@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.core.model
+package org.dokiteam.doki.core.model
 
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.list.domain.ListFilterOption
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.list.domain.ListFilterOption
 
 fun ListFilterOption.toChipModel(isChecked: Boolean) = ChipsView.ChipModel(
 	title = titleText,

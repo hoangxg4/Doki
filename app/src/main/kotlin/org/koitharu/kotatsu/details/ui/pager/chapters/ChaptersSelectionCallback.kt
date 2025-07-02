@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.pager.chapters
+package org.dokiteam.doki.details.ui.pager.chapters
 
 import android.view.Menu
 import android.view.MenuInflater
@@ -6,15 +6,15 @@ import android.view.MenuItem
 import androidx.appcompat.view.ActionMode
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.LocalMangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.list.BaseListSelectionCallback
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.util.ext.toCollection
-import org.koitharu.kotatsu.core.util.ext.toSet
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesViewModel
-import org.koitharu.kotatsu.local.ui.LocalChaptersRemoveService
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.LocalMangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.list.BaseListSelectionCallback
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.util.ext.toCollection
+import org.dokiteam.doki.core.util.ext.toSet
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesViewModel
+import org.dokiteam.doki.local.ui.LocalChaptersRemoveService
 
 class ChaptersSelectionCallback(
 	private val viewModel: ChaptersPagesViewModel,

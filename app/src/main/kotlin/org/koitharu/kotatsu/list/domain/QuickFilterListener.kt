@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.domain
+package org.dokiteam.doki.list.domain
 
 interface QuickFilterListener {
 

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.widgets
+package org.dokiteam.doki.core.ui.widgets
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -9,7 +9,7 @@ import androidx.annotation.DrawableRes
 import androidx.core.content.withStyledAttributes
 import androidx.core.view.isNotEmpty
 import androidx.core.view.isVisible
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class IconsView @JvmOverloads constructor(
 	context: Context,

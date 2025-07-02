@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.explore.ui
+package org.dokiteam.doki.explore.ui
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
 
 class ExploreMenuProvider(
 	private val router: AppRouter,

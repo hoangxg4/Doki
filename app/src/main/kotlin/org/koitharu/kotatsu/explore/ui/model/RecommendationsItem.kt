@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.explore.ui.model
+package org.dokiteam.doki.explore.ui.model
 
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.MangaCompactListModel
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaCompactListModel
 
 data class RecommendationsItem(
 	val manga: List<MangaCompactListModel>

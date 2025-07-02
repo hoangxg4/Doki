@@ -1,16 +1,16 @@
-package org.koitharu.kotatsu.favourites.domain
+package org.dokiteam.doki.favourites.domain
 
 import dagger.Reusable
 import kotlinx.coroutines.flow.Flow
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.db.entity.toMangaTags
-import org.koitharu.kotatsu.favourites.data.FavouriteManga
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.ListSortOrder
-import org.koitharu.kotatsu.local.data.index.LocalMangaIndex
-import org.koitharu.kotatsu.local.domain.LocalObserveMapper
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.db.entity.toMangaTags
+import org.dokiteam.doki.favourites.data.FavouriteManga
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.ListSortOrder
+import org.dokiteam.doki.local.data.index.LocalMangaIndex
+import org.dokiteam.doki.local.domain.LocalObserveMapper
+import org.dokiteam.doki.parsers.model.Manga
 import javax.inject.Inject
 
 @Reusable

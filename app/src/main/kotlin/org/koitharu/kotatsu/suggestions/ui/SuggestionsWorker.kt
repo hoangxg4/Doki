@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.suggestions.ui
+package org.dokiteam.doki.suggestions.ui
 
 import android.Manifest
 import android.app.PendingIntent
@@ -44,45 +44,45 @@ import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.CloudFlareException
-import org.koitharu.kotatsu.core.exceptions.CloudFlareProtectedException
-import org.koitharu.kotatsu.core.exceptions.resolve.CaptchaHandler
-import org.koitharu.kotatsu.core.model.distinctById
-import org.koitharu.kotatsu.core.model.getLocale
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.nav.ReaderIntent
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.LocaleComparator
-import org.koitharu.kotatsu.core.util.ext.asArrayList
-import org.koitharu.kotatsu.core.util.ext.awaitUniqueWorkInfoByName
-import org.koitharu.kotatsu.core.util.ext.awaitWorkInfosByTag
-import org.koitharu.kotatsu.core.util.ext.checkNotificationPermission
-import org.koitharu.kotatsu.core.util.ext.flatten
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.sanitize
-import org.koitharu.kotatsu.core.util.ext.takeMostFrequent
-import org.koitharu.kotatsu.core.util.ext.toBitmapOrNull
-import org.koitharu.kotatsu.core.util.ext.trySetForeground
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.util.almostEquals
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.parsers.util.sizeOrZero
-import org.koitharu.kotatsu.settings.work.PeriodicWorkScheduler
-import org.koitharu.kotatsu.suggestions.domain.MangaSuggestion
-import org.koitharu.kotatsu.suggestions.domain.SuggestionRepository
-import org.koitharu.kotatsu.suggestions.domain.TagsBlacklist
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.CloudFlareException
+import org.dokiteam.doki.core.exceptions.CloudFlareProtectedException
+import org.dokiteam.doki.core.exceptions.resolve.CaptchaHandler
+import org.dokiteam.doki.core.model.distinctById
+import org.dokiteam.doki.core.model.getLocale
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.nav.ReaderIntent
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.LocaleComparator
+import org.dokiteam.doki.core.util.ext.asArrayList
+import org.dokiteam.doki.core.util.ext.awaitUniqueWorkInfoByName
+import org.dokiteam.doki.core.util.ext.awaitWorkInfosByTag
+import org.dokiteam.doki.core.util.ext.checkNotificationPermission
+import org.dokiteam.doki.core.util.ext.flatten
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.sanitize
+import org.dokiteam.doki.core.util.ext.takeMostFrequent
+import org.dokiteam.doki.core.util.ext.toBitmapOrNull
+import org.dokiteam.doki.core.util.ext.trySetForeground
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.util.almostEquals
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.parsers.util.sizeOrZero
+import org.dokiteam.doki.settings.work.PeriodicWorkScheduler
+import org.dokiteam.doki.suggestions.domain.MangaSuggestion
+import org.dokiteam.doki.suggestions.domain.SuggestionRepository
+import org.dokiteam.doki.suggestions.domain.TagsBlacklist
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import kotlin.math.pow
@@ -461,7 +461,7 @@ class SuggestionsWorker @AssistedInject constructor(
 		const val DATA_COUNT = "count"
 		const val WORKER_CHANNEL_ID = "suggestion_worker"
 		const val MANGA_CHANNEL_ID = "suggestions"
-		const val GROUP_SUGGESTION = "org.koitharu.kotatsu.SUGGESTIONS"
+		const val GROUP_SUGGESTION = "org.dokiteam.doki.SUGGESTIONS"
 		const val WORKER_NOTIFICATION_ID = 36
 		const val MAX_RESULTS = 160
 		const val MAX_PARALLELISM = 3

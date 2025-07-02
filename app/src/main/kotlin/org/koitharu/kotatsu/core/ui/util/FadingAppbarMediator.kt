@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.util
+package org.dokiteam.doki.core.ui.util
 
 import android.view.View
 import com.google.android.material.appbar.AppBarLayout

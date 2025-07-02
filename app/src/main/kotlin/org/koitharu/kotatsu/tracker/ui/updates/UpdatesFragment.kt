@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.tracker.ui.updates
+package org.dokiteam.doki.tracker.ui.updates
 
 import android.view.Menu
 import android.view.MenuInflater
@@ -6,9 +6,9 @@ import android.view.MenuItem
 import androidx.appcompat.view.ActionMode
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.list.ui.MangaListFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.list.ui.MangaListFragment
 
 @AndroidEntryPoint
 class UpdatesFragment : MangaListFragment() {

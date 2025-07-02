@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.main.ui
+package org.dokiteam.doki.main.ui
 
 import android.view.View
 import androidx.activity.OnBackPressedCallback
@@ -11,10 +11,10 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.main.ui.owners.BottomNavOwner
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.main.ui.owners.BottomNavOwner
 
 class ExitCallback(
 	private val activity: MainActivity,

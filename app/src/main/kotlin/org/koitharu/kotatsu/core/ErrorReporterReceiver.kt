@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core
+package org.dokiteam.doki.core
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
@@ -7,11 +7,11 @@ import android.content.Intent
 import android.os.BadParcelableException
 import androidx.core.app.PendingIntentCompat
 import androidx.core.net.toUri
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.util.ext.getSerializableExtraCompat
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.report
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.util.ext.getSerializableExtraCompat
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.report
 
 class ErrorReporterReceiver : BroadcastReceiver() {
 

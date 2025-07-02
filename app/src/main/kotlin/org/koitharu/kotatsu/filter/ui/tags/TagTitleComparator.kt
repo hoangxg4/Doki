@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.filter.ui.tags
+package org.dokiteam.doki.filter.ui.tags
 
-import org.koitharu.kotatsu.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.model.MangaTag
 import java.text.Collator
 import java.util.Locale
 

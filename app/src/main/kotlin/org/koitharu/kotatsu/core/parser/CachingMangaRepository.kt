@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.parser
+package org.dokiteam.doki.core.parser
 
 import android.util.Log
 import androidx.collection.MutableLongSet
@@ -9,15 +9,15 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainCoroutineDispatcher
 import kotlinx.coroutines.async
 import kotlinx.coroutines.currentCoroutineContext
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.cache.MemoryContentCache
-import org.koitharu.kotatsu.core.cache.SafeDeferred
-import org.koitharu.kotatsu.core.util.MultiMutex
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.cache.MemoryContentCache
+import org.dokiteam.doki.core.cache.SafeDeferred
+import org.dokiteam.doki.core.util.MultiMutex
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 
 abstract class CachingMangaRepository(
 	private val cache: MemoryContentCache,

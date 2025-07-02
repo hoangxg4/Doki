@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.reader.data
+package org.dokiteam.doki.reader.data
 
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
 
 fun Manga.filterChapters(branch: String?): Manga {
 	if (chapters.isNullOrEmpty()) return this

@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.reader.ui.pager.doublepage
+package org.dokiteam.doki.reader.ui.pager.doublepage
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.databinding.ItemPageBinding
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.config.ReaderSettings
-import org.koitharu.kotatsu.reader.ui.pager.BaseReaderAdapter
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.databinding.ItemPageBinding
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.config.ReaderSettings
+import org.dokiteam.doki.reader.ui.pager.BaseReaderAdapter
 
 class DoublePagesAdapter(
 	private val lifecycleOwner: LifecycleOwner,

@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.ui.model
+package org.dokiteam.doki.core.ui.model
 
 import android.content.Context
 import android.text.format.DateUtils
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.getQuantityStringSafe
-import org.koitharu.kotatsu.core.util.ext.toMillis
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.toMillis
 import java.time.LocalDate
 
 sealed class DateTimeAgo {

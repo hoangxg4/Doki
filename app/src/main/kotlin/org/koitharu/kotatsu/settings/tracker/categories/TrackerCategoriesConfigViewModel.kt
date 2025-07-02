@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.tracker.categories
+package org.dokiteam.doki.settings.tracker.categories
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -7,9 +7,9 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
 import javax.inject.Inject
 
 @HiltViewModel

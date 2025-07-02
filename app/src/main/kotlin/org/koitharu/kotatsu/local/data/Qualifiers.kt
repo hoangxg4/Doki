@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.data
+package org.dokiteam.doki.local.data
 
 import javax.inject.Qualifier
 

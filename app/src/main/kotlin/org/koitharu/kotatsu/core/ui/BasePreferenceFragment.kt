@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui
+package org.dokiteam.doki.core.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -14,19 +14,19 @@ import androidx.preference.get
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.EntryPointAccessors
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.util.RecyclerViewOwner
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.container
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.core.util.ext.getThemeDrawable
-import org.koitharu.kotatsu.core.util.ext.parentView
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.settings.SettingsActivity
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.container
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.core.util.ext.getThemeDrawable
+import org.dokiteam.doki.core.util.ext.parentView
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.settings.SettingsActivity
 import javax.inject.Inject
 import com.google.android.material.R as materialR
 

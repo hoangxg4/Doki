@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.sources
+package org.dokiteam.doki.settings.sources
 
 import android.content.SharedPreferences
 import androidx.lifecycle.SavedStateHandle
@@ -7,22 +7,22 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import okhttp3.HttpUrl
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.network.cookies.MutableCookieJar
-import org.koitharu.kotatsu.core.parser.CachingMangaRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.SourceSettings
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.ui.util.ReversibleAction
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.parsers.MangaParserAuthProvider
-import org.koitharu.kotatsu.parsers.exception.AuthRequiredException
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.network.cookies.MutableCookieJar
+import org.dokiteam.doki.core.parser.CachingMangaRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.SourceSettings
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.ui.util.ReversibleAction
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.parsers.MangaParserAuthProvider
+import org.dokiteam.doki.parsers.exception.AuthRequiredException
 import javax.inject.Inject
 
 @HiltViewModel

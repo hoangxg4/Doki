@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.scrobbling.common.ui.selector.adapter
+package org.dokiteam.doki.scrobbling.common.ui.selector.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ItemMangaListBinding
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerManga
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ItemMangaListBinding
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerManga
 
 fun scrobblingMangaAD(
 	clickListener: OnListItemClickListener<ScrobblerManga>,

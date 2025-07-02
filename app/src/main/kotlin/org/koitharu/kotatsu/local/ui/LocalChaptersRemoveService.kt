@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.ui
+package org.dokiteam.doki.local.ui
 
 import android.annotation.SuppressLint
 import android.app.NotificationManager
@@ -11,18 +11,18 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.MutableSharedFlow
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ErrorReporterReceiver
-import org.koitharu.kotatsu.core.model.parcelable.ParcelableManga
-import org.koitharu.kotatsu.core.ui.CoroutineIntentService
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getParcelableExtraCompat
-import org.koitharu.kotatsu.core.util.ext.powerManager
-import org.koitharu.kotatsu.core.util.ext.withPartialWakeLock
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.local.data.LocalStorageChanges
-import org.koitharu.kotatsu.local.domain.model.LocalManga
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ErrorReporterReceiver
+import org.dokiteam.doki.core.model.parcelable.ParcelableManga
+import org.dokiteam.doki.core.ui.CoroutineIntentService
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getParcelableExtraCompat
+import org.dokiteam.doki.core.util.ext.powerManager
+import org.dokiteam.doki.core.util.ext.withPartialWakeLock
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.local.data.LocalStorageChanges
+import org.dokiteam.doki.local.domain.model.LocalManga
+import org.dokiteam.doki.parsers.model.Manga
 import javax.inject.Inject
 
 @AndroidEntryPoint

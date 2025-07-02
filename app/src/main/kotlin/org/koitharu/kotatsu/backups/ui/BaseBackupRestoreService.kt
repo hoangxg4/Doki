@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.backups.ui
+package org.dokiteam.doki.backups.ui
 
 import android.net.Uri
 import androidx.core.app.NotificationChannelCompat
@@ -6,14 +6,14 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.PendingIntentCompat
 import androidx.core.app.ShareCompat
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ErrorReporterReceiver
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.CoroutineIntentService
-import org.koitharu.kotatsu.core.util.CompositeResult
-import org.koitharu.kotatsu.core.util.ext.checkNotificationPermission
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getFileDisplayName
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ErrorReporterReceiver
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.CoroutineIntentService
+import org.dokiteam.doki.core.util.CompositeResult
+import org.dokiteam.doki.core.util.ext.checkNotificationPermission
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getFileDisplayName
 import androidx.appcompat.R as appcompatR
 
 abstract class BaseBackupRestoreService : CoroutineIntentService() {

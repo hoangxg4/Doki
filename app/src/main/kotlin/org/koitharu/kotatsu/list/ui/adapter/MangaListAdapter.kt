@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.size.ItemSizeResolver
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.size.ItemSizeResolver
 
 open class MangaListAdapter(
 	listener: MangaListListener,

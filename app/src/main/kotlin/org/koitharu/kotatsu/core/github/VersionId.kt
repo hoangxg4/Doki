@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.core.github
+package org.dokiteam.doki.core.github
 
-import org.koitharu.kotatsu.parsers.util.digits
+import org.dokiteam.doki.parsers.util.digits
 import java.util.Locale
 
 data class VersionId(

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.common.domain.model
+package org.dokiteam.doki.scrobbling.common.domain.model
 
 class ScrobblerMangaInfo(
 	val id: Long,

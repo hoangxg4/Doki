@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network.webview.adblock
+package org.dokiteam.doki.core.network.webview.adblock
 
 import androidx.collection.ArraySet
 

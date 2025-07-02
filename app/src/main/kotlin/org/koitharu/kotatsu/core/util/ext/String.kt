@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import android.content.Context
 import androidx.collection.arraySetOf
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.parsers.util.ellipsize
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
+import org.dokiteam.doki.R
+import org.dokiteam.doki.parsers.util.ellipsize
+import org.dokiteam.doki.parsers.util.nullIfEmpty
 import java.util.UUID
 
 fun String.toUUIDOrNull(): UUID? = try {

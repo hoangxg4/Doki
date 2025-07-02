@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.scrobbling.common.domain.model
+package org.dokiteam.doki.scrobbling.common.domain.model
 
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.ListModel
 
 enum class ScrobblingStatus : ListModel {
 

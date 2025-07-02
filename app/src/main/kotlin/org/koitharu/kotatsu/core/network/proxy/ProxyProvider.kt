@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network.proxy
+package org.dokiteam.doki.core.network.proxy
 
 import androidx.webkit.ProxyConfig
 import androidx.webkit.ProxyController
@@ -12,10 +12,10 @@ import okhttp3.Request
 import okhttp3.Response
 import okhttp3.Route
 import okio.IOException
-import org.koitharu.kotatsu.core.exceptions.ProxyConfigException
-import org.koitharu.kotatsu.core.network.CommonHeaders
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.exceptions.ProxyConfigException
+import org.dokiteam.doki.core.network.CommonHeaders
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
 import java.net.InetSocketAddress
 import java.net.PasswordAuthentication
 import java.net.Proxy

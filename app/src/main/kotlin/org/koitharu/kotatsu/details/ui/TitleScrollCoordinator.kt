@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.details.ui
+package org.dokiteam.doki.details.ui
 
 import android.content.Context
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.doOnLayout
 import androidx.core.widget.NestedScrollView
-import org.koitharu.kotatsu.core.util.ext.findActivity
+import org.dokiteam.doki.core.util.ext.findActivity
 import java.lang.ref.WeakReference
 
 class TitleScrollCoordinator(

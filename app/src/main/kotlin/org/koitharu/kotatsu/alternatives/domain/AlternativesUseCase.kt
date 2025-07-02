@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.alternatives.domain
+package org.dokiteam.doki.alternatives.domain
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.channelFlow
@@ -6,15 +6,15 @@ import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.ext.toLocale
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.search.domain.SearchKind
-import org.koitharu.kotatsu.search.domain.SearchV2Helper
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.ext.toLocale
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.search.domain.SearchKind
+import org.dokiteam.doki.search.domain.SearchV2Helper
 import java.util.Locale
 import javax.inject.Inject
 

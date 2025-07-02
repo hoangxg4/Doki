@@ -1,21 +1,21 @@
-package org.koitharu.kotatsu.settings.sources.manage
+package org.dokiteam.doki.settings.sources.manage
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.removeObserverAsync
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.ui.util.ReversibleAction
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.move
-import org.koitharu.kotatsu.settings.sources.model.SourceConfigItem
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.removeObserverAsync
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.ui.util.ReversibleAction
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.move
+import org.dokiteam.doki.settings.sources.model.SourceConfigItem
 import javax.inject.Inject
 
 @HiltViewModel

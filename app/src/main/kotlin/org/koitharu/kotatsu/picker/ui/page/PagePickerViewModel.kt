@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.picker.ui.page
+package org.dokiteam.doki.picker.ui.page
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -10,17 +10,17 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.nav.MangaIntent
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsStateFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.firstNotNull
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.details.domain.DetailsLoadUseCase
-import org.koitharu.kotatsu.details.ui.pager.pages.PageThumbnail
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.reader.domain.ChaptersLoader
+import org.dokiteam.doki.core.nav.MangaIntent
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsStateFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.firstNotNull
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.details.domain.DetailsLoadUseCase
+import org.dokiteam.doki.details.ui.pager.pages.PageThumbnail
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.reader.domain.ChaptersLoader
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.reader.ui
+package org.dokiteam.doki.reader.ui
 
-import org.koitharu.kotatsu.bookmarks.domain.Bookmark
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.bookmarks.domain.Bookmark
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 
 interface ReaderNavigationCallback {
 

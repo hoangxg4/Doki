@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.search.ui.suggestion
+package org.dokiteam.doki.search.ui.suggestion
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -14,20 +14,20 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.SearchSuggestionType
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.prefs.observeAsStateFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.explore.data.MangaSourcesRepository
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.util.mapToSet
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.search.domain.MangaSearchRepository
-import org.koitharu.kotatsu.search.ui.suggestion.model.SearchSuggestionItem
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.SearchSuggestionType
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.prefs.observeAsStateFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.explore.data.MangaSourcesRepository
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.util.mapToSet
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.search.domain.MangaSearchRepository
+import org.dokiteam.doki.search.ui.suggestion.model.SearchSuggestionItem
 import javax.inject.Inject
 
 private const val DEBOUNCE_TIMEOUT = 300L

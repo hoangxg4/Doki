@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.image
+package org.dokiteam.doki.core.image
 
 import android.net.Uri
 import coil3.ImageLoader
@@ -11,8 +11,8 @@ import coil3.toAndroidUri
 import kotlinx.coroutines.runInterruptible
 import okio.Path.Companion.toPath
 import okio.openZip
-import org.koitharu.kotatsu.core.util.MimeTypes
-import org.koitharu.kotatsu.core.util.ext.isZipUri
+import org.dokiteam.doki.core.util.MimeTypes
+import org.dokiteam.doki.core.util.ext.isZipUri
 import coil3.Uri as CoilUri
 
 class CbzFetcher(

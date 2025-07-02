@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.local.ui
+package org.dokiteam.doki.local.ui
 
 import android.Manifest
 import android.os.Build
@@ -14,22 +14,22 @@ import androidx.core.net.toUri
 import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.LocalMangaSource
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.ui.widgets.TipView
-import org.koitharu.kotatsu.core.util.ShareHelper
-import org.koitharu.kotatsu.core.util.ext.addMenuProvider
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.core.util.ext.withArgs
-import org.koitharu.kotatsu.databinding.FragmentListBinding
-import org.koitharu.kotatsu.filter.ui.FilterCoordinator
-import org.koitharu.kotatsu.list.ui.MangaListFragment
-import org.koitharu.kotatsu.remotelist.ui.MangaSearchMenuProvider
-import org.koitharu.kotatsu.remotelist.ui.RemoteListFragment
-import org.koitharu.kotatsu.settings.storage.RequestStorageManagerPermissionContract
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.LocalMangaSource
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.ui.widgets.TipView
+import org.dokiteam.doki.core.util.ShareHelper
+import org.dokiteam.doki.core.util.ext.addMenuProvider
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.core.util.ext.withArgs
+import org.dokiteam.doki.databinding.FragmentListBinding
+import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.list.ui.MangaListFragment
+import org.dokiteam.doki.remotelist.ui.MangaSearchMenuProvider
+import org.dokiteam.doki.remotelist.ui.RemoteListFragment
+import org.dokiteam.doki.settings.storage.RequestStorageManagerPermissionContract
 
 class LocalListFragment : MangaListFragment(), FilterCoordinator.Owner {
 

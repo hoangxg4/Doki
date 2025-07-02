@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.alternatives.ui
+package org.dokiteam.doki.alternatives.ui
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -15,21 +15,21 @@ import coil3.ImageLoader
 import coil3.request.ImageRequest
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.runBlocking
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.alternatives.domain.AutoFixUseCase
-import org.koitharu.kotatsu.core.ErrorReporterReceiver
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.CoroutineIntentService
-import org.koitharu.kotatsu.core.util.ext.checkNotificationPermission
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.mangaSourceExtra
-import org.koitharu.kotatsu.core.util.ext.powerManager
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.toBitmapOrNull
-import org.koitharu.kotatsu.core.util.ext.withPartialWakeLock
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.R
+import org.dokiteam.doki.alternatives.domain.AutoFixUseCase
+import org.dokiteam.doki.core.ErrorReporterReceiver
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.CoroutineIntentService
+import org.dokiteam.doki.core.util.ext.checkNotificationPermission
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.mangaSourceExtra
+import org.dokiteam.doki.core.util.ext.powerManager
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.toBitmapOrNull
+import org.dokiteam.doki.core.util.ext.withPartialWakeLock
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 import androidx.appcompat.R as appcompatR
 

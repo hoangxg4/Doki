@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network.cookies
+package org.dokiteam.doki.core.network.cookies
 
 import androidx.annotation.WorkerThread
 import androidx.core.util.Predicate

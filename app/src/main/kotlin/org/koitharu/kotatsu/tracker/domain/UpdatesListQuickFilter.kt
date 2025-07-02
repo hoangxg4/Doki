@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.tracker.domain
+package org.dokiteam.doki.tracker.domain
 
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.list.domain.ListFilterOption
-import org.koitharu.kotatsu.list.domain.MangaListQuickFilter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.MangaListQuickFilter
 import javax.inject.Inject
 
 class UpdatesListQuickFilter @Inject constructor(

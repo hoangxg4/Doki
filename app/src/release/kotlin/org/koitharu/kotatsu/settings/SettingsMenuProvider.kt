@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.Context
 import android.view.Menu

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.categories
+package org.dokiteam.doki.favourites.ui.categories
 
 import androidx.collection.LongSet
 import androidx.lifecycle.viewModelScope
@@ -13,19 +13,19 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.requireValue
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.favourites.domain.model.Cover
-import org.koitharu.kotatsu.favourites.ui.categories.adapter.AllCategoriesListModel
-import org.koitharu.kotatsu.favourites.ui.categories.adapter.CategoryListModel
-import org.koitharu.kotatsu.list.ui.model.EmptyState
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.model.LoadingState
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.requireValue
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.favourites.domain.model.Cover
+import org.dokiteam.doki.favourites.ui.categories.adapter.AllCategoriesListModel
+import org.dokiteam.doki.favourites.ui.categories.adapter.CategoryListModel
+import org.dokiteam.doki.list.ui.model.EmptyState
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.LoadingState
 import javax.inject.Inject
 
 @HiltViewModel

@@ -324,7 +324,7 @@
 	<string name="import_completed_hint">You can delete the original file from storage to save space</string>
 	<string name="import_will_start_soon">Import will start soon</string>
 	<string name="feed">Feed</string>
-	<string name="manga_error_description_pattern">Error details:&lt;br&gt;&lt;tt&gt;%1$s&lt;/tt&gt;&lt;br&gt;&lt;br&gt;1. Try to &lt;a href="%2$s"&gt;open manga in a web browser&lt;/a&gt; to ensure it is available on its source&lt;br&gt;2. Make sure you are using the &lt;a href="kotatsu://about"&gt;latest version of Kotatsu&lt;/a&gt;&lt;br&gt;3. If it is available, send an error report to the developers.</string>
+	<string name="manga_error_description_pattern">Error details:&lt;br&gt;&lt;tt&gt;%1$s&lt;/tt&gt;&lt;br&gt;&lt;br&gt;1. Try to &lt;a href="%2$s"&gt;open manga in a web browser&lt;/a&gt; to ensure it is available on its source&lt;br&gt;2. Make sure you are using the &lt;a href="doki://about"&gt;latest version of Doki&lt;/a&gt;&lt;br&gt;3. If it is available, send an error report to the developers.</string>
 	<string name="history_shortcuts">Show recent manga shortcuts</string>
 	<string name="history_shortcuts_summary">Make recent manga available by long pressing on application icon</string>
 	<string name="reader_control_ltr_summary">Do not adjust the page switching direction to the reader mode, e. g. pressing the right key always switches to the next page. This option affects only hardware input devices</string>
@@ -817,7 +817,7 @@
 	<string name="error_disclaimer_app_outdated">It looks like your version of Doki is out of date. Please install the latest version to get all available fixes.</string>
 	<string name="error_disclaimer_report">You can submit a bug report to the developers. This will help us investigate and fix the issue.</string>
 	<string name="link_to_manga_on_s">Link to manga on %s</string>
-	<string name="link_to_manga_in_app">Link to manga in Kotatsu</string>
+	<string name="link_to_manga_in_app">Link to manga in Doki</string>
 	<string name="clear_browser_data">Clear browser data</string>
 	<string name="clear_browser_data_summary">Clear browser data such as cache and cookies. Warning: Authorization in manga sources may become invalid</string>
 	<string name="no_write_permission_to_file">Does not have permission to write a file</string>

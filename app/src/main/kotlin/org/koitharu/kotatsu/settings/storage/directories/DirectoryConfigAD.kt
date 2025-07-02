@@ -1,15 +1,15 @@
-package org.koitharu.kotatsu.settings.storage.directories
+package org.dokiteam.doki.settings.storage.directories
 
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.drawableStart
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ItemStorageConfigBinding
-import org.koitharu.kotatsu.settings.storage.DirectoryModel
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.drawableStart
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ItemStorageConfigBinding
+import org.dokiteam.doki.settings.storage.DirectoryModel
 
 fun directoryConfigAD(
 	clickListener: OnListItemClickListener<DirectoryModel>,

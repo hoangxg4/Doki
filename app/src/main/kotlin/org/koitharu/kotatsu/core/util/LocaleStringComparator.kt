@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import androidx.core.os.LocaleListCompat
-import org.koitharu.kotatsu.core.util.ext.indexOfContains
-import org.koitharu.kotatsu.core.util.ext.iterator
+import org.dokiteam.doki.core.util.ext.indexOfContains
+import org.dokiteam.doki.core.util.ext.iterator
 
 class LocaleStringComparator : Comparator<String?> {
 

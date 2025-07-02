@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.filter.ui
+package org.dokiteam.doki.filter.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,19 +10,19 @@ import com.google.android.material.chip.Chip
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.core.util.ext.isAnimationsEnabled
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.databinding.FragmentFilterHeaderBinding
-import org.koitharu.kotatsu.filter.ui.model.FilterHeaderModel
-import org.koitharu.kotatsu.parsers.model.ContentRating
-import org.koitharu.kotatsu.parsers.model.ContentType
-import org.koitharu.kotatsu.parsers.model.Demographic
-import org.koitharu.kotatsu.parsers.model.MangaState
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.model.YEAR_UNKNOWN
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.core.util.ext.isAnimationsEnabled
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.databinding.FragmentFilterHeaderBinding
+import org.dokiteam.doki.filter.ui.model.FilterHeaderModel
+import org.dokiteam.doki.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.ContentType
+import org.dokiteam.doki.parsers.model.Demographic
+import org.dokiteam.doki.parsers.model.MangaState
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.model.YEAR_UNKNOWN
 import java.util.Locale
 import javax.inject.Inject
 

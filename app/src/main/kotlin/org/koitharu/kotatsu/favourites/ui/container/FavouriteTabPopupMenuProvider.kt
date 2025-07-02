@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.favourites.ui.container
+package org.dokiteam.doki.favourites.ui.container
 
 import android.content.Context
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.favourites.ui.list.FavouritesListFragment.Companion.NO_ID
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.favourites.ui.list.FavouritesListFragment.Companion.NO_ID
 
 class FavouriteTabPopupMenuProvider(
 	private val context: Context,

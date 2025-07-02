@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.list.ui.config
+package org.dokiteam.doki.list.ui.config
 
 import androidx.lifecycle.SavedStateHandle
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.runBlocking
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ListMode
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.require
-import org.koitharu.kotatsu.core.util.ext.sortedByOrdinal
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.favourites.ui.list.FavouritesListFragment.Companion.NO_ID
-import org.koitharu.kotatsu.list.domain.ListSortOrder
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ListMode
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.require
+import org.dokiteam.doki.core.util.ext.sortedByOrdinal
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.favourites.ui.list.FavouritesListFragment.Companion.NO_ID
+import org.dokiteam.doki.list.domain.ListSortOrder
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 
 @HiltViewModel

@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.google.android.material.badge.BadgeDrawable
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.databinding.ItemHeaderBinding
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.databinding.ItemHeaderBinding
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
 
 fun listHeaderAD(
 	listener: ListHeaderClickListener?,

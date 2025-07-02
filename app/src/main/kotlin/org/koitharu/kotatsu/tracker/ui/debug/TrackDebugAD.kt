@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.tracker.ui.debug
+package org.dokiteam.doki.tracker.ui.debug
 
 import android.graphics.Color
 import android.text.format.DateUtils
@@ -7,12 +7,12 @@ import androidx.core.text.bold
 import androidx.core.text.buildSpannedString
 import androidx.core.text.color
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.drawableStart
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
-import org.koitharu.kotatsu.databinding.ItemTrackDebugBinding
-import org.koitharu.kotatsu.tracker.data.TrackEntity
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.drawableStart
+import org.dokiteam.doki.core.util.ext.getThemeColor
+import org.dokiteam.doki.databinding.ItemTrackDebugBinding
+import org.dokiteam.doki.tracker.data.TrackEntity
 import androidx.appcompat.R as appcompatR
 
 fun trackDebugAD(

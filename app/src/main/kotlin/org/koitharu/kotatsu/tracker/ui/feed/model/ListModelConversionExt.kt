@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.tracker.ui.feed.model
+package org.dokiteam.doki.tracker.ui.feed.model
 
-import org.koitharu.kotatsu.tracker.domain.model.TrackingLogItem
+import org.dokiteam.doki.tracker.domain.model.TrackingLogItem
 
 fun TrackingLogItem.toFeedItem() = FeedItem(
 	id = id,

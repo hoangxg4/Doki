@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.core.ui.list.lifecycle
+package org.dokiteam.doki.core.ui.list.lifecycle
 
 import android.view.View
 import androidx.core.view.children
 import androidx.core.view.isEmpty
 import androidx.viewpager2.widget.ViewPager2
-import org.koitharu.kotatsu.core.util.ext.recyclerView
+import org.dokiteam.doki.core.util.ext.recyclerView
 
 class PagerLifecycleDispatcher(
 	private val pager: ViewPager2,

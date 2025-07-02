@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.widget.shelf
+package org.dokiteam.doki.widget.shelf
 
 import android.content.Context
 import android.content.Intent
@@ -13,16 +13,16 @@ import coil3.size.Size
 import coil3.transform.RoundedCornersTransformation
 import dagger.Lazy
 import kotlinx.coroutines.runBlocking
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.AppWidgetConfig
-import org.koitharu.kotatsu.core.ui.image.TrimTransformation
-import org.koitharu.kotatsu.core.util.ext.getDrawableOrThrow
-import org.koitharu.kotatsu.core.util.ext.mangaExtra
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.replaceWith
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.AppWidgetConfig
+import org.dokiteam.doki.core.ui.image.TrimTransformation
+import org.dokiteam.doki.core.util.ext.getDrawableOrThrow
+import org.dokiteam.doki.core.util.ext.mangaExtra
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.replaceWith
 
 class ShelfListFactory(
 	private val context: Context,

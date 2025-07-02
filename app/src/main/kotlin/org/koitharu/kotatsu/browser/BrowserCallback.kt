@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.browser
+package org.dokiteam.doki.browser
 
 interface BrowserCallback : OnHistoryChangedListener {
 

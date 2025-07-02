@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.backups.ui.periodical
+package org.dokiteam.doki.backups.ui.periodical
 
 import android.content.Intent
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.backups.data.BackupRepository
-import org.koitharu.kotatsu.backups.domain.BackupUtils
-import org.koitharu.kotatsu.backups.domain.ExternalBackupStorage
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.CoroutineIntentService
+import org.dokiteam.doki.backups.data.BackupRepository
+import org.dokiteam.doki.backups.domain.BackupUtils
+import org.dokiteam.doki.backups.domain.ExternalBackupStorage
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.CoroutineIntentService
 import java.util.zip.ZipOutputStream
 import javax.inject.Inject
 

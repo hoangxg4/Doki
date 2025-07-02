@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.core.fs
+package org.dokiteam.doki.core.fs
 
 import android.os.Build
 import androidx.annotation.RequiresApi
-import org.koitharu.kotatsu.core.util.CloseableSequence
-import org.koitharu.kotatsu.core.util.iterator.MappingIterator
+import org.dokiteam.doki.core.util.CloseableSequence
+import org.dokiteam.doki.core.util.iterator.MappingIterator
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Path

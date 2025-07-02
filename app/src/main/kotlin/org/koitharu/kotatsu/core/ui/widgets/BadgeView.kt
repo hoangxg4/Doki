@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.ui.widgets
+package org.dokiteam.doki.core.ui.widgets
 
 import android.content.Context
 import android.os.Parcel
@@ -10,7 +10,7 @@ import androidx.customview.view.AbsSavedState
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
 import com.google.android.material.textview.MaterialTextView
-import org.koitharu.kotatsu.R
+import org.dokiteam.doki.R
 
 class BadgeView @JvmOverloads constructor(
 	context: Context,

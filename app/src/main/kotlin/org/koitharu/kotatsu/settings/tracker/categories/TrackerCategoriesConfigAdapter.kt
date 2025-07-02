@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.settings.tracker.categories
+package org.dokiteam.doki.settings.tracker.categories
 
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
 
 class TrackerCategoriesConfigAdapter(
 	listener: OnListItemClickListener<FavouriteCategory>,

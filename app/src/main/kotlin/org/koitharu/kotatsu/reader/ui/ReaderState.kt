@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.reader.ui
+package org.dokiteam.doki.reader.ui
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import org.koitharu.kotatsu.core.model.MangaHistory
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.core.model.MangaHistory
+import org.dokiteam.doki.parsers.model.Manga
 
 @Parcelize
 data class ReaderState(

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.about.changelog
+package org.dokiteam.doki.settings.about.changelog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,17 +12,17 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.DialogErrorObserver
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.util.ext.consumeAll
-import org.koitharu.kotatsu.core.util.ext.container
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.showOrHide
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.databinding.FragmentChangelogBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.DialogErrorObserver
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.util.ext.consumeAll
+import org.dokiteam.doki.core.util.ext.container
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.showOrHide
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.databinding.FragmentChangelogBinding
 
 @AndroidEntryPoint
 class ChangelogFragment : BaseFragment<FragmentChangelogBinding>() {

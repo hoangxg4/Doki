@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -6,12 +6,12 @@ import android.view.View
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import com.google.android.material.snackbar.Snackbar
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.network.DoHProvider
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.parsers.util.names
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.network.DoHProvider
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.parsers.util.names
 import java.net.Proxy
 
 class NetworkSettingsFragment :

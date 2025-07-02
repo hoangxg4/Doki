@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import android.graphics.Paint
 import androidx.core.graphics.PaintCompat
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
 import java.util.Locale
 
 object LocaleUtils {

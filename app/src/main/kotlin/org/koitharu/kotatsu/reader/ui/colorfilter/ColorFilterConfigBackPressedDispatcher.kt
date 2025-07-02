@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.reader.ui.colorfilter
+package org.dokiteam.doki.reader.ui.colorfilter
 
 import android.content.DialogInterface
 import androidx.activity.OnBackPressedCallback
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.call
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.call
 
 class ColorFilterConfigBackPressedDispatcher(
 	private val activity: ColorFilterConfigActivity,

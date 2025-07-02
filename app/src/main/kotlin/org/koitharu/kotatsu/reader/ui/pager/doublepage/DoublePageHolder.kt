@@ -1,17 +1,17 @@
-package org.koitharu.kotatsu.reader.ui.pager.doublepage
+package org.dokiteam.doki.reader.ui.pager.doublepage
 
 import android.graphics.PointF
 import android.view.Gravity
 import android.widget.FrameLayout
 import androidx.lifecycle.LifecycleOwner
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.databinding.ItemPageBinding
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.config.ReaderSettings
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
-import org.koitharu.kotatsu.reader.ui.pager.standard.PageHolder
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.databinding.ItemPageBinding
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.config.ReaderSettings
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.reader.ui.pager.standard.PageHolder
 
 class DoublePageHolder(
 	owner: LifecycleOwner,

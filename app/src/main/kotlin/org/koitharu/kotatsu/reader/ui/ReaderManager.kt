@@ -1,19 +1,19 @@
-package org.koitharu.kotatsu.reader.ui
+package org.dokiteam.doki.reader.ui
 
 import android.content.res.Configuration
 import androidx.fragment.app.FragmentContainerView
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ReaderMode
-import org.koitharu.kotatsu.core.util.ext.findKeyByValue
-import org.koitharu.kotatsu.reader.ui.pager.BaseReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.doublepage.DoubleReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.doublereversed.ReversedDoubleReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.reversed.ReversedReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.standard.PagerReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.vertical.VerticalReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.webtoon.WebtoonReaderFragment
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ReaderMode
+import org.dokiteam.doki.core.util.ext.findKeyByValue
+import org.dokiteam.doki.reader.ui.pager.BaseReaderFragment
+import org.dokiteam.doki.reader.ui.pager.doublepage.DoubleReaderFragment
+import org.dokiteam.doki.reader.ui.pager.doublereversed.ReversedDoubleReaderFragment
+import org.dokiteam.doki.reader.ui.pager.reversed.ReversedReaderFragment
+import org.dokiteam.doki.reader.ui.pager.standard.PagerReaderFragment
+import org.dokiteam.doki.reader.ui.pager.vertical.VerticalReaderFragment
+import org.dokiteam.doki.reader.ui.pager.webtoon.WebtoonReaderFragment
 import java.util.EnumMap
 
 class ReaderManager(

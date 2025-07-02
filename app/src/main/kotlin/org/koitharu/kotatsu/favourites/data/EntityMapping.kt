@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.favourites.data
+package org.dokiteam.doki.favourites.data
 
-import org.koitharu.kotatsu.core.db.entity.toManga
-import org.koitharu.kotatsu.core.db.entity.toMangaTags
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.list.domain.ListSortOrder
+import org.dokiteam.doki.core.db.entity.toManga
+import org.dokiteam.doki.core.db.entity.toMangaTags
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.list.domain.ListSortOrder
 import java.time.Instant
 
 fun FavouriteCategoryEntity.toFavouriteCategory(id: Long = categoryId.toLong()) = FavouriteCategory(

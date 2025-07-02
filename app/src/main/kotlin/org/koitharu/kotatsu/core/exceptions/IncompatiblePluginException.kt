@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.exceptions
+package org.dokiteam.doki.core.exceptions
 
 class IncompatiblePluginException(
 	val name: String?,

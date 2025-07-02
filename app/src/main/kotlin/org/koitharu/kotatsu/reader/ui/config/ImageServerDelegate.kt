@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.reader.ui.config
+package org.dokiteam.doki.reader.ui.config
 
 import android.content.Context
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.parsers.config.ConfigKey
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.mapToArray
-import org.koitharu.kotatsu.parsers.util.suspendlazy.getOrNull
-import org.koitharu.kotatsu.parsers.util.suspendlazy.suspendLazy
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.parsers.config.ConfigKey
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.mapToArray
+import org.dokiteam.doki.parsers.util.suspendlazy.getOrNull
+import org.dokiteam.doki.parsers.util.suspendlazy.suspendLazy
 import kotlin.coroutines.resume
 
 class ImageServerDelegate(

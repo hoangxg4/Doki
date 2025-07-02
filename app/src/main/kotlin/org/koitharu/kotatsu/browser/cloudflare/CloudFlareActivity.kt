@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.browser.cloudflare
+package org.dokiteam.doki.browser.cloudflare
 
 import android.content.Context
 import android.content.Intent
@@ -16,20 +16,20 @@ import kotlinx.coroutines.runInterruptible
 import kotlinx.coroutines.yield
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.browser.BaseBrowserActivity
-import org.koitharu.kotatsu.core.exceptions.CloudFlareProtectedException
-import org.koitharu.kotatsu.core.exceptions.resolve.CaptchaHandler
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.network.cookies.MutableCookieJar
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.network.CloudFlareHelper
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.R
+import org.dokiteam.doki.browser.BaseBrowserActivity
+import org.dokiteam.doki.core.exceptions.CloudFlareProtectedException
+import org.dokiteam.doki.core.exceptions.resolve.CaptchaHandler
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.network.cookies.MutableCookieJar
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.network.CloudFlareHelper
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 
 @AndroidEntryPoint

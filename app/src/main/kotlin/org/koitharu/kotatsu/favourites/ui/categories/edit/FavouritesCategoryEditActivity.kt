@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.categories.edit
+package org.dokiteam.doki.favourites.ui.categories.edit
 
 import android.content.Context
 import android.os.Bundle
@@ -11,20 +11,20 @@ import androidx.activity.viewModels
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.util.DefaultTextWatcher
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.getSerializableCompat
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.setChecked
-import org.koitharu.kotatsu.core.util.ext.sortedByOrdinal
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.ActivityCategoryEditBinding
-import org.koitharu.kotatsu.list.domain.ListSortOrder
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.util.DefaultTextWatcher
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.getSerializableCompat
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.setChecked
+import org.dokiteam.doki.core.util.ext.sortedByOrdinal
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.ActivityCategoryEditBinding
+import org.dokiteam.doki.list.domain.ListSortOrder
 
 @AndroidEntryPoint
 class FavouritesCategoryEditActivity :

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui
+package org.dokiteam.doki.reader.ui
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -17,18 +17,18 @@ import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import com.google.android.material.slider.Slider
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ReaderControl
-import org.koitharu.kotatsu.core.util.ext.hasVisibleChildren
-import org.koitharu.kotatsu.core.util.ext.isRtl
-import org.koitharu.kotatsu.core.util.ext.setContentDescriptionAndTooltip
-import org.koitharu.kotatsu.core.util.ext.setValueRounded
-import org.koitharu.kotatsu.databinding.LayoutReaderActionsBinding
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesSheet
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesSheet.Companion.TAB_PAGES
-import org.koitharu.kotatsu.reader.ui.ReaderControlDelegate.OnInteractionListener
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ReaderControl
+import org.dokiteam.doki.core.util.ext.hasVisibleChildren
+import org.dokiteam.doki.core.util.ext.isRtl
+import org.dokiteam.doki.core.util.ext.setContentDescriptionAndTooltip
+import org.dokiteam.doki.core.util.ext.setValueRounded
+import org.dokiteam.doki.databinding.LayoutReaderActionsBinding
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet.Companion.TAB_PAGES
+import org.dokiteam.doki.reader.ui.ReaderControlDelegate.OnInteractionListener
 import javax.inject.Inject
 import com.google.android.material.R as materialR
 

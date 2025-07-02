@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.storage.directories
+package org.dokiteam.doki.settings.storage.directories
 
 import android.net.Uri
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -6,12 +6,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.flow.MutableStateFlow
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.isReadable
-import org.koitharu.kotatsu.core.util.ext.isWriteable
-import org.koitharu.kotatsu.local.data.LocalStorageManager
-import org.koitharu.kotatsu.settings.storage.DirectoryModel
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.isReadable
+import org.dokiteam.doki.core.util.ext.isWriteable
+import org.dokiteam.doki.local.data.LocalStorageManager
+import org.dokiteam.doki.settings.storage.DirectoryModel
 import java.io.File
 import javax.inject.Inject
 

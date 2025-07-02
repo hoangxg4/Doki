@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.settings.sources.model
+package org.dokiteam.doki.settings.sources.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.model.MangaSource
 
 sealed interface SourceConfigItem : ListModel {
 

@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.reader.ui.pager.reversed
+package org.dokiteam.doki.reader.ui.pager.reversed
 
 import androidx.viewpager2.widget.ViewPager2
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.reader.ui.ReaderState
-import org.koitharu.kotatsu.reader.ui.pager.BasePagerReaderFragment
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.reader.ui.ReaderState
+import org.dokiteam.doki.reader.ui.pager.BasePagerReaderFragment
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import javax.inject.Inject
 
 @AndroidEntryPoint

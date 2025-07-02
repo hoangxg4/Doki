@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.remotelist.ui
+package org.dokiteam.doki.remotelist.ui
 
 import android.view.Menu
 import android.view.MenuInflater
@@ -6,12 +6,12 @@ import android.view.MenuItem
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.MenuProvider
 import androidx.core.view.inputmethod.EditorInfoCompat
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.util.ReversibleAction
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.filter.ui.FilterCoordinator
-import org.koitharu.kotatsu.list.ui.MangaListViewModel
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.util.ReversibleAction
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.list.ui.MangaListViewModel
+import org.dokiteam.doki.parsers.model.MangaListFilter
 
 class MangaSearchMenuProvider(
 	private val filter: FilterCoordinator,

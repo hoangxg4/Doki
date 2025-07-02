@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.pager
+package org.dokiteam.doki.details.ui.pager
 
 import android.view.Menu
 import android.view.MenuInflater
@@ -9,14 +9,14 @@ import androidx.core.view.MenuProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.slider.LabelFormatter
 import com.google.android.material.slider.Slider
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.sheet.BaseAdaptiveSheet
-import org.koitharu.kotatsu.core.util.ext.setValueRounded
-import org.koitharu.kotatsu.core.util.progress.IntPercentLabelFormatter
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesSheet.Companion.TAB_BOOKMARKS
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesSheet.Companion.TAB_CHAPTERS
-import org.koitharu.kotatsu.details.ui.pager.ChaptersPagesSheet.Companion.TAB_PAGES
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.sheet.BaseAdaptiveSheet
+import org.dokiteam.doki.core.util.ext.setValueRounded
+import org.dokiteam.doki.core.util.progress.IntPercentLabelFormatter
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet.Companion.TAB_BOOKMARKS
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet.Companion.TAB_CHAPTERS
+import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet.Companion.TAB_PAGES
 import java.lang.ref.WeakReference
 
 class ChapterPagesMenuProvider(

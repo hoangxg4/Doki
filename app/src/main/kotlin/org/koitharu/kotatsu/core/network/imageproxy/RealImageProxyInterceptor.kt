@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network.imageproxy
+package org.dokiteam.doki.core.network.imageproxy
 
 import coil3.intercept.Interceptor
 import coil3.request.ImageResult
@@ -7,10 +7,10 @@ import kotlinx.coroutines.plus
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.observeAsStateFlow
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
-import org.koitharu.kotatsu.parsers.util.await
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.observeAsStateFlow
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.parsers.util.await
 import javax.inject.Inject
 import javax.inject.Singleton
 

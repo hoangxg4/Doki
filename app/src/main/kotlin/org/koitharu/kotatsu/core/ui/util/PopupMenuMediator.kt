@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.ui.util
+package org.dokiteam.doki.core.ui.util
 
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.widget.PopupMenu
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.core.ui.OnContextClickListenerCompat
-import org.koitharu.kotatsu.core.util.ext.setOnContextClickListenerCompat
+import org.dokiteam.doki.core.ui.OnContextClickListenerCompat
+import org.dokiteam.doki.core.util.ext.setOnContextClickListenerCompat
 
 class PopupMenuMediator(
 	private val provider: MenuProvider,

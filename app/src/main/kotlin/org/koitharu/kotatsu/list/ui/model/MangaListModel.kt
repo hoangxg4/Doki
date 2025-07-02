@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
 import android.content.Context
 import androidx.core.text.bold
 import androidx.core.text.buildSpannedString
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback.Companion.PAYLOAD_ANYTHING_CHANGED
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.list.ui.ListModelDiffCallback.Companion.PAYLOAD_ANYTHING_CHANGED
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
 
 sealed class MangaListModel : ListModel {
 

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.userdata
+package org.dokiteam.doki.settings.userdata
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -14,26 +14,26 @@ import androidx.preference.Preference
 import androidx.preference.TwoStatePreference
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.backups.domain.BackupUtils
-import org.koitharu.kotatsu.backups.ui.backup.BackupService
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.os.AppShortcutManager
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ScreenshotsPolicy
-import org.koitharu.kotatsu.core.prefs.SearchSuggestionType
-import org.koitharu.kotatsu.core.prefs.TriStateOption
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.FileSize
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.parsers.util.mapToSet
-import org.koitharu.kotatsu.parsers.util.names
-import org.koitharu.kotatsu.settings.protect.ProtectSetupActivity
-import org.koitharu.kotatsu.settings.utils.MultiSummaryProvider
+import org.dokiteam.doki.R
+import org.dokiteam.doki.backups.domain.BackupUtils
+import org.dokiteam.doki.backups.ui.backup.BackupService
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.os.AppShortcutManager
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ScreenshotsPolicy
+import org.dokiteam.doki.core.prefs.SearchSuggestionType
+import org.dokiteam.doki.core.prefs.TriStateOption
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.FileSize
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.parsers.util.mapToSet
+import org.dokiteam.doki.parsers.util.names
+import org.dokiteam.doki.settings.protect.ProtectSetupActivity
+import org.dokiteam.doki.settings.utils.MultiSummaryProvider
 import javax.inject.Inject
 
 @AndroidEntryPoint

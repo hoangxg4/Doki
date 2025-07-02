@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.standard
+package org.dokiteam.doki.reader.ui.pager.standard
 
 import android.annotation.SuppressLint
 import android.graphics.PointF
@@ -18,16 +18,16 @@ import androidx.core.view.setMargins
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.LifecycleOwner
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.ExceptionResolver
-import org.koitharu.kotatsu.core.model.ZoomMode
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.core.ui.widgets.ZoomControl
-import org.koitharu.kotatsu.databinding.ItemPageBinding
-import org.koitharu.kotatsu.reader.domain.PageLoader
-import org.koitharu.kotatsu.reader.ui.config.ReaderSettings
-import org.koitharu.kotatsu.reader.ui.pager.BasePageHolder
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.ExceptionResolver
+import org.dokiteam.doki.core.model.ZoomMode
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.core.ui.widgets.ZoomControl
+import org.dokiteam.doki.databinding.ItemPageBinding
+import org.dokiteam.doki.reader.domain.PageLoader
+import org.dokiteam.doki.reader.ui.config.ReaderSettings
+import org.dokiteam.doki.reader.ui.pager.BasePageHolder
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 
 open class PageHolder(
 	owner: LifecycleOwner,

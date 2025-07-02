@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.stats.data
+package org.dokiteam.doki.stats.data
 
 import androidx.room.Dao
 import androidx.room.MapColumn
@@ -8,7 +8,7 @@ import androidx.room.Upsert
 import androidx.sqlite.db.SimpleSQLiteQuery
 import androidx.sqlite.db.SupportSQLiteQuery
 import kotlinx.coroutines.flow.Flow
-import org.koitharu.kotatsu.core.db.entity.MangaEntity
+import org.dokiteam.doki.core.db.entity.MangaEntity
 
 @Dao
 abstract class StatsDao {

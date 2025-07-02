@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.nav
+package org.dokiteam.doki.settings.nav
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -10,26 +10,26 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.NavItem
-import org.koitharu.kotatsu.core.ui.BaseFragment
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.dialog.buildAlertDialog
-import org.koitharu.kotatsu.core.ui.dialog.setRecyclerViewList
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.util.RecyclerViewOwner
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.container
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.databinding.FragmentSettingsSourcesBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.settings.nav.adapter.navAddAD
-import org.koitharu.kotatsu.settings.nav.adapter.navAvailableAD
-import org.koitharu.kotatsu.settings.nav.adapter.navConfigAD
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.NavItem
+import org.dokiteam.doki.core.ui.BaseFragment
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.dialog.buildAlertDialog
+import org.dokiteam.doki.core.ui.dialog.setRecyclerViewList
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.container
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.databinding.FragmentSettingsSourcesBinding
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.settings.nav.adapter.navAddAD
+import org.dokiteam.doki.settings.nav.adapter.navAvailableAD
+import org.dokiteam.doki.settings.nav.adapter.navConfigAD
 
 @AndroidEntryPoint
 class NavConfigFragment : BaseFragment<FragmentSettingsSourcesBinding>(), RecyclerViewOwner,

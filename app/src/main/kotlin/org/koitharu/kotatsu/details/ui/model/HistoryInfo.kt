@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.details.ui.model
+package org.dokiteam.doki.details.ui.model
 
-import org.koitharu.kotatsu.core.model.MangaHistory
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.details.data.ReadingTime
+import org.dokiteam.doki.core.model.MangaHistory
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.details.data.ReadingTime
 
 data class HistoryInfo(
 	val totalChapters: Int,

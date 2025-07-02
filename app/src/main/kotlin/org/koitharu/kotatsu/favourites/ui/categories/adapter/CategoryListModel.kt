@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.favourites.ui.categories.adapter
+package org.dokiteam.doki.favourites.ui.categories.adapter
 
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.favourites.domain.model.Cover
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.favourites.domain.model.Cover
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.model.ListModel
 
 class CategoryListModel(
 	val mangaCount: Int,

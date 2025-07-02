@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.colorfilter
+package org.dokiteam.doki.reader.ui.colorfilter
 
 import android.content.res.Resources
 import android.os.Bundle
@@ -16,19 +16,19 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.slider.LabelFormatter
 import com.google.android.material.slider.Slider
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.setChecked
-import org.koitharu.kotatsu.core.util.ext.setValueRounded
-import org.koitharu.kotatsu.core.util.ext.systemBarsInsets
-import org.koitharu.kotatsu.core.util.progress.ImageRequestIndicatorListener
-import org.koitharu.kotatsu.databinding.ActivityColorFilterBinding
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.util.format
-import org.koitharu.kotatsu.reader.domain.ReaderColorFilter
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.setChecked
+import org.dokiteam.doki.core.util.ext.setValueRounded
+import org.dokiteam.doki.core.util.ext.systemBarsInsets
+import org.dokiteam.doki.core.util.progress.ImageRequestIndicatorListener
+import org.dokiteam.doki.databinding.ActivityColorFilterBinding
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.util.format
+import org.dokiteam.doki.reader.domain.ReaderColorFilter
 import javax.inject.Inject
 
 @AndroidEntryPoint

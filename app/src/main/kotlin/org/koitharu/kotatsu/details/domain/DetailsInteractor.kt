@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.domain
+package org.dokiteam.doki.details.domain
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -6,21 +6,21 @@ import kotlinx.coroutines.flow.distinctUntilChangedBy
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.TriStateOption
-import org.koitharu.kotatsu.core.prefs.observeAsFlow
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.history.data.HistoryRepository
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.local.domain.model.LocalManga
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingInfo
-import org.koitharu.kotatsu.tracker.domain.TrackingRepository
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.TriStateOption
+import org.dokiteam.doki.core.prefs.observeAsFlow
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.history.data.HistoryRepository
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.local.domain.model.LocalManga
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingInfo
+import org.dokiteam.doki.tracker.domain.TrackingRepository
 import javax.inject.Inject
 
 /* TODO: remove */

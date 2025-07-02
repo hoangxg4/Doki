@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.util.iterator
+package org.dokiteam.doki.core.util.iterator
 
 class MappingIterator<T, R>(
 	private val upstream: Iterator<T>,

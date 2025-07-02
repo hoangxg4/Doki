@@ -1,14 +1,14 @@
-package org.koitharu.kotatsu.reader.domain
+package org.dokiteam.doki.reader.domain
 
 import android.util.LongSparseArray
 import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import javax.inject.Inject
 
 private const val PAGES_TRIM_THRESHOLD = 120

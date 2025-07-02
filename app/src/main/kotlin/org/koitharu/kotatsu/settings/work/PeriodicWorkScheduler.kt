@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.work
+package org.dokiteam.doki.settings.work
 
 interface PeriodicWorkScheduler {
 

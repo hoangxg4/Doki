@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.pager
+package org.dokiteam.doki.details.ui.pager
 
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout

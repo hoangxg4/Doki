@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.details.domain
+package org.dokiteam.doki.details.domain
 
-import org.koitharu.kotatsu.core.model.MangaHistory
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.details.data.ReadingTime
-import org.koitharu.kotatsu.parsers.util.findById
-import org.koitharu.kotatsu.stats.data.StatsRepository
+import org.dokiteam.doki.core.model.MangaHistory
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.details.data.ReadingTime
+import org.dokiteam.doki.parsers.util.findById
+import org.dokiteam.doki.stats.data.StatsRepository
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import kotlin.math.roundToInt

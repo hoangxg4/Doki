@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.filter.ui.tags
+package org.dokiteam.doki.filter.ui.tags
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,17 +12,17 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.sheet.AdaptiveSheetBehavior
-import org.koitharu.kotatsu.core.ui.sheet.AdaptiveSheetCallback
-import org.koitharu.kotatsu.core.ui.sheet.BaseAdaptiveSheet
-import org.koitharu.kotatsu.core.ui.util.DefaultTextWatcher
-import org.koitharu.kotatsu.core.util.ext.consumeAll
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.databinding.SheetTagsBinding
-import org.koitharu.kotatsu.filter.ui.FilterCoordinator
-import org.koitharu.kotatsu.filter.ui.model.TagCatalogItem
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.sheet.AdaptiveSheetBehavior
+import org.dokiteam.doki.core.ui.sheet.AdaptiveSheetCallback
+import org.dokiteam.doki.core.ui.sheet.BaseAdaptiveSheet
+import org.dokiteam.doki.core.ui.util.DefaultTextWatcher
+import org.dokiteam.doki.core.util.ext.consumeAll
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.databinding.SheetTagsBinding
+import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.filter.ui.model.TagCatalogItem
 
 @AndroidEntryPoint
 class TagsCatalogSheet : BaseAdaptiveSheet<SheetTagsBinding>(),

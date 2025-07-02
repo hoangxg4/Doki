@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.favourites.ui.container
+package org.dokiteam.doki.favourites.ui.container
 
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.ListModel
 
 data class FavouriteTabModel(
 	val id: Long,

@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.network.cookies
+package org.dokiteam.doki.core.network.cookies
 
 import android.webkit.CookieManager
 import androidx.annotation.WorkerThread
 import androidx.core.util.Predicate
 import okhttp3.Cookie
 import okhttp3.HttpUrl
-import org.koitharu.kotatsu.parsers.util.newBuilder
+import org.dokiteam.doki.parsers.util.newBuilder
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 

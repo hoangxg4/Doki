@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
@@ -8,21 +8,21 @@ import androidx.preference.ListPreference
 import androidx.preference.MultiSelectListPreference
 import androidx.preference.Preference
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.ZoomMode
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.prefs.ReaderAnimation
-import org.koitharu.kotatsu.core.prefs.ReaderBackground
-import org.koitharu.kotatsu.core.prefs.ReaderControl
-import org.koitharu.kotatsu.core.prefs.ReaderMode
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
-import org.koitharu.kotatsu.parsers.util.mapToSet
-import org.koitharu.kotatsu.parsers.util.names
-import org.koitharu.kotatsu.settings.utils.MultiSummaryProvider
-import org.koitharu.kotatsu.settings.utils.PercentSummaryProvider
-import org.koitharu.kotatsu.settings.utils.SliderPreference
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.ZoomMode
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.prefs.ReaderAnimation
+import org.dokiteam.doki.core.prefs.ReaderBackground
+import org.dokiteam.doki.core.prefs.ReaderControl
+import org.dokiteam.doki.core.prefs.ReaderMode
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.setDefaultValueCompat
+import org.dokiteam.doki.parsers.util.mapToSet
+import org.dokiteam.doki.parsers.util.names
+import org.dokiteam.doki.settings.utils.MultiSummaryProvider
+import org.dokiteam.doki.settings.utils.PercentSummaryProvider
+import org.dokiteam.doki.settings.utils.SliderPreference
 
 @AndroidEntryPoint
 class ReaderSettingsFragment :

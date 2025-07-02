@@ -1,5 +1,5 @@
-package org.koitharu.kotatsu.suggestions.ui
+package org.dokiteam.doki.suggestions.ui
 
-import org.koitharu.kotatsu.core.ui.FragmentContainerActivity
+import org.dokiteam.doki.core.ui.FragmentContainerActivity
 
 class SuggestionsActivity : FragmentContainerActivity(SuggestionsFragment::class.java)

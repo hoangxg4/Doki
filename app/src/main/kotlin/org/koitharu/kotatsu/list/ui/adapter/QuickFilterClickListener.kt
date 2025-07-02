@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.list.ui.adapter
+package org.dokiteam.doki.list.ui.adapter
 
-import org.koitharu.kotatsu.list.domain.ListFilterOption
+import org.dokiteam.doki.list.domain.ListFilterOption
 
 interface QuickFilterClickListener {
 

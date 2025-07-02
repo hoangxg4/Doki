@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.scrobbling
+package org.dokiteam.doki.details.ui.scrobbling
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,19 +15,19 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.activityViewModels
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.sheet.BaseAdaptiveSheet
-import org.koitharu.kotatsu.core.util.ext.consume
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.sanitize
-import org.koitharu.kotatsu.databinding.SheetScrobblingBinding
-import org.koitharu.kotatsu.details.ui.DetailsViewModel
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingInfo
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingStatus
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.sheet.BaseAdaptiveSheet
+import org.dokiteam.doki.core.util.ext.consume
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.sanitize
+import org.dokiteam.doki.databinding.SheetScrobblingBinding
+import org.dokiteam.doki.details.ui.DetailsViewModel
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingInfo
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingStatus
 
 @AndroidEntryPoint
 class ScrobblingInfoSheet :

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,27 +17,27 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.material.appbar.AppBarLayout
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.util.ext.buildBundle
-import org.koitharu.kotatsu.core.util.ext.end
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.start
-import org.koitharu.kotatsu.core.util.ext.textAndVisible
-import org.koitharu.kotatsu.databinding.ActivitySettingsBinding
-import org.koitharu.kotatsu.main.ui.owners.AppBarOwner
-import org.koitharu.kotatsu.settings.about.AboutSettingsFragment
-import org.koitharu.kotatsu.settings.search.SettingsItem
-import org.koitharu.kotatsu.settings.search.SettingsSearchFragment
-import org.koitharu.kotatsu.settings.search.SettingsSearchViewModel
-import org.koitharu.kotatsu.settings.sources.SourceSettingsFragment
-import org.koitharu.kotatsu.settings.sources.SourcesSettingsFragment
-import org.koitharu.kotatsu.settings.sources.manage.SourcesManageFragment
-import org.koitharu.kotatsu.settings.tracker.TrackerSettingsFragment
-import org.koitharu.kotatsu.settings.userdata.UserDataSettingsFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.util.ext.buildBundle
+import org.dokiteam.doki.core.util.ext.end
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.start
+import org.dokiteam.doki.core.util.ext.textAndVisible
+import org.dokiteam.doki.databinding.ActivitySettingsBinding
+import org.dokiteam.doki.main.ui.owners.AppBarOwner
+import org.dokiteam.doki.settings.about.AboutSettingsFragment
+import org.dokiteam.doki.settings.search.SettingsItem
+import org.dokiteam.doki.settings.search.SettingsSearchFragment
+import org.dokiteam.doki.settings.search.SettingsSearchViewModel
+import org.dokiteam.doki.settings.sources.SourceSettingsFragment
+import org.dokiteam.doki.settings.sources.SourcesSettingsFragment
+import org.dokiteam.doki.settings.sources.manage.SourcesManageFragment
+import org.dokiteam.doki.settings.tracker.TrackerSettingsFragment
+import org.dokiteam.doki.settings.userdata.UserDataSettingsFragment
 
 @AndroidEntryPoint
 class SettingsActivity :

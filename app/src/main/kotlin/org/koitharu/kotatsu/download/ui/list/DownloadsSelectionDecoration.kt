@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.download.ui.list
+package org.dokiteam.doki.download.ui.list
 
 import android.content.Context
 import android.graphics.Canvas
@@ -11,10 +11,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.ColorUtils
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.NO_ID
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.list.decor.AbstractSelectionItemDecoration
-import org.koitharu.kotatsu.core.util.ext.getItem
-import org.koitharu.kotatsu.core.util.ext.getThemeColor
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.list.decor.AbstractSelectionItemDecoration
+import org.dokiteam.doki.core.util.ext.getItem
+import org.dokiteam.doki.core.util.ext.getThemeColor
 import androidx.appcompat.R as appcompatR
 import com.google.android.material.R as materialR
 

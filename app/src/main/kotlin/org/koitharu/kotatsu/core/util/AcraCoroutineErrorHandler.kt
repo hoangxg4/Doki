@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import kotlinx.coroutines.CoroutineExceptionHandler
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.report
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.report
 import kotlin.coroutines.AbstractCoroutineContextElement
 import kotlin.coroutines.CoroutineContext
 

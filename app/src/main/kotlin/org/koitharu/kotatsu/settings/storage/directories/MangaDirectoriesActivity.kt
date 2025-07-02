@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.storage.directories
+package org.dokiteam.doki.settings.storage.directories
 
 import android.Manifest
 import android.content.Intent
@@ -15,19 +15,19 @@ import androidx.core.view.updatePadding
 import com.google.android.material.snackbar.Snackbar
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.exceptions.resolve.SnackbarErrorObserver
-import org.koitharu.kotatsu.core.os.OpenDocumentTreeHelper
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.consumeAllSystemBarsInsets
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.tryLaunch
-import org.koitharu.kotatsu.databinding.ActivityMangaDirectoriesBinding
-import org.koitharu.kotatsu.settings.storage.DirectoryDiffCallback
-import org.koitharu.kotatsu.settings.storage.DirectoryModel
-import org.koitharu.kotatsu.settings.storage.RequestStorageManagerPermissionContract
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.exceptions.resolve.SnackbarErrorObserver
+import org.dokiteam.doki.core.os.OpenDocumentTreeHelper
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.consumeAllSystemBarsInsets
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.tryLaunch
+import org.dokiteam.doki.databinding.ActivityMangaDirectoriesBinding
+import org.dokiteam.doki.settings.storage.DirectoryDiffCallback
+import org.dokiteam.doki.settings.storage.DirectoryModel
+import org.dokiteam.doki.settings.storage.RequestStorageManagerPermissionContract
 
 @AndroidEntryPoint
 class MangaDirectoriesActivity : BaseActivity<ActivityMangaDirectoriesBinding>(),

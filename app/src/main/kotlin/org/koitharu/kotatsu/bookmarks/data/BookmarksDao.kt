@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.bookmarks.data
+package org.dokiteam.doki.bookmarks.data
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -10,7 +10,7 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.isActive
-import org.koitharu.kotatsu.core.db.entity.MangaWithTags
+import org.dokiteam.doki.core.db.entity.MangaWithTags
 
 @Dao
 abstract class BookmarksDao {

@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.core.parser.external
+package org.dokiteam.doki.core.parser.external
 
 import android.database.Cursor
 import android.database.CursorWrapper
-import org.koitharu.kotatsu.core.exceptions.IncompatiblePluginException
-import org.koitharu.kotatsu.core.util.ext.getBoolean
+import org.dokiteam.doki.core.exceptions.IncompatiblePluginException
+import org.dokiteam.doki.core.util.ext.getBoolean
 
 class ExternalPluginCursor(private val source: ExternalMangaSource, cursor: Cursor) : CursorWrapper(cursor) {
 

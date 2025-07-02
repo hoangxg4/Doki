@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.explore.ui.model
+package org.dokiteam.doki.explore.ui.model
 
-import org.koitharu.kotatsu.core.model.MangaSourceInfo
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.util.longHashCode
+import org.dokiteam.doki.core.model.MangaSourceInfo
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.util.longHashCode
 
 data class MangaSourceItem(
 	val source: MangaSourceInfo,

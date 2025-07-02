@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.core.exceptions
+package org.dokiteam.doki.core.exceptions
 
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.Manga
 
 class UnsupportedSourceException(
 	message: String?,

@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.core.ui.util
+package org.dokiteam.doki.core.ui.util
 
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.flow.FlowCollector
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.util.ext.findActivity
-import org.koitharu.kotatsu.main.ui.owners.BottomNavOwner
-import org.koitharu.kotatsu.main.ui.owners.BottomSheetOwner
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.util.ext.findActivity
+import org.dokiteam.doki.main.ui.owners.BottomNavOwner
+import org.dokiteam.doki.main.ui.owners.BottomSheetOwner
 
 class ReversibleActionObserver(
 	private val snackbarHost: View,

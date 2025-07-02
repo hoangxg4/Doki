@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -15,18 +15,18 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.network.BaseHttpClient
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.viewLifecycleScope
-import org.koitharu.kotatsu.parsers.util.await
-import org.koitharu.kotatsu.settings.utils.EditTextBindListener
-import org.koitharu.kotatsu.settings.utils.PasswordSummaryProvider
-import org.koitharu.kotatsu.settings.utils.validation.DomainValidator
-import org.koitharu.kotatsu.settings.utils.validation.PortNumberValidator
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.network.BaseHttpClient
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.viewLifecycleScope
+import org.dokiteam.doki.parsers.util.await
+import org.dokiteam.doki.settings.utils.EditTextBindListener
+import org.dokiteam.doki.settings.utils.PasswordSummaryProvider
+import org.dokiteam.doki.settings.utils.validation.DomainValidator
+import org.dokiteam.doki.settings.utils.validation.PortNumberValidator
 import java.net.Proxy
 import javax.inject.Inject
 import kotlin.coroutines.cancellation.CancellationException

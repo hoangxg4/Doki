@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.scrobbling.anilist.domain
+package org.dokiteam.doki.scrobbling.anilist.domain
 
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.scrobbling.anilist.data.AniListRepository
-import org.koitharu.kotatsu.scrobbling.common.domain.Scrobbler
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblingStatus
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.scrobbling.anilist.data.AniListRepository
+import org.dokiteam.doki.scrobbling.common.domain.Scrobbler
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblingStatus
 import javax.inject.Inject
 import javax.inject.Singleton
 

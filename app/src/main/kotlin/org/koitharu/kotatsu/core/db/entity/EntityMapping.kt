@@ -1,17 +1,17 @@
-package org.koitharu.kotatsu.core.db.entity
+package org.dokiteam.doki.core.db.entity
 
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.ContentRating
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaState
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.util.longHashCode
-import org.koitharu.kotatsu.parsers.util.mapToSet
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.parsers.util.toArraySet
-import org.koitharu.kotatsu.parsers.util.toTitleCase
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.parsers.model.ContentRating
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.model.MangaState
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.parsers.model.SortOrder
+import org.dokiteam.doki.parsers.util.longHashCode
+import org.dokiteam.doki.parsers.util.mapToSet
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.parsers.util.toArraySet
+import org.dokiteam.doki.parsers.util.toTitleCase
 
 private const val VALUES_DIVIDER = '\n'
 

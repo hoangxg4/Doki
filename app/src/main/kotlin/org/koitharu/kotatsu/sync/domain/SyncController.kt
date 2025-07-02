@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.sync.domain
+package org.dokiteam.doki.sync.domain
 
 import android.accounts.Account
 import android.accounts.AccountManager
@@ -18,12 +18,12 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITES
-import org.koitharu.kotatsu.core.db.TABLE_FAVOURITE_CATEGORIES
-import org.koitharu.kotatsu.core.db.TABLE_HISTORY
-import org.koitharu.kotatsu.core.util.ext.processLifecycleScope
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.core.db.TABLE_FAVOURITES
+import org.dokiteam.doki.core.db.TABLE_FAVOURITE_CATEGORIES
+import org.dokiteam.doki.core.db.TABLE_HISTORY
+import org.dokiteam.doki.core.util.ext.processLifecycleScope
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Provider

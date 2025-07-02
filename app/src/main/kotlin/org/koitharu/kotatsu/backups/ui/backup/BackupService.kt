@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.backups.ui.backup
+package org.dokiteam.doki.backups.ui.backup
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -13,17 +13,17 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.backups.data.BackupRepository
-import org.koitharu.kotatsu.backups.ui.BaseBackupRestoreService
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.util.CompositeResult
-import org.koitharu.kotatsu.core.util.ext.checkNotificationPermission
-import org.koitharu.kotatsu.core.util.ext.powerManager
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.toUriOrNull
-import org.koitharu.kotatsu.core.util.ext.withPartialWakeLock
-import org.koitharu.kotatsu.core.util.progress.Progress
+import org.dokiteam.doki.R
+import org.dokiteam.doki.backups.data.BackupRepository
+import org.dokiteam.doki.backups.ui.BaseBackupRestoreService
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.util.CompositeResult
+import org.dokiteam.doki.core.util.ext.checkNotificationPermission
+import org.dokiteam.doki.core.util.ext.powerManager
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.toUriOrNull
+import org.dokiteam.doki.core.util.ext.withPartialWakeLock
+import org.dokiteam.doki.core.util.progress.Progress
 import java.io.FileNotFoundException
 import java.util.zip.ZipOutputStream
 import javax.inject.Inject

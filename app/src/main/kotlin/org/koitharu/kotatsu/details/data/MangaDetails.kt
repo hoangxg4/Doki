@@ -1,15 +1,15 @@
-package org.koitharu.kotatsu.details.data
+package org.dokiteam.doki.details.data
 
-import org.koitharu.kotatsu.core.model.getLocale
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.model.withOverride
-import org.koitharu.kotatsu.core.ui.model.MangaOverride
-import org.koitharu.kotatsu.local.domain.model.LocalManga
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.reader.data.filterChapters
+import org.dokiteam.doki.core.model.getLocale
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.model.withOverride
+import org.dokiteam.doki.core.ui.model.MangaOverride
+import org.dokiteam.doki.local.domain.model.LocalManga
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.reader.data.filterChapters
 import java.util.Locale
 
 data class MangaDetails(

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.sources.catalog
+package org.dokiteam.doki.settings.sources.catalog
 
 import android.os.Bundle
 import android.view.Menu
@@ -14,24 +14,24 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.chip.Chip
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.combine
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.model.titleResId
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.core.ui.BaseActivity
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.ui.util.FadingAppbarMediator
-import org.koitharu.kotatsu.core.ui.util.ReversibleActionObserver
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView.ChipModel
-import org.koitharu.kotatsu.core.util.LocaleComparator
-import org.koitharu.kotatsu.core.util.ext.getDisplayName
-import org.koitharu.kotatsu.core.util.ext.observe
-import org.koitharu.kotatsu.core.util.ext.observeEvent
-import org.koitharu.kotatsu.core.util.ext.toLocale
-import org.koitharu.kotatsu.databinding.ActivitySourcesCatalogBinding
-import org.koitharu.kotatsu.list.ui.adapter.TypedListSpacingDecoration
-import org.koitharu.kotatsu.main.ui.owners.AppBarOwner
-import org.koitharu.kotatsu.parsers.model.ContentType
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.titleResId
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.core.ui.BaseActivity
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.util.FadingAppbarMediator
+import org.dokiteam.doki.core.ui.util.ReversibleActionObserver
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.core.ui.widgets.ChipsView.ChipModel
+import org.dokiteam.doki.core.util.LocaleComparator
+import org.dokiteam.doki.core.util.ext.getDisplayName
+import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeEvent
+import org.dokiteam.doki.core.util.ext.toLocale
+import org.dokiteam.doki.databinding.ActivitySourcesCatalogBinding
+import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
+import org.dokiteam.doki.main.ui.owners.AppBarOwner
+import org.dokiteam.doki.parsers.model.ContentType
 
 @AndroidEntryPoint
 class SourcesCatalogActivity : BaseActivity<ActivitySourcesCatalogBinding>(),

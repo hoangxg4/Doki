@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.search.ui.suggestion.adapter
+package org.dokiteam.doki.search.ui.suggestion.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.databinding.ItemSearchSuggestionTagsBinding
-import org.koitharu.kotatsu.parsers.model.MangaTag
-import org.koitharu.kotatsu.search.ui.suggestion.SearchSuggestionListener
-import org.koitharu.kotatsu.search.ui.suggestion.model.SearchSuggestionItem
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.databinding.ItemSearchSuggestionTagsBinding
+import org.dokiteam.doki.parsers.model.MangaTag
+import org.dokiteam.doki.search.ui.suggestion.SearchSuggestionListener
+import org.dokiteam.doki.search.ui.suggestion.model.SearchSuggestionItem
 
 fun searchSuggestionTagsAD(
 	listener: SearchSuggestionListener,

@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.browser.cloudflare
+package org.dokiteam.doki.browser.cloudflare
 
-import org.koitharu.kotatsu.browser.BrowserCallback
+import org.dokiteam.doki.browser.BrowserCallback
 
 interface CloudFlareCallback : BrowserCallback {
 

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.model
+package org.dokiteam.doki.core.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

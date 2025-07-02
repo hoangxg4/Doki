@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.core.model.parcelable
+package org.dokiteam.doki.core.model.parcelable
 
 import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.parcelize.Parceler
 import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.TypeParceler
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaTag
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaTag
 
 object MangaTagParceler : Parceler<MangaTag> {
 	override fun create(parcel: Parcel) = MangaTag(

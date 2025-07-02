@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.tracker.domain.model
+package org.dokiteam.doki.tracker.domain.model
 
-import org.koitharu.kotatsu.parsers.exception.TooManyRequestExceptions
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.util.ifZero
+import org.dokiteam.doki.parsers.exception.TooManyRequestExceptions
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaChapter
+import org.dokiteam.doki.parsers.util.ifZero
 
 sealed interface MangaUpdates {
 

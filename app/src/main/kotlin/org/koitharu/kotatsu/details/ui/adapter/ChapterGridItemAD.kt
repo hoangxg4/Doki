@@ -1,15 +1,15 @@
-package org.koitharu.kotatsu.details.ui.adapter
+package org.dokiteam.doki.details.ui.adapter
 
 import android.graphics.Typeface
 import androidx.appcompat.widget.TooltipCompat
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.core.ui.list.AdapterDelegateClickListenerAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.core.util.ext.getThemeColorStateList
-import org.koitharu.kotatsu.databinding.ItemChapterGridBinding
-import org.koitharu.kotatsu.details.ui.model.ChapterListItem
-import org.koitharu.kotatsu.list.ui.model.ListModel
+import org.dokiteam.doki.core.ui.list.AdapterDelegateClickListenerAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.util.ext.getThemeColorStateList
+import org.dokiteam.doki.databinding.ItemChapterGridBinding
+import org.dokiteam.doki.details.ui.model.ChapterListItem
+import org.dokiteam.doki.list.ui.model.ListModel
 
 fun chapterGridItemAD(
 	clickListener: OnListItemClickListener<ChapterListItem>,

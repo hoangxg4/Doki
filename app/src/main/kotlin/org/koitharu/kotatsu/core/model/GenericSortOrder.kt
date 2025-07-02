@@ -1,8 +1,8 @@
-package org.koitharu.kotatsu.core.model
+package org.dokiteam.doki.core.model
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.parsers.model.SortOrder
+import org.dokiteam.doki.R
+import org.dokiteam.doki.parsers.model.SortOrder
 
 @Deprecated("")
 enum class GenericSortOrder(

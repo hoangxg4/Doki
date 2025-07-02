@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.local.data.index
+package org.dokiteam.doki.local.data.index
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
-import org.koitharu.kotatsu.core.db.entity.MangaEntity
+import org.dokiteam.doki.core.db.entity.MangaEntity
 
 @Entity(
 	tableName = "local_index",

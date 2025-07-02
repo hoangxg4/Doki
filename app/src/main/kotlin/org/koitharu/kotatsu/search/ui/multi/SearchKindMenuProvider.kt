@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.search.ui.multi
+package org.dokiteam.doki.search.ui.multi
 
 import android.os.Build
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
-import org.koitharu.kotatsu.search.domain.SearchKind
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
+import org.dokiteam.doki.search.domain.SearchKind
 
 class SearchKindMenuProvider(
 	private val activity: SearchActivity,

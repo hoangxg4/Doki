@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
-import org.koitharu.kotatsu.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.Manga
 
 data class MangaCompactListModel(
 	override val id: Long,

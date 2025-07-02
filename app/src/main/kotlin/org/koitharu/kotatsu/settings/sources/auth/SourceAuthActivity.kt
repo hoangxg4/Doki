@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.sources.auth
+package org.dokiteam.doki.settings.sources.auth
 
 import android.content.Context
 import android.content.Intent
@@ -11,17 +11,17 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.browser.BaseBrowserActivity
-import org.koitharu.kotatsu.browser.BrowserCallback
-import org.koitharu.kotatsu.browser.BrowserClient
-import org.koitharu.kotatsu.core.model.getTitle
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.parser.ParserMangaRepository
-import org.koitharu.kotatsu.core.util.ext.getDisplayMessage
-import org.koitharu.kotatsu.parsers.MangaParserAuthProvider
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.R
+import org.dokiteam.doki.browser.BaseBrowserActivity
+import org.dokiteam.doki.browser.BrowserCallback
+import org.dokiteam.doki.browser.BrowserClient
+import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.parser.ParserMangaRepository
+import org.dokiteam.doki.core.util.ext.getDisplayMessage
+import org.dokiteam.doki.parsers.MangaParserAuthProvider
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 
 @AndroidEntryPoint
 class SourceAuthActivity : BaseBrowserActivity(), BrowserCallback {

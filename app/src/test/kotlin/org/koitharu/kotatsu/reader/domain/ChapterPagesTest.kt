@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.reader.domain
+package org.dokiteam.doki.reader.domain
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.reader.ui.pager.ReaderPage
+import org.dokiteam.doki.parsers.model.MangaParserSource
+import org.dokiteam.doki.reader.ui.pager.ReaderPage
 import kotlin.random.Random
 
 class ChapterPagesTest {

@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.categories.edit
+package org.dokiteam.doki.favourites.ui.categories.edit
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
@@ -9,15 +9,15 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.model.FavouriteCategory
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.core.util.ext.MutableEventFlow
-import org.koitharu.kotatsu.core.util.ext.call
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.favourites.ui.categories.edit.FavouritesCategoryEditActivity.Companion.NO_ID
-import org.koitharu.kotatsu.list.domain.ListSortOrder
+import org.dokiteam.doki.core.model.FavouriteCategory
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.core.util.ext.MutableEventFlow
+import org.dokiteam.doki.core.util.ext.call
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.favourites.ui.categories.edit.FavouritesCategoryEditActivity.Companion.NO_ID
+import org.dokiteam.doki.list.domain.ListSortOrder
 import javax.inject.Inject
 
 @HiltViewModel

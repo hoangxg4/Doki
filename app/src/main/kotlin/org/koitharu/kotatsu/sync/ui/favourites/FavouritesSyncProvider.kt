@@ -1,5 +1,5 @@
-package org.koitharu.kotatsu.sync.ui.favourites
+package org.dokiteam.doki.sync.ui.favourites
 
-import org.koitharu.kotatsu.sync.ui.SyncProvider
+import org.dokiteam.doki.sync.ui.SyncProvider
 
 class FavouritesSyncProvider : SyncProvider()

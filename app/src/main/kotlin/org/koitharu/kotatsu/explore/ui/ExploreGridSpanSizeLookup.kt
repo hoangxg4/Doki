@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.explore.ui
+package org.dokiteam.doki.explore.ui
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup
-import org.koitharu.kotatsu.explore.ui.adapter.ExploreAdapter
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
+import org.dokiteam.doki.explore.ui.adapter.ExploreAdapter
+import org.dokiteam.doki.list.ui.adapter.ListItemType
 
 class ExploreGridSpanSizeLookup(
 	private val adapter: ExploreAdapter,

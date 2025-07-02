@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.network
+package org.dokiteam.doki.core.network
 
 import okhttp3.Interceptor
 import okhttp3.MultipartBody
 import okhttp3.Response
 import okio.IOException
-import org.koitharu.kotatsu.core.exceptions.WrapperIOException
-import org.koitharu.kotatsu.core.network.CommonHeaders.CONTENT_ENCODING
+import org.dokiteam.doki.core.exceptions.WrapperIOException
+import org.dokiteam.doki.core.network.CommonHeaders.CONTENT_ENCODING
 
 class GZipInterceptor : Interceptor {
 

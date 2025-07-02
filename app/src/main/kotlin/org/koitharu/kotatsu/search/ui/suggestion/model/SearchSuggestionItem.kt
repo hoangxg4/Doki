@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.search.ui.suggestion.model
+package org.dokiteam.doki.search.ui.suggestion.model
 
 import androidx.annotation.StringRes
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.ui.widgets.ChipsView
-import org.koitharu.kotatsu.list.ui.ListModelDiffCallback
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaSource
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.ui.widgets.ChipsView
+import org.dokiteam.doki.list.ui.ListModelDiffCallback
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaSource
 
 sealed interface SearchSuggestionItem : ListModel {
 

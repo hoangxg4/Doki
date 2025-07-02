@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.widget.shelf
+package org.dokiteam.doki.widget.shelf
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -9,9 +9,9 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
-import org.koitharu.kotatsu.core.ui.BaseViewModel
-import org.koitharu.kotatsu.favourites.domain.FavouritesRepository
-import org.koitharu.kotatsu.widget.shelf.model.CategoryItem
+import org.dokiteam.doki.core.ui.BaseViewModel
+import org.dokiteam.doki.favourites.domain.FavouritesRepository
+import org.dokiteam.doki.widget.shelf.model.CategoryItem
 import javax.inject.Inject
 
 @HiltViewModel

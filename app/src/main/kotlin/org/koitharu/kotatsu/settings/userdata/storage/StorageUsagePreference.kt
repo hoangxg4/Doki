@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings.userdata.storage
+package org.dokiteam.doki.settings.userdata.storage
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -9,11 +9,11 @@ import androidx.core.widget.TextViewCompat
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 import kotlinx.coroutines.flow.FlowCollector
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.widgets.SegmentedBarView
-import org.koitharu.kotatsu.core.util.FileSize
-import org.koitharu.kotatsu.core.util.KotatsuColors
-import org.koitharu.kotatsu.databinding.PreferenceMemoryUsageBinding
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.widgets.SegmentedBarView
+import org.dokiteam.doki.core.util.FileSize
+import org.dokiteam.doki.core.util.KotatsuColors
+import org.dokiteam.doki.databinding.PreferenceMemoryUsageBinding
 
 class StorageUsagePreference @JvmOverloads constructor(
 	context: Context,

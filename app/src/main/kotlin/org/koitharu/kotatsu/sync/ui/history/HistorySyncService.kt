@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.sync.ui.history
+package org.dokiteam.doki.sync.ui.history
 
 import android.app.Service
 import android.content.Intent

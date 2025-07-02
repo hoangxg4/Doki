@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.list.ui.model
+package org.dokiteam.doki.list.ui.model
 
 data class ErrorFooter(
 	val exception: Throwable,

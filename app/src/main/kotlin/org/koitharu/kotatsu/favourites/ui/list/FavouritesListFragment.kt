@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.favourites.ui.list
+package org.dokiteam.doki.favourites.ui.list
 
 import android.os.Bundle
 import android.view.Menu
@@ -10,14 +10,14 @@ import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.AppRouter
-import org.koitharu.kotatsu.core.ui.list.ListSelectionController
-import org.koitharu.kotatsu.core.util.ext.sortedByOrdinal
-import org.koitharu.kotatsu.core.util.ext.withArgs
-import org.koitharu.kotatsu.databinding.FragmentListBinding
-import org.koitharu.kotatsu.list.domain.ListSortOrder
-import org.koitharu.kotatsu.list.ui.MangaListFragment
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.AppRouter
+import org.dokiteam.doki.core.ui.list.ListSelectionController
+import org.dokiteam.doki.core.util.ext.sortedByOrdinal
+import org.dokiteam.doki.core.util.ext.withArgs
+import org.dokiteam.doki.databinding.FragmentListBinding
+import org.dokiteam.doki.list.domain.ListSortOrder
+import org.dokiteam.doki.list.ui.MangaListFragment
 
 @AndroidEntryPoint
 class FavouritesListFragment : MangaListFragment(), PopupMenu.OnMenuItemClickListener {

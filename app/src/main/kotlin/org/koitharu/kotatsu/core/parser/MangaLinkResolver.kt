@@ -1,21 +1,21 @@
-package org.koitharu.kotatsu.core.parser
+package org.dokiteam.doki.core.parser
 
 import android.net.Uri
 import coil3.request.CachePolicy
 import dagger.Reusable
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.core.model.UnknownMangaSource
-import org.koitharu.kotatsu.core.model.isNsfw
-import org.koitharu.kotatsu.core.util.ext.isHttpUrl
-import org.koitharu.kotatsu.parsers.MangaLoaderContext
-import org.koitharu.kotatsu.parsers.exception.NotFoundException
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaSource
-import org.koitharu.kotatsu.parsers.util.almostEquals
-import org.koitharu.kotatsu.parsers.util.ifNullOrEmpty
-import org.koitharu.kotatsu.parsers.util.levenshteinDistance
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.core.model.UnknownMangaSource
+import org.dokiteam.doki.core.model.isNsfw
+import org.dokiteam.doki.core.util.ext.isHttpUrl
+import org.dokiteam.doki.parsers.MangaLoaderContext
+import org.dokiteam.doki.parsers.exception.NotFoundException
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaListFilter
+import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.almostEquals
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
+import org.dokiteam.doki.parsers.util.levenshteinDistance
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 
 @Reusable
@@ -26,7 +26,7 @@ class MangaLinkResolver @Inject constructor(
 ) {
 
 	suspend fun resolve(uri: Uri): Manga {
-		return if (uri.scheme == "kotatsu" || uri.host == "kotatsu.app") {
+		return if (uri.scheme == "kotatsu" || uri.host == "kotatsu.app" || uri.host == "doki") {
 			resolveAppLink(uri)
 		} else {
 			resolveExternalLink(uri.toString())
@@ -118,7 +118,7 @@ class MangaLinkResolver @Inject constructor(
 	companion object {
 
 		fun isValidLink(str: String): Boolean {
-			return str.isHttpUrl() || str.startsWith("kotatsu://", ignoreCase = true)
+			return str.isHttpUrl() || str.startsWith("doki://", ignoreCase = true)
 		}
 	}
 }

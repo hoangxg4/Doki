@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.network
+package org.dokiteam.doki.core.network
 
 import android.content.Context
 import dagger.Binds
@@ -10,17 +10,17 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.Cache
 import okhttp3.CookieJar
 import okhttp3.OkHttpClient
-import org.koitharu.kotatsu.BuildConfig
-import org.koitharu.kotatsu.core.network.cookies.AndroidCookieJar
-import org.koitharu.kotatsu.core.network.cookies.MutableCookieJar
-import org.koitharu.kotatsu.core.network.cookies.PreferencesCookieJar
-import org.koitharu.kotatsu.core.network.imageproxy.ImageProxyInterceptor
-import org.koitharu.kotatsu.core.network.imageproxy.RealImageProxyInterceptor
-import org.koitharu.kotatsu.core.network.proxy.ProxyProvider
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.util.ext.assertNotInMainThread
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.local.data.LocalStorageManager
+import org.dokiteam.doki.BuildConfig
+import org.dokiteam.doki.core.network.cookies.AndroidCookieJar
+import org.dokiteam.doki.core.network.cookies.MutableCookieJar
+import org.dokiteam.doki.core.network.cookies.PreferencesCookieJar
+import org.dokiteam.doki.core.network.imageproxy.ImageProxyInterceptor
+import org.dokiteam.doki.core.network.imageproxy.RealImageProxyInterceptor
+import org.dokiteam.doki.core.network.proxy.ProxyProvider
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.util.ext.assertNotInMainThread
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.local.data.LocalStorageManager
 import java.util.concurrent.TimeUnit
 import javax.inject.Provider
 import javax.inject.Singleton

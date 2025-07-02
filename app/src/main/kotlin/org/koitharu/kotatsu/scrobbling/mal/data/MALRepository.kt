@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.scrobbling.mal.data
+package org.dokiteam.doki.scrobbling.mal.data
 
 import android.content.Context
 import android.util.Base64
@@ -8,25 +8,25 @@ import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.json.JSONObject
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.db.MangaDatabase
-import org.koitharu.kotatsu.parsers.util.await
-import org.koitharu.kotatsu.parsers.util.json.getStringOrNull
-import org.koitharu.kotatsu.parsers.util.json.mapJSONNotNull
-import org.koitharu.kotatsu.parsers.util.parseJson
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblerRepository
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblerStorage
-import org.koitharu.kotatsu.scrobbling.common.data.ScrobblingEntity
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerManga
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerMangaInfo
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerService
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerType
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerUser
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.db.MangaDatabase
+import org.dokiteam.doki.parsers.util.await
+import org.dokiteam.doki.parsers.util.json.getStringOrNull
+import org.dokiteam.doki.parsers.util.json.mapJSONNotNull
+import org.dokiteam.doki.parsers.util.parseJson
+import org.dokiteam.doki.scrobbling.common.data.ScrobblerRepository
+import org.dokiteam.doki.scrobbling.common.data.ScrobblerStorage
+import org.dokiteam.doki.scrobbling.common.data.ScrobblingEntity
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerManga
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerMangaInfo
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerService
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerType
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerUser
 import java.security.SecureRandom
 import javax.inject.Inject
 import javax.inject.Singleton
 
-private const val REDIRECT_URI = "kotatsu://mal-auth"
+private const val REDIRECT_URI = "doki://mal-auth"
 private const val BASE_WEB_URL = "https://myanimelist.net"
 private const val BASE_API_URL = "https://api.myanimelist.net/v2"
 

@@ -1,11 +1,11 @@
-package org.koitharu.kotatsu.core.model.parcelable
+package org.dokiteam.doki.core.model.parcelable
 
 import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.parcelize.Parceler
 import kotlinx.parcelize.Parcelize
-import org.koitharu.kotatsu.core.model.MangaSource
-import org.koitharu.kotatsu.parsers.model.MangaChapter
+import org.dokiteam.doki.core.model.MangaSource
+import org.dokiteam.doki.parsers.model.MangaChapter
 
 @Parcelize
 data class ParcelableChapter(

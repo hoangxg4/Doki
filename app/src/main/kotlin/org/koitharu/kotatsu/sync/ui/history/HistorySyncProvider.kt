@@ -1,5 +1,5 @@
-package org.koitharu.kotatsu.sync.ui.history
+package org.dokiteam.doki.sync.ui.history
 
-import org.koitharu.kotatsu.sync.ui.SyncProvider
+import org.dokiteam.doki.sync.ui.SyncProvider
 
 class HistorySyncProvider : SyncProvider()

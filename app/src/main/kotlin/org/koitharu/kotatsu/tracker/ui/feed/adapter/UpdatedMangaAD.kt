@@ -1,18 +1,18 @@
-package org.koitharu.kotatsu.tracker.ui.feed.adapter
+package org.dokiteam.doki.tracker.ui.feed.adapter
 
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.databinding.ItemListGroupBinding
-import org.koitharu.kotatsu.list.ui.adapter.ListHeaderClickListener
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.mangaGridItemAD
-import org.koitharu.kotatsu.list.ui.model.ListHeader
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.list.ui.size.ItemSizeResolver
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.tracker.ui.feed.model.UpdatedMangaHeader
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.databinding.ItemListGroupBinding
+import org.dokiteam.doki.list.ui.adapter.ListHeaderClickListener
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.mangaGridItemAD
+import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.size.ItemSizeResolver
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.tracker.ui.feed.model.UpdatedMangaHeader
 
 fun updatedMangaAD(
 	sizeResolver: ItemSizeResolver,

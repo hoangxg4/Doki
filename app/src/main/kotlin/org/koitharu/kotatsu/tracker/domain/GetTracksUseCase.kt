@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.tracker.domain
+package org.dokiteam.doki.tracker.domain
 
-import org.koitharu.kotatsu.tracker.domain.model.MangaTracking
+import org.dokiteam.doki.tracker.domain.model.MangaTracking
 import javax.inject.Inject
 
 class GetTracksUseCase @Inject constructor(

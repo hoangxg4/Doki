@@ -1,10 +1,10 @@
-package org.koitharu.kotatsu.history.ui
+package org.dokiteam.doki.history.ui
 
 import android.content.Context
-import org.koitharu.kotatsu.core.ui.list.fastscroll.FastScroller
-import org.koitharu.kotatsu.list.ui.adapter.MangaListAdapter
-import org.koitharu.kotatsu.list.ui.adapter.MangaListListener
-import org.koitharu.kotatsu.list.ui.size.ItemSizeResolver
+import org.dokiteam.doki.core.ui.list.fastscroll.FastScroller
+import org.dokiteam.doki.list.ui.adapter.MangaListAdapter
+import org.dokiteam.doki.list.ui.adapter.MangaListListener
+import org.dokiteam.doki.list.ui.size.ItemSizeResolver
 
 class HistoryListAdapter(
 	listener: MangaListListener,

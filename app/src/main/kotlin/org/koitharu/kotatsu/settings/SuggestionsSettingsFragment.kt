@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.settings
+package org.dokiteam.doki.settings
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -6,13 +6,13 @@ import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.prefs.AppSettings
-import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
-import org.koitharu.kotatsu.settings.utils.MultiAutoCompleteTextViewPreference
-import org.koitharu.kotatsu.settings.utils.TagsAutoCompleteProvider
-import org.koitharu.kotatsu.suggestions.domain.SuggestionRepository
-import org.koitharu.kotatsu.suggestions.ui.SuggestionsWorker
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.prefs.AppSettings
+import org.dokiteam.doki.core.ui.BasePreferenceFragment
+import org.dokiteam.doki.settings.utils.MultiAutoCompleteTextViewPreference
+import org.dokiteam.doki.settings.utils.TagsAutoCompleteProvider
+import org.dokiteam.doki.suggestions.domain.SuggestionRepository
+import org.dokiteam.doki.suggestions.ui.SuggestionsWorker
 import javax.inject.Inject
 
 @AndroidEntryPoint

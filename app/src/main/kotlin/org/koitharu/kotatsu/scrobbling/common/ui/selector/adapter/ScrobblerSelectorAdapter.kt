@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.scrobbling.common.ui.selector.adapter
+package org.dokiteam.doki.scrobbling.common.ui.selector.adapter
 
-import org.koitharu.kotatsu.core.ui.BaseListAdapter
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
-import org.koitharu.kotatsu.list.ui.adapter.ListItemType
-import org.koitharu.kotatsu.list.ui.adapter.ListStateHolderListener
-import org.koitharu.kotatsu.list.ui.adapter.loadingFooterAD
-import org.koitharu.kotatsu.list.ui.adapter.loadingStateAD
-import org.koitharu.kotatsu.list.ui.model.ListModel
-import org.koitharu.kotatsu.scrobbling.common.domain.model.ScrobblerManga
+import org.dokiteam.doki.core.ui.BaseListAdapter
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.list.ui.adapter.ListItemType
+import org.dokiteam.doki.list.ui.adapter.ListStateHolderListener
+import org.dokiteam.doki.list.ui.adapter.loadingFooterAD
+import org.dokiteam.doki.list.ui.adapter.loadingStateAD
+import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.scrobbling.common.domain.model.ScrobblerManga
 
 class ScrobblerSelectorAdapter(
 	clickListener: OnListItemClickListener<ScrobblerManga>,

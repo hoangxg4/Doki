@@ -1,12 +1,12 @@
-package org.koitharu.kotatsu.local.ui
+package org.dokiteam.doki.local.ui
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
-import org.koitharu.kotatsu.R
-import org.koitharu.kotatsu.core.nav.router
+import org.dokiteam.doki.R
+import org.dokiteam.doki.core.nav.router
 
 class LocalListMenuProvider(
 	private val fragment: Fragment,

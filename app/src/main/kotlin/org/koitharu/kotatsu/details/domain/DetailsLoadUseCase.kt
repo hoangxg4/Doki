@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.domain
+package org.dokiteam.doki.details.domain
 
 import android.text.Html
 import android.text.SpannableString
@@ -14,23 +14,23 @@ import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runInterruptible
 import okio.IOException
-import org.koitharu.kotatsu.core.model.isLocal
-import org.koitharu.kotatsu.core.nav.MangaIntent
-import org.koitharu.kotatsu.core.os.NetworkState
-import org.koitharu.kotatsu.core.parser.CachingMangaRepository
-import org.koitharu.kotatsu.core.parser.MangaDataRepository
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.ext.peek
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
-import org.koitharu.kotatsu.core.util.ext.sanitize
-import org.koitharu.kotatsu.details.data.MangaDetails
-import org.koitharu.kotatsu.explore.domain.RecoverMangaUseCase
-import org.koitharu.kotatsu.local.data.LocalMangaRepository
-import org.koitharu.kotatsu.parsers.exception.NotFoundException
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.util.recoverNotNull
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
-import org.koitharu.kotatsu.tracker.domain.CheckNewChaptersUseCase
+import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.nav.MangaIntent
+import org.dokiteam.doki.core.os.NetworkState
+import org.dokiteam.doki.core.parser.CachingMangaRepository
+import org.dokiteam.doki.core.parser.MangaDataRepository
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.ext.peek
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.sanitize
+import org.dokiteam.doki.details.data.MangaDetails
+import org.dokiteam.doki.explore.domain.RecoverMangaUseCase
+import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.parsers.exception.NotFoundException
+import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.util.recoverNotNull
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.tracker.domain.CheckNewChaptersUseCase
 import javax.inject.Inject
 import javax.inject.Provider
 

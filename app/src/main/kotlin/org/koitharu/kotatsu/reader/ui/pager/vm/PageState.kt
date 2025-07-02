@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.reader.ui.pager.vm
+package org.dokiteam.doki.reader.ui.pager.vm
 
 import com.davemorrissey.labs.subscaleview.ImageSource
 

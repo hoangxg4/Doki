@@ -1,7 +1,7 @@
-package org.koitharu.kotatsu.details.domain
+package org.dokiteam.doki.details.domain
 
-import org.koitharu.kotatsu.core.util.LocaleStringComparator
-import org.koitharu.kotatsu.details.ui.model.MangaBranch
+import org.dokiteam.doki.core.util.LocaleStringComparator
+import org.dokiteam.doki.details.ui.model.MangaBranch
 
 class BranchComparator : Comparator<MangaBranch> {
 

@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.backups.data.model
+package org.dokiteam.doki.backups.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.koitharu.kotatsu.favourites.data.FavouriteCategoryEntity
-import org.koitharu.kotatsu.list.domain.ListSortOrder
+import org.dokiteam.doki.favourites.data.FavouriteCategoryEntity
+import org.dokiteam.doki.list.domain.ListSortOrder
 
 @Serializable
 class CategoryBackup(

@@ -1,9 +1,9 @@
-package org.koitharu.kotatsu.core.util.ext
+package org.dokiteam.doki.core.util.ext
 
 import androidx.collection.ArrayMap
 import androidx.collection.ArraySet
 import androidx.collection.LongSet
-import org.koitharu.kotatsu.BuildConfig
+import org.dokiteam.doki.BuildConfig
 import java.util.EnumSet
 
 fun <T> Collection<T>.asArrayList(): ArrayList<T> = if (this is ArrayList<*>) {

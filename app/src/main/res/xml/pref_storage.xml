@@ -4,7 +4,7 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:title="@string/storage_usage">
 
-	<org.koitharu.kotatsu.settings.userdata.storage.StorageUsagePreference android:key="storage_usage" />
+	<org.dokiteam.doki.settings.userdata.storage.StorageUsagePreference android:key="storage_usage" />
 
 	<Preference
 		android:key="search_history_clear"

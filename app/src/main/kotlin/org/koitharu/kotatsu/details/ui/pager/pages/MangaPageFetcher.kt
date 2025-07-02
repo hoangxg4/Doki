@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.details.ui.pager.pages
+package org.dokiteam.doki.details.ui.pager.pages
 
 import androidx.core.net.toUri
 import coil3.ImageLoader
@@ -17,18 +17,18 @@ import okhttp3.OkHttpClient
 import okhttp3.Response
 import okio.FileSystem
 import okio.Path.Companion.toOkioPath
-import org.koitharu.kotatsu.core.network.MangaHttpClient
-import org.koitharu.kotatsu.core.network.imageproxy.ImageProxyInterceptor
-import org.koitharu.kotatsu.core.parser.MangaRepository
-import org.koitharu.kotatsu.core.util.MimeTypes
-import org.koitharu.kotatsu.core.util.ext.fetch
-import org.koitharu.kotatsu.core.util.ext.isNetworkUri
-import org.koitharu.kotatsu.core.util.ext.toMimeTypeOrNull
-import org.koitharu.kotatsu.local.data.PagesCache
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.util.mimeType
-import org.koitharu.kotatsu.parsers.util.requireBody
-import org.koitharu.kotatsu.reader.domain.PageLoader
+import org.dokiteam.doki.core.network.MangaHttpClient
+import org.dokiteam.doki.core.network.imageproxy.ImageProxyInterceptor
+import org.dokiteam.doki.core.parser.MangaRepository
+import org.dokiteam.doki.core.util.MimeTypes
+import org.dokiteam.doki.core.util.ext.fetch
+import org.dokiteam.doki.core.util.ext.isNetworkUri
+import org.dokiteam.doki.core.util.ext.toMimeTypeOrNull
+import org.dokiteam.doki.local.data.PagesCache
+import org.dokiteam.doki.parsers.model.MangaPage
+import org.dokiteam.doki.parsers.util.mimeType
+import org.dokiteam.doki.parsers.util.requireBody
+import org.dokiteam.doki.reader.domain.PageLoader
 import javax.inject.Inject
 
 class MangaPageFetcher(

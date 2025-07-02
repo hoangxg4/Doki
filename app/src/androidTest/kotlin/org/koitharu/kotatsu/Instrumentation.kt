@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu
+package org.dokiteam.doki
 
 import android.app.Instrumentation
 import kotlin.coroutines.resume

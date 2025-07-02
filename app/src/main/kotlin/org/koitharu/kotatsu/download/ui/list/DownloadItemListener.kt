@@ -1,6 +1,6 @@
-package org.koitharu.kotatsu.download.ui.list
+package org.dokiteam.doki.download.ui.list
 
-import org.koitharu.kotatsu.core.ui.list.OnListItemClickListener
+import org.dokiteam.doki.core.ui.list.OnListItemClickListener
 
 interface DownloadItemListener : OnListItemClickListener<DownloadItemModel> {
 

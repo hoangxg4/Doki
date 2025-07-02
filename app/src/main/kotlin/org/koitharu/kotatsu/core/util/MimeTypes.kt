@@ -1,13 +1,13 @@
-package org.koitharu.kotatsu.core.util
+package org.dokiteam.doki.core.util
 
 import android.os.Build
 import android.webkit.MimeTypeMap
 import org.jetbrains.annotations.Blocking
-import org.koitharu.kotatsu.core.util.ext.MimeType
-import org.koitharu.kotatsu.core.util.ext.toMimeTypeOrNull
-import org.koitharu.kotatsu.parsers.util.nullIfEmpty
-import org.koitharu.kotatsu.parsers.util.removeSuffix
-import org.koitharu.kotatsu.parsers.util.runCatchingCancellable
+import org.dokiteam.doki.core.util.ext.MimeType
+import org.dokiteam.doki.core.util.ext.toMimeTypeOrNull
+import org.dokiteam.doki.parsers.util.nullIfEmpty
+import org.dokiteam.doki.parsers.util.removeSuffix
+import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import java.io.File
 import java.nio.file.Files
 import coil3.util.MimeTypeMap as CoilMimeTypeMap

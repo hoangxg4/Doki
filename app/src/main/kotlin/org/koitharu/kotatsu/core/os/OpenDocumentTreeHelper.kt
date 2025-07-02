@@ -1,4 +1,4 @@
-package org.koitharu.kotatsu.core.os
+package org.dokiteam.doki.core.os
 
 import android.content.Context
 import android.content.Intent
@@ -13,7 +13,7 @@ import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityOptionsCompat
-import org.koitharu.kotatsu.core.util.ext.printStackTraceDebug
+import org.dokiteam.doki.core.util.ext.printStackTraceDebug
 
 // https://stackoverflow.com/questions/77555641/saf-no-activity-found-to-handle-intent-android-intent-action-open-document-tr
 class OpenDocumentTreeHelper(
