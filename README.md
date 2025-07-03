@@ -5,3 +5,4 @@ TODO List:
 - [x] Fix errors with doki-exts
 - [ ] Remake app resources
 - [ ] README + Documents
+- [ ] Change kotatsu:// to doki:// for all translations
