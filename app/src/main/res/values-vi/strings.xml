@@ -406,7 +406,7 @@
     <string name="reader_info_pattern">Chương %1$d/%2$d - Trang %3$d/%4$d</string>
     <string name="memory_usage_pattern">%s - %s</string>
     <string name="web_view_unavailable">WebView hiện không có sẵn: Kiểm tra xem ứng dụng WebView được cài chưa</string>
-    <string name="manga_error_description_pattern">Chi tiết lỗi: &lt;br&gt;&lt;tt&gt;%1$s&lt;/tt&gt;&lt;br&gt;&lt;br&gt;1. Hãy thử &lt;a href=%2$s&gt;mở manga trong trình duyệt web&lt;/a&gt; để đảm bảo rằng manga này có trong nguồn&lt;br&gt;2. Hãy chắc chắn rằng bạn đang dùng &lt;a href=doki://about&gt;bản mới nhất của Doki&lt;/a&gt;&lt;br&gt;3. Nếu đã đáp ứng các yêu cầu trên, gửi báo cáo lỗi lên nhà phát triển.</string>
+    <string name="manga_error_description_pattern">Chi tiết lỗi: &lt;br&gt;&lt;tt&gt;%1$s&lt;/tt&gt;&lt;br&gt;&lt;br&gt;1. Hãy thử &lt;a href=%2$s&gt;mở manga trong trình duyệt web&lt;/a&gt; để đảm bảo rằng manga này có trong nguồn&lt;br&gt;2. Hãy chắc chắn rằng bạn đang dùng &lt;a href=doki://about&gt;bản mới nhất của Kotatsu&lt;/a&gt;&lt;br&gt;3. Nếu đã đáp ứng các yêu cầu trên, gửi báo cáo lỗi lên nhà phát triển.</string>
     <string name="text_history_holder_secondary">Tìm truyện để đọc trong phần «Khám phá»</string>
     <string name="this_month">Tháng này</string>
     <string name="tracker_wifi_only_summary">Không kiểm tra các chương mới bằng kết nối mạng có đo lường</string>
@@ -599,7 +599,7 @@
     <string name="split_by_translations_summary">Hiển thị chương với các bản dịch tách riêng ra, không gộp lại thành một danh sách</string>
     <string name="order_oldest">Cũ nhất</string>
     <string name="unread">Chưa đọc</string>
-    <string name="unsupported_backup_message">Vui lòng chọn một tệp sao lưu Kotatsu / Doki hợp lệ</string>
+    <string name="unsupported_backup_message">Vui lòng chọn một tệp sao lưu Doki / Kotatsu hợp lệ</string>
     <string name="remaining_time_pattern">Còn %1$s %2$s</string>
     <string name="fix">Sửa lỗi</string>
     <string name="missing_storage_permission">Không có quyền để truy cập manga trên bộ nhớ ngoài</string>
@@ -823,4 +823,7 @@
     <string name="collapse">Thu gọn</string>
     <string name="adblock">Chặn quảng cáo trong trình duyệt (Webview)</string>
     <string name="adblock_summary">Chặn những quảng cáo xuất hiện trong trình duyệt Webview của hệ thống khi duyệt (Beta)</string>
+    <string name="collapse_long_description">Thu gọn đoạn mô tả dài</string>
+    <string name="creating_backup">Đang tạo sao lưu</string>
+    <string name="share_backup">Chia sẻ dữ liệu đã sao lưu</string>
 </resources>
