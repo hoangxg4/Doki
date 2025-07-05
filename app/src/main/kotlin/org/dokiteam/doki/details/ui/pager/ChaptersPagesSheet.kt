@@ -30,7 +30,6 @@ import org.dokiteam.doki.core.util.ext.menuView
 import org.dokiteam.doki.core.util.ext.observe
 import org.dokiteam.doki.core.util.ext.observeEvent
 import org.dokiteam.doki.core.util.ext.recyclerView
-import org.dokiteam.doki.core.util.ext.setTabsEnabled
 import org.dokiteam.doki.core.util.ext.smoothScrollToTop
 import org.dokiteam.doki.databinding.SheetChaptersPagesBinding
 import org.dokiteam.doki.details.ui.DetailsViewModel
@@ -144,7 +143,11 @@ class ChaptersPagesSheet : BaseAdaptiveSheet<SheetChaptersPagesBinding>(),
 	private fun adjustLockState() {
 		viewBinding?.run {
 			pager.isUserInputEnabled = !isLocked
-			tabs.setTabsEnabled(!isLocked)
+			tabs.visibility = when {
+				(pager.adapter?.itemCount ?: 0) <= 1 -> View.GONE
+				isLocked -> View.INVISIBLE
+				else -> View.VISIBLE
+			}
 		}
 	}
 
