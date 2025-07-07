@@ -22,6 +22,7 @@ import org.dokiteam.doki.core.util.ext.EventFlow
 import org.dokiteam.doki.core.util.ext.MutableEventFlow
 import org.dokiteam.doki.core.util.ext.call
 import org.dokiteam.doki.core.util.ext.printStackTraceDebug
+import kotlin.coroutines.AbstractCoroutineContextElement
 import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 
@@ -80,10 +81,15 @@ abstract class BaseViewModel : ViewModel() {
 
 	protected fun MutableStateFlow<Int>.decrement() = update { it - 1 }
 
-	private fun createErrorHandler() = CoroutineExceptionHandler { _, throwable ->
+	private fun createErrorHandler() = CoroutineExceptionHandler { coroutineContext, throwable ->
 		throwable.printStackTraceDebug()
-		if (throwable !is CancellationException) {
+		if (coroutineContext[SkipErrors.key] == null && throwable !is CancellationException) {
 			errorEvent.call(throwable)
 		}
+	}
+
+      protected object SkipErrors : AbstractCoroutineContextElement(Key) {
+
+		private object Key : CoroutineContext.Key<SkipErrors>
 	}
 }
