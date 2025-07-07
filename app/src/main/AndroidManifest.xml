@@ -402,7 +402,14 @@
 				android:value="androidx.startup"
 				tools:node="remove" />
 		</provider>
-
+            
+            <receiver
+			android:name="org.dokiteam.doki.core.exceptions.resolve.CaptchaHandler$DiscardReceiver"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="org.dokiteam.doki.CAPTCHA_DISCARD" />
+			</intent-filter>
+		</receiver>
 		<receiver
 			android:name="org.dokiteam.doki.widget.shelf.ShelfWidgetProvider"
 			android:exported="true"
