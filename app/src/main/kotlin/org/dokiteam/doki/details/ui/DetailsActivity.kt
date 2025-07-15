@@ -80,6 +80,7 @@ import org.dokiteam.doki.core.util.ext.mangaSourceExtra
 import org.dokiteam.doki.core.util.ext.observe
 import org.dokiteam.doki.core.util.ext.observeEvent
 import org.dokiteam.doki.core.util.ext.parentView
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.core.util.ext.start
 import org.dokiteam.doki.core.util.ext.textAndVisible
 import org.dokiteam.doki.core.util.ext.toUriOrNull
@@ -455,7 +456,7 @@ class DetailsActivity :
 				textViewSourceLabel.isVisible = false
 			} else {
 				textViewSource.textAndVisible = manga.source.getTitle(this@DetailsActivity)
-				TooltipCompat.setTooltipText(textViewSource, manga.source.getSummary(this@DetailsActivity))
+				textViewSource.setTooltipCompat(manga.source.getSummary(this@DetailsActivity))
 				textViewSourceLabel.isVisible = textViewSource.isVisible == true
 			}
 			val faviconPlaceholderFactory = FaviconDrawable.Factory(R.style.FaviconDrawable_Chip)

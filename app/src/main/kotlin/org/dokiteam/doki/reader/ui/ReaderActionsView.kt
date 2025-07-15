@@ -24,6 +24,7 @@ import org.dokiteam.doki.core.prefs.ReaderControl
 import org.dokiteam.doki.core.util.ext.hasVisibleChildren
 import org.dokiteam.doki.core.util.ext.isRtl
 import org.dokiteam.doki.core.util.ext.setContentDescriptionAndTooltip
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.core.util.ext.setValueRounded
 import org.dokiteam.doki.databinding.LayoutReaderActionsBinding
 import org.dokiteam.doki.details.ui.pager.ChaptersPagesSheet
@@ -254,7 +255,7 @@ class ReaderActionsView @JvmOverloads constructor(
 	private fun Button.initAction() {
 		setOnClickListener(this@ReaderActionsView)
 		setOnLongClickListener(this@ReaderActionsView)
-		TooltipCompat.setTooltipText(this, contentDescription)
+		setTooltipCompat(contentDescription)
 	}
 
 	private fun isAutoRotationEnabled(): Boolean = Settings.System.getInt(

@@ -1,6 +1,5 @@
 package org.dokiteam.doki.settings.storage.directories
 
-import androidx.appcompat.widget.TooltipCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
@@ -18,7 +17,7 @@ fun directoryConfigAD(
 ) {
 
 	binding.buttonRemove.setOnClickListener { v -> clickListener.onItemClick(item, v) }
-	TooltipCompat.setTooltipText(binding.buttonRemove, binding.buttonRemove.contentDescription)
+	binding.buttonRemove.setTooltipCompat(binding.buttonRemove.contentDescription)
 
 	bind {
 		binding.textViewTitle.text = item.title ?: getString(item.titleRes)

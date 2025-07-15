@@ -15,6 +15,7 @@ import org.dokiteam.doki.core.ui.list.OnListItemClickListener
 import org.dokiteam.doki.core.util.ext.drawableStart
 import org.dokiteam.doki.core.util.ext.recyclerView
 import org.dokiteam.doki.core.util.ext.setProgressIcon
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.core.util.ext.textAndVisible
 import org.dokiteam.doki.databinding.ItemExploreButtonsBinding
 import org.dokiteam.doki.databinding.ItemExploreSourceGridBinding
@@ -126,8 +127,7 @@ fun exploreSourceGridItemAD(
 
 	bind {
 		val title = item.source.getTitle(context)
-		TooltipCompat.setTooltipText(
-			itemView,
+		itemView.setTooltipCompat(
 			buildSpannedString {
 				bold {
 					append(title)

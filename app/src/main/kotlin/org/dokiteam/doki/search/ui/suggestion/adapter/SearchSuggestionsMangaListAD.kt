@@ -10,6 +10,7 @@ import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import org.dokiteam.doki.R
 import org.dokiteam.doki.core.ui.list.decor.SpacingItemDecoration
 import org.dokiteam.doki.core.util.RecyclerViewScrollCallback
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.databinding.ItemSearchSuggestionMangaGridBinding
 import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.search.ui.suggestion.SearchSuggestionListener
@@ -47,7 +48,7 @@ private fun searchSuggestionMangaGridAD(
 	}
 
 	bind {
-		TooltipCompat.setTooltipText(itemView, item.title)
+		itemView.setTooltipCompat(item.title)
 		binding.imageViewCover.setImageAsync(item.coverUrl, item.source)
 		binding.textViewTitle.text = item.title
 	}
