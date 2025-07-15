@@ -18,6 +18,7 @@ import androidx.preference.PreferenceFragmentCompat
 import com.google.android.material.appbar.AppBarLayout
 import dagger.hilt.android.AndroidEntryPoint
 import org.dokiteam.doki.R
+import org.dokiteam.doki.backups.ui.periodical.PeriodicalBackupSettingsFragment
 import org.dokiteam.doki.core.model.MangaSource
 import org.dokiteam.doki.core.nav.AppRouter
 import org.dokiteam.doki.core.ui.BaseActivity
@@ -146,6 +147,7 @@ class SettingsActivity :
 			AppRouter.ACTION_SUGGESTIONS -> SuggestionsSettingsFragment()
 			AppRouter.ACTION_HISTORY -> UserDataSettingsFragment()
 			AppRouter.ACTION_TRACKER -> TrackerSettingsFragment()
+			AppRouter.ACTION_PERIODIC_BACKUP -> PeriodicalBackupSettingsFragment()
 			AppRouter.ACTION_SOURCES -> SourcesSettingsFragment()
 			AppRouter.ACTION_PROXY -> ProxySettingsFragment()
 			AppRouter.ACTION_MANAGE_DOWNLOADS -> DownloadsSettingsFragment()
