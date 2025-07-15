@@ -23,8 +23,9 @@ import org.dokiteam.doki.list.ui.model.MangaListModel
 import org.dokiteam.doki.local.data.index.LocalMangaIndex
 import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.parsers.model.MangaTag
-import org.dokiteam.doki.parsers.util.ifNullOrEmpty
 import org.dokiteam.doki.tracker.domain.TrackingRepository
+import org.dokiteam.doki.tracker.domain.model.TrackingLogItem
+import org.dokiteam.doki.tracker.ui.feed.model.FeedItem
 import javax.inject.Inject
 
 @Reusable
@@ -77,6 +78,14 @@ class MangaListMapper @Inject constructor(
 		override = dataRepository.getOverride(manga.id),
 	)
 
+	suspend fun toFeedItem(logItem: TrackingLogItem) = FeedItem(
+		id = logItem.id,
+		override = dataRepository.getOverride(logItem.manga.id),
+		count = logItem.chapters.size,
+		manga = logItem.manga,
+		isNew = logItem.isNew,
+	)
+
 	fun mapTags(tags: Collection<MangaTag>) = tags.map {
 		ChipsView.ChipModel(
 			tint = getTagTint(it),
@@ -90,11 +99,9 @@ class MangaListMapper @Inject constructor(
 		@Options options: Int,
 		override: MangaOverride?,
 	) = MangaCompactListModel(
-		id = manga.id,
-		title = override?.title.ifNullOrEmpty { manga.title },
-		subtitle = manga.tags.joinToString(", ") { it.title },
-		coverUrl = override?.coverUrl.ifNullOrEmpty { manga.coverUrl },
 		manga = manga,
+		override = override,
+		subtitle = manga.tags.joinToString(", ") { it.title },
 		counter = getCounter(manga.id, options),
 	)
 
@@ -103,11 +110,9 @@ class MangaListMapper @Inject constructor(
 		@Options options: Int,
 		override: MangaOverride?,
 	) = MangaDetailedListModel(
-		id = manga.id,
-		title = override?.title.ifNullOrEmpty { manga.title },
 		subtitle = manga.altTitles.firstOrNull(),
-		coverUrl = override?.coverUrl.ifNullOrEmpty { manga.coverUrl },
 		manga = manga,
+		override = override,
 		counter = getCounter(manga.id, options),
 		progress = getProgress(manga.id, options),
 		isFavorite = isFavorite(manga.id, options),
@@ -120,10 +125,8 @@ class MangaListMapper @Inject constructor(
 		@Options options: Int,
 		override: MangaOverride?
 	) = MangaGridModel(
-		id = manga.id,
-		title = override?.title.ifNullOrEmpty { manga.title },
-		coverUrl = override?.coverUrl.ifNullOrEmpty { manga.coverUrl },
 		manga = manga,
+		override = override,
 		counter = getCounter(manga.id, options),
 		progress = getProgress(manga.id, options),
 		isFavorite = isFavorite(manga.id, options),

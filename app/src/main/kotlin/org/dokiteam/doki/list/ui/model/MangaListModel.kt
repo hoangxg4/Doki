@@ -4,20 +4,32 @@ import android.content.Context
 import androidx.core.text.bold
 import androidx.core.text.buildSpannedString
 import org.dokiteam.doki.core.model.getTitle
+import org.dokiteam.doki.core.model.withOverride
+import org.dokiteam.doki.core.ui.model.MangaOverride
 import org.dokiteam.doki.list.ui.ListModelDiffCallback.Companion.PAYLOAD_ANYTHING_CHANGED
 import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.parsers.model.MangaSource
+import org.dokiteam.doki.parsers.util.ifNullOrEmpty
 
 sealed class MangaListModel : ListModel {
 
-	abstract val id: Long
+	abstract val override: MangaOverride?
 	abstract val manga: Manga
-	abstract val title: String
-	abstract val coverUrl: String?
 	abstract val counter: Int
+
+	val id: Long
+		get() = manga.id
+
+	val title: String
+		get() = override?.title.ifNullOrEmpty { manga.title }
+
+	val coverUrl: String?
+		get() = override?.coverUrl.ifNullOrEmpty { manga.coverUrl }
 
 	val source: MangaSource
 		get() = manga.source
+
+	fun toMangaWithOverride() = manga.withOverride(override)
 
 	open fun getSummary(context: Context): CharSequence = buildSpannedString {
 		bold {

@@ -31,6 +31,7 @@ import org.dokiteam.doki.list.domain.ListFilterOption
 import org.dokiteam.doki.list.ui.adapter.MangaListListener
 import org.dokiteam.doki.list.ui.adapter.TypedListSpacingDecoration
 import org.dokiteam.doki.list.ui.model.ListHeader
+import org.dokiteam.doki.list.ui.model.MangaListModel
 import org.dokiteam.doki.list.ui.size.StaticItemSizeResolver
 import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.parsers.model.MangaTag
@@ -63,7 +64,7 @@ class FeedFragment :
 		val sizeResolver = StaticItemSizeResolver(resources.getDimensionPixelSize(R.dimen.smaller_grid_width))
 		val feedAdapter = FeedAdapter(this, sizeResolver) { item, v ->
 			viewModel.onItemClick(item)
-			onItemClick(item.manga, v)
+			router.openDetails(item.toMangaWithOverride())
 		}
 		with(binding.recyclerView) {
 			val paddingVertical = resources.getDimensionPixelSize(R.dimen.list_spacing_normal)
@@ -126,8 +127,8 @@ class FeedFragment :
 		viewModel.requestMoreItems()
 	}
 
-	override fun onItemClick(item: Manga, view: View) {
-		router.openDetails(item)
+	override fun onItemClick(item: MangaListModel, view: View) {
+		router.openDetails(item.toMangaWithOverride())
 	}
 
 	override fun onReadClick(manga: Manga, view: View) = Unit

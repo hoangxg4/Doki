@@ -10,17 +10,17 @@ import org.dokiteam.doki.databinding.ItemMangaGridBinding
 import org.dokiteam.doki.list.ui.ListModelDiffCallback.Companion.PAYLOAD_PROGRESS_CHANGED
 import org.dokiteam.doki.list.ui.model.ListModel
 import org.dokiteam.doki.list.ui.model.MangaGridModel
+import org.dokiteam.doki.list.ui.model.MangaListModel
 import org.dokiteam.doki.list.ui.size.ItemSizeResolver
-import org.dokiteam.doki.parsers.model.Manga
 
 fun mangaGridItemAD(
 	sizeResolver: ItemSizeResolver,
-	clickListener: OnListItemClickListener<Manga>,
+	clickListener: OnListItemClickListener<MangaListModel>,
 ) = adapterDelegateViewBinding<MangaGridModel, ListModel, ItemMangaGridBinding>(
 	{ inflater, parent -> ItemMangaGridBinding.inflate(inflater, parent, false) },
 ) {
 
-	AdapterDelegateClickListenerAdapter(this, clickListener, MangaGridModel::manga).attach(itemView)
+	AdapterDelegateClickListenerAdapter(this, clickListener).attach(itemView)
 	sizeResolver.attachToView(itemView, binding.textViewTitle, binding.progressView)
 
 	bind { payloads ->

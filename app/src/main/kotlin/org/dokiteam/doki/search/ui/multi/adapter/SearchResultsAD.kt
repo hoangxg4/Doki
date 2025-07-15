@@ -17,8 +17,8 @@ import org.dokiteam.doki.databinding.ItemListGroupBinding
 import org.dokiteam.doki.list.ui.MangaSelectionDecoration
 import org.dokiteam.doki.list.ui.adapter.mangaGridItemAD
 import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaListModel
 import org.dokiteam.doki.list.ui.size.ItemSizeResolver
-import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.search.ui.multi.SearchResultsListModel
 
 @SuppressLint("NotifyDataSetChanged")
@@ -26,7 +26,7 @@ fun searchResultsAD(
 	sharedPool: RecycledViewPool,
 	sizeResolver: ItemSizeResolver,
 	selectionDecoration: MangaSelectionDecoration,
-	listener: OnListItemClickListener<Manga>,
+	listener: OnListItemClickListener<MangaListModel>,
 	itemClickListener: OnListItemClickListener<SearchResultsListModel>,
 ) = adapterDelegateViewBinding<SearchResultsListModel, ListModel, ItemListGroupBinding>(
 	{ layoutInflater, parent -> ItemListGroupBinding.inflate(layoutInflater, parent, false) },

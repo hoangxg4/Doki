@@ -10,13 +10,13 @@ import org.dokiteam.doki.list.ui.adapter.ListItemType
 import org.dokiteam.doki.list.ui.adapter.mangaGridItemAD
 import org.dokiteam.doki.list.ui.model.ListHeader
 import org.dokiteam.doki.list.ui.model.ListModel
+import org.dokiteam.doki.list.ui.model.MangaListModel
 import org.dokiteam.doki.list.ui.size.ItemSizeResolver
-import org.dokiteam.doki.parsers.model.Manga
 import org.dokiteam.doki.tracker.ui.feed.model.UpdatedMangaHeader
 
 fun updatedMangaAD(
 	sizeResolver: ItemSizeResolver,
-	listener: OnListItemClickListener<Manga>,
+	listener: OnListItemClickListener<MangaListModel>,
 	headerClickListener: ListHeaderClickListener,
 ) = adapterDelegateViewBinding<UpdatedMangaHeader, ListModel, ItemListGroupBinding>(
 	{ layoutInflater, parent -> ItemListGroupBinding.inflate(layoutInflater, parent, false) },
