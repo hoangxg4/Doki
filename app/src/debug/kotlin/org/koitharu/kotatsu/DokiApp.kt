@@ -60,7 +60,9 @@ class DokiApp : BaseApp() {
 				detectLeakedSqlLiteObjects()
 				detectLeakedClosableObjects()
 				detectLeakedRegistrationObjects()
-				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) detectContentUriWithoutPermission()
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+					detectContentUriWithoutPermission()
+				}
 				detectFileUriExposure()
 				setClassInstanceLimit(LocalMangaRepository::class.java, 1)
 				setClassInstanceLimit(PagesCache::class.java, 1)
