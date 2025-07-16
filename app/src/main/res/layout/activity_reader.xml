@@ -62,6 +62,7 @@
 		android:id="@+id/appbar_top"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:alpha="0.95"
 		android:elevation="@dimen/m3_card_elevated_elevation"
 		app:elevation="@dimen/m3_card_elevated_elevation"
 		app:liftOnScroll="false">
@@ -81,6 +82,7 @@
 		android:id="@+id/toolbar_docked"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:alpha="0.9"
 		android:layout_gravity="bottom|center_horizontal"
 		android:layout_marginStart="25dp"
 		android:layout_marginEnd="25dp"
