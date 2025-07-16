@@ -8,7 +8,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
 import org.dokiteam.doki.core.util.ext.getEnumValue
-import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.observeChanges
 import org.dokiteam.doki.core.util.ext.putAll
 import org.dokiteam.doki.core.util.ext.putEnumValue
 import org.dokiteam.doki.reader.domain.TapGridArea
@@ -44,7 +44,7 @@ class TapGridSettings @Inject constructor(@ApplicationContext context: Context) 
 		initPrefs(withDefaultValues = false)
 	}
 
-	fun observe() = prefs.observe().flowOn(Dispatchers.IO)
+	fun observeChanges() = prefs.observeChanges().flowOn(Dispatchers.IO)
 
 	fun getAllValues(): Map<String, *> = prefs.all
 
