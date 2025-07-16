@@ -6,6 +6,7 @@ import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import org.dokiteam.doki.R
 import org.dokiteam.doki.core.ui.list.OnListItemClickListener
 import org.dokiteam.doki.core.util.ext.drawableStart
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.core.util.ext.textAndVisible
 import org.dokiteam.doki.databinding.ItemStorageConfigBinding
 import org.dokiteam.doki.settings.storage.DirectoryModel
