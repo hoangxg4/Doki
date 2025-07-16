@@ -62,7 +62,7 @@
 		android:id="@+id/appbar_top"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:alpha="0.95"
+		android:alpha="0.90"
 		android:elevation="@dimen/m3_card_elevated_elevation"
 		app:elevation="@dimen/m3_card_elevated_elevation"
 		app:liftOnScroll="false">
