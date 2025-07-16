@@ -158,6 +158,7 @@ abstract class MangaListFragment :
 			val manga = item.toMangaWithOverride()
 			if ((activity as? MangaListActivity)?.showPreview(manga) != true) {
 				router.openDetails(manga)
+			}
 		}
 	}
 
