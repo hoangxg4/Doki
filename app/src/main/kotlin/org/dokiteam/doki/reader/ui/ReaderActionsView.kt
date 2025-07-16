@@ -91,7 +91,6 @@ class ReaderActionsView @JvmOverloads constructor(
 		binding.buttonNext.initAction()
 		binding.buttonPrev.initAction()
 		binding.buttonSave.initAction()
-		binding.buttonOptions.initAction()
 		binding.buttonScreenRotation.initAction()
 		binding.buttonPagesThumbs.initAction()
 		binding.buttonTimer.initAction()
@@ -126,7 +125,6 @@ class ReaderActionsView @JvmOverloads constructor(
 			R.id.button_timer -> listener?.onScrollTimerClick(isLongClick = false)
 			R.id.button_pages_thumbs -> AppRouter.from(this)?.showChapterPagesSheet()
 			R.id.button_screen_rotation -> listener?.toggleScreenOrientation()
-			R.id.button_options -> listener?.openMenu()
 			R.id.button_bookmark -> listener?.onBookmarkClick()
 		}
 	}
@@ -136,7 +134,6 @@ class ReaderActionsView @JvmOverloads constructor(
 			?.showChapterPagesSheet(ChaptersPagesSheet.TAB_BOOKMARKS)
 
 		R.id.button_timer -> listener?.onScrollTimerClick(isLongClick = true)
-		R.id.button_options -> AppRouter.from(this)?.openReaderSettings()
 		else -> null
 	} != null
 

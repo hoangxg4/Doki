@@ -169,7 +169,7 @@ class ReaderActivity :
 		viewModel.isZoomControlsEnabled.observe(this) {
 			viewBinding.zoomControl.isVisible = it
 		}
-		addMenuProvider(ReaderMenuProvider(viewModel))
+		addMenuProvider(ReaderMenuProvider(viewModel) { openMenu() })
 	}
 
 	override fun getParentActivityIntent(): Intent? {

@@ -8,6 +8,7 @@ import org.dokiteam.doki.R
 
 class ReaderMenuProvider(
 	private val viewModel: ReaderViewModel,
+	private val onOptionsClick: () -> Unit
 ) : MenuProvider {
 
 	override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
@@ -20,7 +21,10 @@ class ReaderMenuProvider(
 				// TODO
 				true
 			}
-
+			R.id.action_options -> {
+				onOptionsClick()
+				true
+			}
 			else -> false
 		}
 	}
