@@ -358,7 +358,7 @@ class ReaderActivity :
 		}
 		if (viewBinding.toolbarDocked != null) {
 			viewBinding.actionsView.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-				bottomMargin = systemBars.bottom
+				bottomMargin += 0
 				rightMargin = systemBars.right
 				leftMargin = systemBars.left
 			}

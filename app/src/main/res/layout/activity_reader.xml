@@ -77,22 +77,25 @@
 
 	</com.google.android.material.appbar.AppBarLayout>
 
-	<com.google.android.material.dockedtoolbar.DockedToolbarLayout
+	<com.google.android.material.card.MaterialCardView
 		android:id="@+id/toolbar_docked"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_gravity="bottom"
-		android:fitsSystemWindows="false"
+		android:layout_gravity="bottom|center_horizontal"
+		android:layout_marginStart="25dp"
+		android:layout_marginEnd="25dp"
+		android:layout_marginBottom="20dp"
+		android:elevation="8dp"
+		app:cardCornerRadius="20dp"
 		app:cardBackgroundColor="?colorSurfaceContainer"
-		app:layout_insetEdge="bottom">
+		app:layout_dodgeInsetEdges="bottom">
 
 		<org.dokiteam.doki.reader.ui.ReaderActionsView
 			android:id="@+id/actionsView"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:minHeight="?actionBarSize" />
-
-	</com.google.android.material.dockedtoolbar.DockedToolbarLayout>
+	</com.google.android.material.card.MaterialCardView>
 
 	<org.dokiteam.doki.reader.ui.ReaderToastView
 		android:id="@+id/toastView"
