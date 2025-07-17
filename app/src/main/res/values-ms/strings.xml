@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="enter_password">Masukkan kata laluan</string>
-    <string name="protect_application_summary">Minta kata laluan ketika memulakan Kotatsu</string>
+    <string name="protect_application_summary">Minta kata laluan ketika memulakan Doki</string>
     <string name="repeat_password">Ulang kata laluan</string>
     <string name="zoom_mode_fit_center">Muat di tengah</string>
     <string name="create_category">Kategori baharu</string>

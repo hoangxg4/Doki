@@ -6,4 +6,4 @@ TODO List:
 - [x] Fix in-app update (disabled)
 - [ ] Remake app resources
 - [ ] README + Documents
-- [ ] Change kotatsu:// to doki:// for all translations
+- [x] Change kotatsu:// to doki:// for all translations
