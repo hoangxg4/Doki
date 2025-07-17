@@ -14,6 +14,20 @@
 		android:layout_height="wrap_content">
 
 		<com.google.android.material.button.MaterialButton
+			android:id="@+id/button_pages_thumbs"
+			style="?materialIconButtonStyle"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:layout_gravity="center"
+			android:contentDescription="@string/pages"
+			app:icon="@drawable/ic_grid" />
+	</FrameLayout>
+
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<com.google.android.material.button.MaterialButton
 			android:id="@+id/button_prev"
 			style="?materialIconButtonStyle"
 			android:layout_width="48dp"
@@ -103,20 +117,6 @@
 			android:layout_gravity="center"
 			android:contentDescription="@string/bookmark_add"
 			app:icon="@drawable/ic_bookmark" />
-	</FrameLayout>
-
-	<FrameLayout
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content">
-
-		<com.google.android.material.button.MaterialButton
-			android:id="@+id/button_pages_thumbs"
-			style="?materialIconButtonStyle"
-			android:layout_width="48dp"
-			android:layout_height="48dp"
-			android:layout_gravity="center"
-			android:contentDescription="@string/pages"
-			app:icon="@drawable/ic_grid" />
 	</FrameLayout>
 
 </merge>
