@@ -13,8 +13,7 @@
 		android:dependency="discord_rpc"
 		android:key="discord_token"
 		android:summary="@string/discord_token_summary"
-		android:title="@string/discord_token"
-		app:icon="@drawable/ic_key" />
+		android:title="@string/discord_token" />
 
 	<SwitchPreferenceCompat
 		android:dependency="discord_rpc"
