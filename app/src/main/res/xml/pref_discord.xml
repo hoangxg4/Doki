@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.preference.PreferenceScreen
-	xmlns:android="http://schemas.android.com/apk/res/android">
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<SwitchPreferenceCompat
 		android:defaultValue="false"
@@ -12,12 +13,14 @@
 		android:dependency="discord_rpc"
 		android:key="discord_token"
 		android:summary="@string/discord_token_summary"
-		android:title="@string/discord_token" />
+		android:title="@string/discord_token"
+		app:icon="@drawable/ic_key" />
 
 	<SwitchPreferenceCompat
 		android:dependency="discord_rpc"
 		android:key="discord_rpc_skip_nsfw"
 		android:summary="@string/rpc_skip_nsfw_summary"
-		android:title="@string/disable_nsfw" />
+		android:title="@string/disable_nsfw"
+		app:icon="@drawable/ic_nsfw" />
 
 </androidx.preference.PreferenceScreen>
