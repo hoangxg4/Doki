@@ -31,6 +31,7 @@ import org.dokiteam.doki.core.util.ext.textAndVisible
 import org.dokiteam.doki.databinding.ActivitySettingsBinding
 import org.dokiteam.doki.main.ui.owners.AppBarOwner
 import org.dokiteam.doki.settings.about.AboutSettingsFragment
+import org.dokiteam.doki.settings.discord.DiscordSettingsFragment
 import org.dokiteam.doki.settings.search.SettingsItem
 import org.dokiteam.doki.settings.search.SettingsSearchFragment
 import org.dokiteam.doki.settings.search.SettingsSearchViewModel
@@ -149,6 +150,7 @@ class SettingsActivity :
 			AppRouter.ACTION_TRACKER -> TrackerSettingsFragment()
 			AppRouter.ACTION_PERIODIC_BACKUP -> PeriodicalBackupSettingsFragment()
 			AppRouter.ACTION_SOURCES -> SourcesSettingsFragment()
+			AppRouter.ACTION_MANAGE_DISCORD -> DiscordSettingsFragment()
 			AppRouter.ACTION_PROXY -> ProxySettingsFragment()
 			AppRouter.ACTION_MANAGE_DOWNLOADS -> DownloadsSettingsFragment()
 			AppRouter.ACTION_SOURCE -> SourceSettingsFragment.newInstance(
