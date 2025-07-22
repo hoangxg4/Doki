@@ -169,7 +169,7 @@ class ReaderActivity :
 		viewModel.isZoomControlsEnabled.observe(this) {
 			viewBinding.zoomControl.isVisible = it
 		}
-		addMenuProvider(ReaderMenuProvider(viewModel))
+		addMenuProvider(ReaderMenuProvider(viewModel) { openMenu() })
 	}
 
 	override fun getParentActivityIntent(): Intent? {
@@ -364,7 +364,7 @@ class ReaderActivity :
 		}
 		if (viewBinding.toolbarDocked != null) {
 			viewBinding.actionsView.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-				bottomMargin = systemBars.bottom
+				bottomMargin += 0
 				rightMargin = systemBars.right
 				leftMargin = systemBars.left
 			}
