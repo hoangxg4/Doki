@@ -76,8 +76,9 @@ import org.dokiteam.doki.core.util.progress.RealtimeEtaEstimator
 import org.dokiteam.doki.download.domain.DownloadProgress
 import org.dokiteam.doki.download.domain.DownloadState
 import org.dokiteam.doki.local.data.LocalMangaRepository
+import org.dokiteam.doki.local.data.LocalStorageCache
 import org.dokiteam.doki.local.data.LocalStorageChanges
-import org.dokiteam.doki.local.data.PagesCache
+import org.dokiteam.doki.local.data.PageCache
 import org.dokiteam.doki.local.data.TempFileFilter
 import org.dokiteam.doki.local.data.input.LocalMangaParser
 import org.dokiteam.doki.local.data.output.LocalMangaOutput
@@ -103,7 +104,7 @@ class DownloadWorker @AssistedInject constructor(
 	@Assisted appContext: Context,
 	@Assisted params: WorkerParameters,
 	@MangaHttpClient private val okHttp: OkHttpClient,
-	private val cache: PagesCache,
+	@PageCache private val cache: LocalStorageCache,
 	private val localMangaRepository: LocalMangaRepository,
 	private val mangaLock: MangaLock,
 	private val mangaDataRepository: MangaDataRepository,
@@ -233,7 +234,7 @@ class DownloadWorker @AssistedInject constructor(
 								semaphore.withPermit {
 									runFailsafe {
 										val url = repo.getPageUrl(page)
-										val file = cache.get(url)
+										val file = cache[url]
 											?: downloadFile(url, destination, repo.source)
 										output.addPage(
 											chapter = chapter,

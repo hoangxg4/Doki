@@ -9,7 +9,7 @@ import androidx.fragment.app.strictmode.FragmentStrictMode
 import leakcanary.LeakCanary
 import org.dokiteam.doki.core.BaseApp
 import org.dokiteam.doki.local.data.LocalMangaRepository
-import org.dokiteam.doki.local.data.PagesCache
+import org.dokiteam.doki.local.data.PageCache
 import org.dokiteam.doki.parsers.MangaLoaderContext
 import org.dokiteam.doki.reader.domain.PageLoader
 
@@ -65,7 +65,7 @@ class DokiApp : BaseApp() {
 				}
 				detectFileUriExposure()
 				setClassInstanceLimit(LocalMangaRepository::class.java, 1)
-				setClassInstanceLimit(PagesCache::class.java, 1)
+				setClassInstanceLimit(PageCache::class.java, 1)
 				setClassInstanceLimit(MangaLoaderContext::class.java, 1)
 				setClassInstanceLimit(PageLoader::class.java, 1)
 				penaltyLog()

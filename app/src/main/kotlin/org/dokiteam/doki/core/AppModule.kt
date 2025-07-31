@@ -42,18 +42,21 @@ import org.dokiteam.doki.core.network.imageproxy.ImageProxyInterceptor
 import org.dokiteam.doki.core.os.AppShortcutManager
 import org.dokiteam.doki.core.os.NetworkState
 import org.dokiteam.doki.core.parser.MangaLoaderContextImpl
-import org.dokiteam.doki.core.parser.MangaRepository
 import org.dokiteam.doki.core.parser.favicon.FaviconFetcher
 import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.ui.image.CoilImageGetter
 import org.dokiteam.doki.core.ui.util.ActivityRecreationHandle
 import org.dokiteam.doki.core.util.AcraScreenLogger
+import org.dokiteam.doki.core.util.FileSize
 import org.dokiteam.doki.core.util.ext.connectivityManager
 import org.dokiteam.doki.core.util.ext.isLowRamDevice
 import org.dokiteam.doki.details.ui.pager.pages.MangaPageFetcher
 import org.dokiteam.doki.details.ui.pager.pages.MangaPageKeyer
 import org.dokiteam.doki.local.data.CacheDir
+import org.dokiteam.doki.local.data.FaviconCache
+import org.dokiteam.doki.local.data.LocalStorageCache
 import org.dokiteam.doki.local.data.LocalStorageChanges
+import org.dokiteam.doki.local.data.PageCache
 import org.dokiteam.doki.local.domain.model.LocalManga
 import org.dokiteam.doki.main.domain.CoverRestoreInterceptor
 import org.dokiteam.doki.main.ui.protect.AppProtectHelper
@@ -101,7 +104,7 @@ interface AppModule {
 		fun provideCoil(
 			@LocalizedAppContext context: Context,
 			@MangaHttpClient okHttpClientProvider: Provider<OkHttpClient>,
-			mangaRepositoryFactory: MangaRepository.Factory,
+			faviconFetcherFactory: FaviconFetcher.Factory,
 			imageProxyInterceptor: ImageProxyInterceptor,
 			pageFetcherFactory: MangaPageFetcher.Factory,
 			coverRestoreInterceptor: CoverRestoreInterceptor,
@@ -138,7 +141,7 @@ interface AppModule {
 					add(SvgDecoder.Factory())
 					add(CbzFetcher.Factory())
 					add(AvifImageDecoder.Factory())
-					add(FaviconFetcher.Factory(mangaRepositoryFactory))
+					add(faviconFetcherFactory)
 					add(MangaPageKeyer())
 					add(pageFetcherFactory)
 					add(imageProxyInterceptor)
@@ -195,5 +198,29 @@ interface AppModule {
 		fun provideWorkManager(
 			@ApplicationContext context: Context,
 		): WorkManager = WorkManager.getInstance(context)
+
+		@Provides
+		@Singleton
+		@PageCache
+		fun providePageCache(
+			@ApplicationContext context: Context,
+		) = LocalStorageCache(
+			context = context,
+			dir = CacheDir.PAGES,
+			defaultSize = FileSize.MEGABYTES.convert(200, FileSize.BYTES),
+			minSize = FileSize.MEGABYTES.convert(20, FileSize.BYTES),
+		)
+
+		@Provides
+		@Singleton
+		@FaviconCache
+		fun provideFaviconCache(
+			@ApplicationContext context: Context,
+		) = LocalStorageCache(
+			context = context,
+			dir = CacheDir.FAVICONS,
+			defaultSize = FileSize.MEGABYTES.convert(8, FileSize.BYTES),
+			minSize = FileSize.MEGABYTES.convert(2, FileSize.BYTES),
+		)
 	}
 }

@@ -65,7 +65,8 @@ import org.dokiteam.doki.core.util.ext.use
 import org.dokiteam.doki.core.util.ext.withProgress
 import org.dokiteam.doki.core.util.progress.ProgressDeferred
 import org.dokiteam.doki.download.ui.worker.DownloadSlowdownDispatcher
-import org.dokiteam.doki.local.data.PagesCache
+import org.dokiteam.doki.local.data.LocalStorageCache
+import org.dokiteam.doki.local.data.PageCache
 import org.dokiteam.doki.parsers.model.MangaPage
 import org.dokiteam.doki.parsers.model.MangaSource
 import org.dokiteam.doki.parsers.util.requireBody
@@ -84,7 +85,7 @@ class PageLoader @Inject constructor(
 	@LocalizedAppContext private val context: Context,
 	lifecycle: ActivityRetainedLifecycle,
 	@MangaHttpClient private val okHttp: OkHttpClient,
-	private val cache: PagesCache,
+	@PageCache private val cache: LocalStorageCache,
 	private val coil: ImageLoader,
 	private val settings: AppSettings,
 	private val mangaRepositoryFactory: MangaRepository.Factory,
@@ -196,7 +197,7 @@ class PageLoader @Inject constructor(
 					}
 				}
 			}.use { image ->
-				cache.put(uri.toString(), image).toUri()
+				cache.set(uri.toString(), image).toUri()
 			}
 		} else {
 			val file = uri.toFile()
@@ -300,7 +301,7 @@ class PageLoader @Inject constructor(
 				val request = createPageRequest(pageUrl, page.source)
 				imageProxyInterceptor.interceptPageRequest(request, okHttp).ensureSuccess().use { response ->
 					response.requireBody().withProgress(progress).use {
-						cache.put(pageUrl, it.source(), it.contentType()?.toMimeType())
+						cache.set(pageUrl, it.source(), it.contentType()?.toMimeType())
 					}
 				}.toUri()
 			}
