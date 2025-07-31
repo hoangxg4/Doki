@@ -14,6 +14,7 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.plus
@@ -43,6 +44,7 @@ import org.dokiteam.doki.list.domain.ListFilterOption
 import org.dokiteam.doki.local.domain.DeleteLocalMangaUseCase
 import org.dokiteam.doki.local.domain.model.LocalManga
 import org.dokiteam.doki.parsers.model.Manga
+import org.dokiteam.doki.parsers.model.MangaState
 import org.dokiteam.doki.reader.ui.ReaderActivity
 import org.dokiteam.doki.reader.ui.ReaderState
 import org.dokiteam.doki.reader.ui.ReaderViewModel
@@ -97,9 +99,19 @@ abstract class ChaptersPagesViewModel(
 		}
 	}.stateIn(viewModelScope + Dispatchers.Default, SharingStarted.Eagerly, 0)
 
-	val isChaptersEmpty: StateFlow<Boolean> = mangaDetails.map {
-		it != null && it.isLoaded && it.allChapters.isEmpty()
-	}.stateIn(viewModelScope, SharingStarted.WhileSubscribed(), false)
+	val emptyReason: StateFlow<EmptyMangaReason?> = combine(
+		mangaDetails,
+		isLoading,
+		onError.onStart { emit(null) },
+	) { details, loading, error ->
+		when {
+			details == null || loading -> null
+			details.chapters.isNotEmpty() -> null
+			details.toManga().state == MangaState.RESTRICTED -> EmptyMangaReason.RESTRICTED
+			error != null -> EmptyMangaReason.LOADING_ERROR
+			else -> EmptyMangaReason.NO_CHAPTERS
+		}
+	}.stateIn(viewModelScope + Dispatchers.Default, SharingStarted.WhileSubscribed(), null)
 
 	val bookmarks = mangaDetails.flatMapLatest {
 		if (it != null) {

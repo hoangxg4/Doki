@@ -30,6 +30,7 @@ import org.dokiteam.doki.core.util.RecyclerViewScrollCallback
 import org.dokiteam.doki.core.util.ext.findAppCompatDelegate
 import org.dokiteam.doki.core.util.ext.findParentCallback
 import org.dokiteam.doki.core.util.ext.observe
+import org.dokiteam.doki.core.util.ext.setTextAndVisible
 import org.dokiteam.doki.databinding.FragmentChaptersBinding
 import org.dokiteam.doki.details.ui.adapter.ChaptersAdapter
 import org.dokiteam.doki.details.ui.adapter.ChaptersSelectionDecoration
@@ -96,8 +97,8 @@ class ChaptersFragment :
 			.flowOn(Dispatchers.Default)
 			.observe(viewLifecycleOwner, this::onChaptersChanged)
 		viewModel.quickFilter.observe(viewLifecycleOwner, this::onFilterChanged)
-		viewModel.isChaptersEmpty.observe(viewLifecycleOwner) {
-			binding.textViewHolder.isVisible = it
+		viewModel.emptyReason.observe(viewLifecycleOwner) {
+			binding.textViewHolder.setTextAndVisible(it?.msgResId ?: 0)
 		}
 	}
 
