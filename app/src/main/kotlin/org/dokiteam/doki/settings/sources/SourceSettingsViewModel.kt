@@ -14,7 +14,6 @@ import org.dokiteam.doki.core.network.cookies.MutableCookieJar
 import org.dokiteam.doki.core.parser.CachingMangaRepository
 import org.dokiteam.doki.core.parser.MangaRepository
 import org.dokiteam.doki.core.parser.ParserMangaRepository
-import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.prefs.SourceSettings
 import org.dokiteam.doki.core.ui.BaseViewModel
 import org.dokiteam.doki.core.ui.util.ReversibleAction
@@ -69,7 +68,7 @@ class SourceSettingsViewModel @Inject constructor(
 			}
 		}
 		if (repository is ParserMangaRepository) {
-			if (key == AppSettings.KEY_OPEN_BROWSER) {
+			if (key == SourceSettings.KEY_DOMAIN) {
 				browserUrl.value = "https://${repository.domain}"
 			}
 		}
