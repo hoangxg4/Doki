@@ -19,8 +19,8 @@ android {
 		applicationId 'org.dokiteam.doki'
 		minSdk = 21
 		targetSdk = 36
-		versionCode = 7
-		versionName = '1.2.3'
+		versionCode = 1008
+		versionName = '1.2.4'
 		generatedDensities = []
 		testInstrumentationRunner 'org.dokiteam.doki.HiltTestRunner'
 		ksp {
