@@ -17,6 +17,7 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import coil3.ImageLoader
 import coil3.request.Disposable
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
 import coil3.request.allowRgb565
 import coil3.request.crossfade
 import coil3.request.error
@@ -228,7 +229,8 @@ class ChipsView @JvmOverloads constructor(
 					val placeholder = model.icon.ifZero { materialR.drawable.navigation_empty_icon }
 					imageRequest = ImageRequest.Builder(context)
 						.data(model.iconData)
-						.crossfade(false)
+						.allowHardware(false)
+						.crossfade(true)
 						.size(resources.getDimensionPixelSize(materialR.dimen.m3_chip_icon_size))
 						.target(ChipIconTarget(this))
 						.placeholder(placeholder)

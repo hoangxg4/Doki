@@ -8,6 +8,8 @@ import androidx.core.graphics.drawable.toBitmap
 import coil3.ImageLoader
 import coil3.executeBlocking
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
+import coil3.request.crossfade
 import coil3.request.transformations
 import coil3.size.Size
 import coil3.transform.RoundedCornersTransformation
@@ -62,6 +64,8 @@ class RecentListFactory(
 		runCatchingCancellable {
 			coilLazy.get().executeBlocking(
 				ImageRequest.Builder(context)
+					.allowHardware(false)
+					.crossfade(true)
 					.data(item.coverUrl)
 					.size(coverSize)
 					.mangaExtra(item)

@@ -8,6 +8,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.LifecycleOwner
 import coil3.ImageLoader
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
 import coil3.request.allowRgb565
 import coil3.request.crossfade
 import coil3.request.error
@@ -88,7 +89,8 @@ fun alternativeAD(
 			ImageRequest.Builder(context)
 				.data(item.manga.source.faviconUri())
 				.lifecycle(lifecycleOwner)
-				.crossfade(false)
+				.crossfade(true)
+				.allowHardware(false)
 				.size(context.resources.getDimensionPixelSize(materialR.dimen.m3_chip_icon_size))
 				.target(ChipIconTarget(chip))
 				.placeholder(R.drawable.ic_web)

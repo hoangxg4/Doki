@@ -14,6 +14,8 @@ import coil3.Image
 import coil3.ImageLoader
 import coil3.memory.MemoryCache
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
+import coil3.request.crossfade
 import coil3.request.transformations
 import coil3.toBitmap
 import com.davemorrissey.labs.subscaleview.ImageSource
@@ -139,6 +141,8 @@ class PageLoader @Inject constructor(
 		}
 		val request = ImageRequest.Builder(context)
 			.data(preview)
+			.allowHardware(false)
+			.crossfade(true)
 			.mangaSourceExtra(page.source)
 			.transformations(TrimTransformation())
 			.build()

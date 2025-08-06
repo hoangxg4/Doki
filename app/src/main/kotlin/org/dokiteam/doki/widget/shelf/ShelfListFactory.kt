@@ -8,6 +8,8 @@ import androidx.core.graphics.drawable.toBitmap
 import coil3.ImageLoader
 import coil3.executeBlocking
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
+import coil3.request.crossfade
 import coil3.request.transformations
 import coil3.size.Size
 import coil3.transform.RoundedCornersTransformation
@@ -74,6 +76,8 @@ class ShelfListFactory(
 			coilLazy.get().executeBlocking(
 				ImageRequest.Builder(context)
 					.data(item.coverUrl)
+					.allowHardware(false)
+					.crossfade(true)
 					.size(coverSize)
 					.mangaExtra(item)
 					.transformations(transformation, TrimTransformation())

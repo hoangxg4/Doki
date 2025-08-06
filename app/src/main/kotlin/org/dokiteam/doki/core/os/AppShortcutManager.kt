@@ -12,6 +12,8 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.room.InvalidationTracker
 import coil3.ImageLoader
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
+import coil3.request.crossfade
 import coil3.request.transformations
 import coil3.size.Scale
 import coil3.size.Size
@@ -139,6 +141,8 @@ class AppShortcutManager @Inject constructor(
 			coil.execute(
 				ImageRequest.Builder(context)
 					.data(manga.coverUrl)
+					.allowHardware(false)
+					.crossfade(true)
 					.size(iconSize)
 					.mangaSourceExtra(manga.source)
 					.scale(Scale.FILL)
@@ -173,6 +177,8 @@ class AppShortcutManager @Inject constructor(
 			coil.execute(
 				ImageRequest.Builder(context)
 					.data(source.faviconUri())
+					.allowHardware(false)
+					.crossfade(true)
 					.mangaSourceExtra(source)
 					.size(iconSize)
 					.scale(Scale.FIT)

@@ -8,6 +8,8 @@ import androidx.lifecycle.SavedStateHandle
 import coil3.ImageLoader
 import coil3.request.CachePolicy
 import coil3.request.ImageRequest
+import coil3.request.allowHardware
+import coil3.request.crossfade
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
@@ -34,6 +36,8 @@ class ImageViewModel @Inject constructor(
 	fun saveImage(destination: Uri) {
 		launchLoadingJob(Dispatchers.Default) {
 			val request = ImageRequest.Builder(context)
+				.allowHardware(false)
+				.crossfade(true)
 				.memoryCachePolicy(CachePolicy.READ_ONLY)
 				.data(savedStateHandle.require<Uri>(AppRouter.KEY_DATA))
 				.memoryCachePolicy(CachePolicy.DISABLED)

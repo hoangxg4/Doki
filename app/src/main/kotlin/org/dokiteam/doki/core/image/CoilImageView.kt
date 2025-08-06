@@ -15,6 +15,7 @@ import coil3.request.ErrorResult
 import coil3.request.ImageRequest
 import coil3.request.NullRequestData
 import coil3.request.SuccessResult
+import coil3.request.allowHardware
 import coil3.request.allowRgb565
 import coil3.request.crossfade
 import coil3.request.lifecycle
@@ -163,6 +164,7 @@ open class CoilImageView @JvmOverloads constructor(
 			0
 		}
 		crossfade(crossfadeDuration)
+		allowHardware(false)
 		if (useExistingDrawable) {
 			val previousDrawable = this@CoilImageView.drawable?.asImage()
 			if (previousDrawable != null) {
