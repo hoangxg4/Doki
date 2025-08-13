@@ -11,6 +11,7 @@ import androidx.core.view.isVisible
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import org.dokiteam.doki.R
 import org.dokiteam.doki.core.util.ext.getQuantityStringSafe
+import org.dokiteam.doki.core.util.ext.setTooltipCompat
 import org.dokiteam.doki.databinding.ItemCategoriesAllBinding
 import org.dokiteam.doki.databinding.ItemCategoryBinding
 import org.dokiteam.doki.favourites.ui.categories.FavouriteCategoriesListListener
@@ -89,6 +90,13 @@ fun allCategoriesAD(
 				R.drawable.ic_eye
 			} else {
 				R.drawable.ic_eye_off
+			},
+		)
+		binding.imageViewVisible.setTooltipCompat(
+			if (item.isVisible) {
+				R.string.hide
+			} else {
+				R.string.show
 			},
 		)
 		binding.coversView.setCoversAsync(item.covers)
