@@ -6,10 +6,13 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharedFlow
 import org.dokiteam.doki.R
+import org.dokiteam.doki.core.model.toChipModel
+import org.dokiteam.doki.core.nav.AppRouter
 import org.dokiteam.doki.core.parser.MangaDataRepository
 import org.dokiteam.doki.core.parser.MangaRepository
 import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.prefs.ListMode
+import org.dokiteam.doki.core.ui.widgets.ChipsView
 import org.dokiteam.doki.core.util.ext.MutableEventFlow
 import org.dokiteam.doki.core.util.ext.call
 import org.dokiteam.doki.core.util.ext.toFileOrNull
@@ -17,10 +20,13 @@ import org.dokiteam.doki.core.util.ext.toUriOrNull
 import org.dokiteam.doki.explore.data.MangaSourcesRepository
 import org.dokiteam.doki.explore.domain.ExploreRepository
 import org.dokiteam.doki.filter.ui.FilterCoordinator
+import org.dokiteam.doki.list.domain.ListFilterOption
 import org.dokiteam.doki.list.domain.MangaListMapper
+import org.dokiteam.doki.list.domain.QuickFilterListener
 import org.dokiteam.doki.list.ui.model.EmptyState
 import org.dokiteam.doki.list.ui.model.ListModel
 import org.dokiteam.doki.list.ui.model.MangaListModel
+import org.dokiteam.doki.list.ui.model.QuickFilter
 import org.dokiteam.doki.list.ui.model.TipModel
 import org.dokiteam.doki.local.data.LocalStorageChanges
 import org.dokiteam.doki.local.data.LocalStorageManager
@@ -52,9 +58,10 @@ class LocalListViewModel @Inject constructor(
 	exploreRepository = exploreRepository,
 	sourcesRepository = sourcesRepository,
 	mangaDataRepository = mangaDataRepository,
-), SharedPreferences.OnSharedPreferenceChangeListener {
+), SharedPreferences.OnSharedPreferenceChangeListener, QuickFilterListener {
 
 	val onMangaRemoved = MutableEventFlow<Unit>()
+	private val showInlineFilter: Boolean = savedStateHandle[AppRouter.KEY_IS_BOTTOMTAB] ?: false
 
 	init {
 		launchJob(Dispatchers.Default) {
@@ -68,28 +75,48 @@ class LocalListViewModel @Inject constructor(
 
 	override suspend fun onBuildList(list: MutableList<ListModel>) {
 		super.onBuildList(list)
-		if (localStorageManager.hasExternalStoragePermission(isReadOnly = true)) {
-			return
-		}
-		for (item in list) {
-			if (item !is MangaListModel) {
-				continue
+		if (showInlineFilter) {
+			createFilterHeader(maxCount = 16)?.let {
+				list.add(0, it)
 			}
-			val file = item.manga.url.toUriOrNull()?.toFileOrNull() ?: continue
-			if (localStorageManager.isOnExternalStorage(file)) {
-				val tip = TipModel(
-					key = "permission",
-					title = R.string.external_storage,
-					text = R.string.missing_storage_permission,
-					icon = R.drawable.ic_storage,
-					primaryButtonText = R.string.fix,
-					secondaryButtonText = R.string.settings,
-				)
-				list.add(0, tip)
-				return
+		}
+		if (!localStorageManager.hasExternalStoragePermission(isReadOnly = true)) {
+			for (item in list) {
+				if (item !is MangaListModel) {
+					continue
+				}
+				val file = item.manga.url.toUriOrNull()?.toFileOrNull() ?: continue
+				if (localStorageManager.isOnExternalStorage(file)) {
+					val tip = TipModel(
+						key = "permission",
+						title = R.string.external_storage,
+						text = R.string.missing_storage_permission,
+						icon = R.drawable.ic_storage,
+						primaryButtonText = R.string.fix,
+						secondaryButtonText = R.string.settings,
+					)
+					list.add(0, tip)
+					return
+				}
 			}
 		}
 	}
+
+	override fun setFilterOption(option: ListFilterOption, isApplied: Boolean) {
+		if (option is ListFilterOption.Tag) {
+			filterCoordinator.toggleTag(option.tag, isApplied)
+		}
+	}
+
+	override fun toggleFilterOption(option: ListFilterOption) {
+		if (option is ListFilterOption.Tag) {
+			val tag = option.tag
+			val isSelected = tag in filterCoordinator.snapshot().listFilter.tags
+			filterCoordinator.toggleTag(option.tag, !isSelected)
+		}
+	}
+
+	override fun clearFilter() = filterCoordinator.reset()
 
 	override fun onCleared() {
 		settings.unsubscribe(this)
@@ -124,5 +151,27 @@ class LocalListViewModel @Inject constructor(
 			textSecondary = R.string.text_local_holder_secondary,
 			actionStringRes = R.string._import,
 		)
+	}
+
+	private suspend fun createFilterHeader(maxCount: Int): QuickFilter? {
+		val appliedTags = filterCoordinator.snapshot().listFilter.tags
+		val availableTags = repository.getFilterOptions().availableTags
+		if (appliedTags.isEmpty() && availableTags.size < 3) {
+			return null
+		}
+		val result = ArrayList<ChipsView.ChipModel>(minOf(availableTags.size, maxCount))
+		appliedTags.mapTo(result) { tag ->
+			ListFilterOption.Tag(tag).toChipModel(isChecked = true)
+		}
+		for (tag in availableTags) {
+			if (result.size >= maxCount) {
+				break
+			}
+			if (tag in appliedTags) {
+				continue
+			}
+			result.add(ListFilterOption.Tag(tag).toChipModel(isChecked = false))
+		}
+		return QuickFilter(result)
 	}
 }

@@ -25,10 +25,12 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import org.dokiteam.doki.R
 import org.dokiteam.doki.bookmarks.ui.AllBookmarksFragment
+import org.dokiteam.doki.core.nav.AppRouter
 import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.prefs.NavItem
 import org.dokiteam.doki.core.ui.util.RecyclerViewOwner
 import org.dokiteam.doki.core.ui.widgets.SlidingBottomNavigationView
+import org.dokiteam.doki.core.util.ext.buildBundle
 import org.dokiteam.doki.core.util.ext.setContentDescriptionAndTooltip
 import org.dokiteam.doki.core.util.ext.smoothScrollToTop
 import org.dokiteam.doki.databinding.NavigationRailFabBinding
@@ -211,10 +213,13 @@ class MainNavigationDelegate(
 			return false
 		}
 		val fragment = instantiateFragment(fragmentClass)
+		val args = buildBundle(1) {
+			putBoolean(AppRouter.KEY_IS_BOTTOMTAB, true)
+		}
 		fragment.enterTransition = MaterialFadeThrough()
 		fragmentManager.beginTransaction()
 			.setReorderingAllowed(true)
-			.replace(R.id.container, fragmentClass, null, TAG_PRIMARY)
+			.replace(R.id.container, fragmentClass, args, TAG_PRIMARY)
 			.runOnCommit { onFragmentChanged(fragment, fromUser = true) }
 			.commit()
 		return true

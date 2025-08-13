@@ -23,7 +23,6 @@ import org.dokiteam.doki.core.util.ShareHelper
 import org.dokiteam.doki.core.util.ext.addMenuProvider
 import org.dokiteam.doki.core.util.ext.observeEvent
 import org.dokiteam.doki.core.util.ext.tryLaunch
-import org.dokiteam.doki.core.util.ext.withArgs
 import org.dokiteam.doki.databinding.FragmentListBinding
 import org.dokiteam.doki.filter.ui.FilterCoordinator
 import org.dokiteam.doki.list.ui.MangaListFragment
@@ -45,13 +44,14 @@ class LocalListFragment : MangaListFragment(), FilterCoordinator.Owner {
 		}
 	}
 
-	init {
-		withArgs(1) {
-			putString(
-				RemoteListFragment.ARG_SOURCE,
-				LocalMangaSource.name,
-			) // required by FilterCoordinator
-		}
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		val args = arguments ?: Bundle(1)
+		args.putString(
+			RemoteListFragment.ARG_SOURCE,
+			LocalMangaSource.name,
+		) // required by FilterCoordinator
+		arguments = args
 	}
 
 	override val viewModel by viewModels<LocalListViewModel>()
