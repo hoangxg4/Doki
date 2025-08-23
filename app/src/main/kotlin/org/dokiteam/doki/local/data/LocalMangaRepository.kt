@@ -12,6 +12,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runInterruptible
 import org.dokiteam.doki.core.model.LocalMangaSource
 import org.dokiteam.doki.core.model.isLocal
+import org.dokiteam.doki.core.model.isNsfw
 import org.dokiteam.doki.core.parser.MangaRepository
 import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.util.AlphanumComparator
@@ -94,7 +95,7 @@ class LocalMangaRepository @Inject constructor(
 		}
 		val list = getRawList()
 		if (settings.isNsfwContentDisabled) {
-			list.removeAll { it.manga.isNsfw }
+			list.removeAll { it.manga.isNsfw() }
 		}
 		if (filter != null) {
 			val query = filter.query
@@ -109,7 +110,7 @@ class LocalMangaRepository @Inject constructor(
 			}
 			filter.contentRating.singleOrNull()?.let { contentRating ->
 				val isNsfw = contentRating == ContentRating.ADULT
-				list.retainAll { it.manga.isNsfw == isNsfw }
+				list.retainAll { it.manga.isNsfw() == isNsfw }
 			}
 			if (!query.isNullOrEmpty() && order == SortOrder.RELEVANCE) {
 				list.sortBy { it.manga.title.levenshteinDistance(query) }

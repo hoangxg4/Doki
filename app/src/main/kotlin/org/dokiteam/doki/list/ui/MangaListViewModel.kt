@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.plus
+import org.dokiteam.doki.core.model.isNsfw
 import org.dokiteam.doki.core.parser.MangaDataRepository
 import org.dokiteam.doki.core.prefs.AppSettings
 import org.dokiteam.doki.core.prefs.ListMode
@@ -45,7 +46,7 @@ abstract class MangaListViewModel(
 	abstract fun onRetry()
 
 	protected fun List<Manga>.skipNsfwIfNeeded() = if (settings.isNsfwContentDisabled) {
-		filterNot { it.isNsfw }
+		filterNot { it.isNsfw() }
 	} else {
 		this
 	}
