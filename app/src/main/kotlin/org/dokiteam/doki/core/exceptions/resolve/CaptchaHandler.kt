@@ -54,6 +54,7 @@ import org.dokiteam.doki.core.util.ext.processLifecycleScope
 import org.dokiteam.doki.core.util.ext.toBitmapOrNull
 import org.dokiteam.doki.parsers.model.MangaSource
 import org.dokiteam.doki.parsers.network.CloudFlareHelper
+import org.dokiteam.doki.parsers.util.mapToArray
 import org.dokiteam.doki.parsers.util.runCatchingCancellable
 import javax.inject.Inject
 import javax.inject.Provider
@@ -152,6 +153,15 @@ class CaptchaHandler @Inject constructor(
 				.setOnlyAlertOnce(true)
 				.setSmallIcon(R.drawable.ic_bot)
 				.setGroup(GROUP_CAPTCHA)
+				.setContentIntent(
+					PendingIntentCompat.getActivities(
+						context, GROUP_NOTIFICATION_ID,
+						exceptions.mapToArray { e ->
+							AppRouter.cloudFlareResolveIntent(context, e)
+						},
+						0, false,
+					),
+				)
 				.setContentText(
 					context.getString(
 						R.string.captcha_required_summary, context.getString(R.string.app_name),
@@ -172,7 +182,6 @@ class CaptchaHandler @Inject constructor(
 
 	private suspend fun buildNotification(exception: CloudFlareProtectedException): Notification {
 		val intent = AppRouter.cloudFlareResolveIntent(context, exception)
-			.setData(exception.url.toUri())
 		val discardIntent = Intent(ACTION_DISCARD)
 			.putExtra(AppRouter.KEY_SOURCE, exception.source.name)
 			.setData("source://${exception.source.name}".toUri())
