@@ -34,7 +34,7 @@ material = "1.14.0-alpha03"
 moshi = "1.15.2" 
 okhttp = "4.12.0"
 okio = "3.12.0"
-exts = "e523be5d8a"
+exts = "9b70449fbd"
 preference = "1.2.1"
 recyclerview = "1.4.0"
 room = "2.7.2"
@@ -88,7 +88,7 @@ coil-svg = { module = "io.coil-kt.coil3:coil-svg", version.ref = "coil" }
 conscrypt-android = { module = "org.conscrypt:conscrypt-android", version.ref = "conscrypt" }
 desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
 disk-lru-cache = { module = "com.github.solkin:disk-lru-cache", version.ref = "diskLruCache" }
-build-exts = { module = "com.github.DokiTeam:build-exts", version.ref = "exts" }
+doki-exts = { module = "com.github.DokiTeam:doki-exts", version.ref = "exts" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
