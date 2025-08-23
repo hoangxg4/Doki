@@ -99,7 +99,7 @@ android {
 	}
 }
 dependencies {
-	implementation(libs.doki.exts) {
+	implementation(libs.build.exts) {
 		exclude group: 'org.json', module: 'json'
 	}
 
