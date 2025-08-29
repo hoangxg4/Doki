@@ -33,7 +33,7 @@ jobs:
 
       # Build APK (Debug)
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew assembleRelease
 
       # Upload APK as artifact (tên random + xoá sau 1 ngày)
       - name: Upload APK
