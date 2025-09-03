@@ -1,0 +1,46 @@
+name: Build APK
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout source code
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      # Setup JDK
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # Make gradlew executable
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      # Build APK (Debug/Release tuỳ nhu cầu)
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
+
+      # Upload to GitHub Release (overwrite file cũ)
+      - name: Upload APK to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest    # luôn push vào release "latest"
+          name: Latest Build
+          files: app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
