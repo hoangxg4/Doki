@@ -1,4 +1,4 @@
-name: Build APK
+name: Build APK 
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
     branches:
       - "main"
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,16 +31,24 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      # Build APK (Debug/Release tuỳ nhu cầu)
+      # Build APK
       - name: Build with Gradle
         run: ./gradlew assembleDebug
+
+      # Đổi tên file APK thành doki-<6 ký tự ngẫu nhiên>.apk
+      - name: Rename APK
+        run: |
+          cd app/build/outputs/apk/debug
+          NEW_NAME="doki-$(head /dev/urandom | tr -dc a-z0-9 | head -c 6).apk"
+          mv app-debug.apk "$NEW_NAME"
+          echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
       # Upload to GitHub Release (overwrite file cũ)
       - name: Upload APK to Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest    # luôn push vào release "latest"
+          tag_name: latest
           name: Latest Build
-          files: app/build/outputs/apk/debug/app-debug.apk
+          files: app/build/outputs/apk/debug/${{ env.APK_NAME }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
