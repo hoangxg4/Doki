@@ -43,15 +43,21 @@ jobs:
           mv app-debug.apk "$NEW_NAME"
           echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
-      # Xóa release & tag 'latest' cũ (nếu có)
-      - name: Delete old release
+      # Xóa file APK cũ trong release 'latest' (nếu tồn tại)
+      - name: Delete old asset
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          gh release delete latest -y || true
-          git push origin :refs/tags/latest || true
+          # Nếu release 'latest' tồn tại, tìm và xóa asset cũ
+          RELEASE_ID=$(gh release view latest --json id --jq '.id' || echo "")
+          if [ -n "$RELEASE_ID" ]; then
+            ASSET_IDS=$(gh release view latest --json assets --jq '.assets[].id' || echo "")
+            for ID in $ASSET_IDS; do
+              gh api --method DELETE repos/${{ github.repository }}/releases/assets/$ID || true
+            done
+          fi
 
-      # Tạo release mới & upload file APK
+      # Upload file mới lên release 'latest'
       - name: Upload APK to Release
         uses: softprops/action-gh-release@v2
         with:
