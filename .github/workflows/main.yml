@@ -1,4 +1,4 @@
-name: Build APK 
+name: Build APK
 
 on:
   push:
@@ -43,7 +43,15 @@ jobs:
           mv app-debug.apk "$NEW_NAME"
           echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
-      # Upload to GitHub Release (overwrite file cũ)
+      # Xóa release & tag 'latest' cũ (nếu có)
+      - name: Delete old release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest -y || true
+          git push origin :refs/tags/latest || true
+
+      # Tạo release mới & upload file APK
       - name: Upload APK to Release
         uses: softprops/action-gh-release@v2
         with:
