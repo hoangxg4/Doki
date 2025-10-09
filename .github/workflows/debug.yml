@@ -48,7 +48,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          # Nếu release 'latest' tồn tại, tìm và xóa asset cũ
           RELEASE_ID=$(gh release view latest --json id --jq '.id' || echo "")
           if [ -n "$RELEASE_ID" ]; then
             ASSET_IDS=$(gh release view latest --json assets --jq '.assets[].id' || echo "")
@@ -57,12 +56,18 @@ jobs:
             done
           fi
 
-      # Upload file mới lên release 'latest'
-      - name: Upload APK to Release
+      # Upload file mới lên release 'latest' (prerelease)
+      - name: Upload APK to Pre-Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: Latest Build
+          prerelease: true
           files: app/build/outputs/apk/debug/${{ env.APK_NAME }}
+          body: |
+            🚀 **Tự động build mới nhất**
+            - File: `${{ env.APK_NAME }}`
+            - Branch: `${{ github.ref_name }}`
+            - Commit: `${{ github.sha }}`
         env:
           GITHUB_TOKEN: ${{ github.token }}
