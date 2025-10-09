@@ -1,12 +1,11 @@
-name: Build APK
+name: Build Beta APK
 
 on:
   push:
     branches:
       - "main"
-  pull_request:
-    branches:
-      - "main"
+    tags-ignore:
+      - "*.*.*" # Bỏ qua khi có tag (để tránh trùng stable build)
   workflow_dispatch:
 
 jobs:
@@ -14,50 +13,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout source code
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
 
-      # Setup JDK
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      # Make gradlew executable
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      # Build APK
-      - name: Build with Gradle
+      - name: Build Debug APK
         run: ./gradlew assembleDebug
 
-      # Đổi tên file APK thành doki-<6 ký tự ngẫu nhiên>.apk
       - name: Rename APK
         run: |
           cd app/build/outputs/apk/debug
-          NEW_NAME="doki-$(head /dev/urandom | tr -dc a-z0-9 | head -c 6).apk"
+          NEW_NAME="doki-beta-$(head /dev/urandom | tr -dc a-z0-9 | head -c 6).apk"
           mv app-debug.apk "$NEW_NAME"
           echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
-      # Xóa release cũ (và toàn bộ asset)
-      - name: Delete old release
+      - name: Delete old beta release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          gh release delete latest --yes || true
+          gh release delete beta --yes || true
 
-      # Tạo release mới (prerelease) và upload file APK mới
-      - name: Create prerelease
+      - name: Create new beta release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           cd app/build/outputs/apk/debug
           COMMIT=$(git rev-parse --short HEAD)
-          gh release create latest "$APK_NAME" \
-            --prerelease \
-            --title "AutoBuild ${COMMIT}" \
-            --notes "🚀 Build tự động mới nhất từ commit ${COMMIT}\n\nFile: ${APK_NAME}"
+          gh release create beta "$APK_NAME" \
+            --title "Beta Build ${COMMIT}" \
+            --notes "🧪 Bản thử nghiệm mới nhất (beta)\nCommit: ${COMMIT}\nBranch: main" \
+            --prerelease
