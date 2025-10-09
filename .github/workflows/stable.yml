@@ -1,0 +1,51 @@
+name: Build Stable APK
+
+on:
+  push:
+    tags:
+      - "*.*.*" # chỉ chạy khi có tag mới (1.0.0, 2.3.1...)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
+
+      - name: Rename APK
+        run: |
+          cd app/build/outputs/apk/release
+          NEW_NAME="doki-stable-$(head /dev/urandom | tr -dc a-z0-9 | head -c 6).apk"
+          mv app-release.apk "$NEW_NAME"
+          echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
+
+      - name: Delete old stable release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete stable --yes || true
+
+      - name: Create new stable release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          cd app/build/outputs/apk/release
+          VERSION=${GITHUB_REF_NAME}
+          gh release create stable "$APK_NAME" \
+            --title "Stable Release ${VERSION}" \
+            --notes "🏷️ Phiên bản chính thức ${VERSION}\n🚀 Commit: $(git rev-parse --short HEAD)" \
+            --latest
