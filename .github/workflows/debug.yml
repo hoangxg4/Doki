@@ -43,31 +43,21 @@ jobs:
           mv app-debug.apk "$NEW_NAME"
           echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
-      # Xóa file APK cũ trong release 'latest' (nếu tồn tại)
-      - name: Delete old asset
+      # Xóa release cũ (và toàn bộ asset)
+      - name: Delete old release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          RELEASE_ID=$(gh release view latest --json id --jq '.id' || echo "")
-          if [ -n "$RELEASE_ID" ]; then
-            ASSET_IDS=$(gh release view latest --json assets --jq '.assets[].id' || echo "")
-            for ID in $ASSET_IDS; do
-              gh api --method DELETE repos/${{ github.repository }}/releases/assets/$ID || true
-            done
-          fi
+          gh release delete latest --yes || true
 
-      # Upload file mới lên release 'latest' (prerelease)
-      - name: Upload APK to Pre-Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: latest
-          name: Latest Build
-          prerelease: true
-          files: app/build/outputs/apk/debug/${{ env.APK_NAME }}
-          body: |
-            🚀 **Tự động build mới nhất**
-            - File: `${{ env.APK_NAME }}`
-            - Branch: `${{ github.ref_name }}`
-            - Commit: `${{ github.sha }}`
+      # Tạo release mới (prerelease) và upload file APK mới
+      - name: Create prerelease
         env:
           GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          cd app/build/outputs/apk/debug
+          COMMIT=$(git rev-parse --short HEAD)
+          gh release create latest "$APK_NAME" \
+            --prerelease \
+            --title "AutoBuild ${COMMIT}" \
+            --notes "🚀 Build tự động mới nhất từ commit ${COMMIT}\n\nFile: ${APK_NAME}"
