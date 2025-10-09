@@ -3,7 +3,7 @@ name: Build Stable APK
 on:
   push:
     tags:
-      - "*.*.*" # chỉ chạy khi có tag mới (1.0.0, 2.3.1...)
+      - "*.*.*"  # chỉ chạy khi có tag dạng 1.0.0, 2.3.1...
   workflow_dispatch:
 
 jobs:
@@ -11,34 +11,59 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Lấy code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2️⃣ Cài Java 17
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
+      # 3️⃣ Cấp quyền chạy gradlew
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      # 4️⃣ Build APK Release
       - name: Build Release APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --stacktrace
 
-      - name: Rename APK
+      # 5️⃣ Sign APK
+      - name: Sign APK
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+      # 6️⃣ Đổi tên file APK sau khi sign
+      - name: Rename Signed APK
         run: |
           cd app/build/outputs/apk/release
+          echo "==> Files in release folder:"
+          ls -al
+          APK_FILE=$(ls *-signed.apk | head -n 1)
+          if [ -z "$APK_FILE" ]; then
+            echo "❌ Không tìm thấy file APK nào sau khi sign!"
+            exit 1
+          fi
           NEW_NAME="doki-stable-$(head /dev/urandom | tr -dc a-z0-9 | head -c 6).apk"
-          mv app-release.apk "$NEW_NAME"
+          mv "$APK_FILE" "$NEW_NAME"
+          echo "✅ Đã đổi tên $APK_FILE → $NEW_NAME"
           echo "APK_NAME=$NEW_NAME" >> $GITHUB_ENV
 
+      # 7️⃣ Xóa bản stable cũ (nếu có)
       - name: Delete old stable release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           gh release delete stable --yes || true
 
+      # 8️⃣ Tạo bản release mới
       - name: Create new stable release
         env:
           GITHUB_TOKEN: ${{ github.token }}
