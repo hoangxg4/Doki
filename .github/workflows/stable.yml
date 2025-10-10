@@ -26,6 +26,10 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Create local.properties
+        run: |
+          echo "tg_backup_bot_token=${{ secrets.TG_BACKUP_BOT_TOKEN }}" > local.properties
+
       # 4️⃣ Build APK Release
       - name: Build Release APK
         run: ./gradlew assembleRelease --stacktrace
