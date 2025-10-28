@@ -26,7 +26,9 @@ import org.dokiteam.doki.backups.data.model.CategoryBackup
 import org.dokiteam.doki.backups.data.model.FavouriteBackup
 import org.dokiteam.doki.backups.data.model.HistoryBackup
 import org.dokiteam.doki.backups.data.model.MangaBackup
+import org.dokiteam.doki.backups.data.model.ScrobblingBackup
 import org.dokiteam.doki.backups.data.model.SourceBackup
+import org.dokiteam.doki.backups.data.model.StatisticBackup
 import org.dokiteam.doki.backups.domain.BackupSection
 import org.dokiteam.doki.core.db.MangaDatabase
 import org.dokiteam.doki.core.prefs.AppSettings
@@ -109,6 +111,18 @@ class BackupRepository @Inject constructor(
 					data = database.getSourcesDao().dumpEnabled().map { SourceBackup(it) },
 					serializer = serializer(),
 				)
+
+				BackupSection.SCROBBLING -> output.writeJsonArray(
+					section = BackupSection.SCROBBLING,
+					data = database.getScrobblingDao().dumpEnabled().map { ScrobblingBackup(it) },
+					serializer = serializer(),
+				)
+
+				BackupSection.STATS -> output.writeJsonArray(
+					section = BackupSection.STATS,
+					data = database.getStatsDao().dumpEnabled().map { StatisticBackup(it) },
+					serializer = serializer(),
+				)
 			}
 			progress?.emit(commonProgress)
 			commonProgress++
@@ -161,6 +175,14 @@ class BackupRepository @Inject constructor(
 
 					BackupSection.SOURCES -> input.readJsonArray<SourceBackup>(serializer()).restoreToDb {
 						getSourcesDao().upsert(it.toEntity())
+					}
+
+					BackupSection.SCROBBLING -> input.readJsonArray<ScrobblingBackup>(serializer()).restoreToDb {
+						getScrobblingDao().upsert(it.toEntity())
+					}
+
+					BackupSection.STATS -> input.readJsonArray<StatisticBackup>(serializer()).restoreToDb {
+						getStatsDao().upsert(it.toEntity())
 					}
 
 					null -> CompositeResult.EMPTY // skip unknown entries
