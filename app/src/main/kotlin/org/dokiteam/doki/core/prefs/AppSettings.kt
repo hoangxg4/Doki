@@ -138,6 +138,11 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getBoolean(KEY_READER_DOUBLE_PAGES, false)
 		set(value) = prefs.edit { putBoolean(KEY_READER_DOUBLE_PAGES, value) }
 
+	@get:FloatRange(0.0, 1.0)
+	var readerDoublePagesSensitivity: Float
+		get() = prefs.getFloat(KEY_READER_DOUBLE_PAGES_SENSITIVITY, 0.5f)
+		set(@FloatRange(0.0, 1.0) value) = prefs.edit { putFloat(KEY_READER_DOUBLE_PAGES_SENSITIVITY, value) }
+
 	val readerScreenOrientation: Int
 		get() = prefs.getString(KEY_READER_ORIENTATION, null)?.toIntOrNull()
 			?: ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
@@ -404,6 +409,9 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 	val isReaderBarTransparent: Boolean
 		get() = prefs.getBoolean(KEY_READER_BAR_TRANSPARENT, true)
 
+	val isReaderChapterToastEnabled: Boolean
+		get() = prefs.getBoolean(KEY_READER_CHAPTER_TOAST, true)
+
 	val isReaderKeepScreenOn: Boolean
 		get() = prefs.getBoolean(KEY_READER_SCREEN_ON, true)
 
@@ -488,6 +496,10 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getBoolean(KEY_WEBTOON_GAPS, false)
 		set(value) = prefs.edit { putBoolean(KEY_WEBTOON_GAPS, value) }
 
+	var isWebtoonPullGestureEnabled: Boolean
+		get() = prefs.getBoolean(KEY_WEBTOON_PULL_GESTURE, false)
+		set(value) = prefs.edit { putBoolean(KEY_WEBTOON_PULL_GESTURE, value) }
+
 	@get:FloatRange(from = 0.0, to = 0.5)
 	val defaultWebtoonZoomOut: Float
 		get() = prefs.getInt(KEY_WEBTOON_ZOOM_OUT, 0).coerceIn(0, 50) / 100f
@@ -534,11 +546,11 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 	val isPeriodicalBackupEnabled: Boolean
 		get() = prefs.getBoolean(KEY_BACKUP_PERIODICAL_ENABLED, false)
 
-	val periodicalBackupFrequency: Long
-		get() = prefs.getString(KEY_BACKUP_PERIODICAL_FREQUENCY, null)?.toLongOrNull() ?: 7L
+	val periodicalBackupFrequency: Float
+		get() = prefs.getString(KEY_BACKUP_PERIODICAL_FREQUENCY, null)?.toFloatOrNull() ?: 7f
 
 	val periodicalBackupFrequencyMillis: Long
-		get() = TimeUnit.DAYS.toMillis(periodicalBackupFrequency)
+		get() = (TimeUnit.DAYS.toMillis(1) * periodicalBackupFrequency).toLong()
 
 	val periodicalBackupMaxCount: Int
 		get() = if (prefs.getBoolean(KEY_BACKUP_PERIODICAL_TRIM, true)) {
@@ -669,6 +681,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_REMOTE_SOURCES = "remote_sources"
 		const val KEY_LOCAL_STORAGE = "local_storage"
 		const val KEY_READER_DOUBLE_PAGES = "reader_double_pages"
+		const val KEY_READER_DOUBLE_PAGES_SENSITIVITY = "reader_double_pages_sensitivity"
 		const val KEY_READER_ZOOM_BUTTONS = "reader_zoom_buttons"
 		const val KEY_READER_CONTROL_LTR = "reader_taps_ltr"
 		const val KEY_READER_NAVIGATION_INVERTED = "reader_navigation_inverted"
@@ -737,6 +750,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_SYNC_SETTINGS = "sync_settings"
 		const val KEY_READER_BAR = "reader_bar"
 		const val KEY_READER_BAR_TRANSPARENT = "reader_bar_transparent"
+		const val KEY_READER_CHAPTER_TOAST = "reader_chapter_toast"
 		const val KEY_READER_BACKGROUND = "reader_background"
 		const val KEY_READER_SCREEN_ON = "reader_screen_on"
 		const val KEY_SHORTCUTS = "dynamic_shortcuts"
@@ -748,6 +762,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_WEBTOON_GAPS = "webtoon_gaps"
 		const val KEY_WEBTOON_ZOOM = "webtoon_zoom"
 		const val KEY_WEBTOON_ZOOM_OUT = "webtoon_zoom_out"
+		const val KEY_WEBTOON_PULL_GESTURE = "webtoon_pull_gesture"
 		const val KEY_PREFETCH_CONTENT = "prefetch_content"
 		const val KEY_APP_LOCALE = "app_locale"
 		const val KEY_SOURCES_GRID = "sources_grid"
