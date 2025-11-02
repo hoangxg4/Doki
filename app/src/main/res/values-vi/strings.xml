@@ -519,6 +519,7 @@
     <string name="state_abandoned">Đã huỷ</string>
     <string name="enhanced_colors_summary">Giảm hiệu ứng dải, nhưng có thể ảnh hưởng đến hiệu suất</string>
     <string name="enhanced_colors">Chế độ màu 32-bit</string>
+	<string name="frequency_every_6_hours">Mỗi 6 tiếng</string>
     <string name="frequency_every_day">Hàng ngày</string>
     <string name="backup_frequency">Tần suất tạo bản sao lưu</string>
     <string name="frequency_every_2_days">2 ngày</string>
