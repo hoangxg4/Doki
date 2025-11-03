@@ -63,58 +63,66 @@ class ExceptionResolver private constructor(
         host.router.showErrorDialog(e, url)
     }
 
-    suspend fun resolve(e: Throwable): Boolean = host.lifecycleScope.async {
-        when (e) {
-            is CloudFlareProtectedException -> resolveCF(e)
-            is AuthRequiredException -> resolveAuthException(e.source)
-            is SSLException,
-            is CertPathValidatorException -> {
-                showSslErrorDialog()
-                false
-            }
-
-            is InteractiveActionRequiredException -> resolveBrowserAction(e)
-
-            is ProxyConfigException -> {
-                host.router.openProxySettings()
-                false
-            }
-
-            is NotFoundException -> {
-                openInBrowser(e.url)
-                false
-            }
-
-            is EmptyMangaException -> {
-                when (e.reason) {
-                    EmptyMangaReason.NO_CHAPTERS -> openAlternatives(e.manga)
-                    EmptyMangaReason.LOADING_ERROR -> Unit
-                    EmptyMangaReason.RESTRICTED -> host.router.openBrowser(e.manga)
-                    else -> Unit
-                }
-                false
-            }
-
-            is UnsupportedSourceException -> {
-                e.manga?.let { openAlternatives(it) }
-                false
-            }
-
-            is ScrobblerAuthRequiredException -> {
-                val authHelper = scrobblerAuthHelperProvider.get()
-                if (authHelper.isAuthorized(e.scrobbler)) {
-                    true
-                } else {
-                    host.withContext {
-                        authHelper.startAuth(this, e.scrobbler).onFailure(::showErrorDetails)
-                    }
-                    false
-                }
-            }
-
-            else -> false
+    // SỬA THÀNH:
+suspend fun resolve(e: Throwable): Boolean {
+    // Sử dụng if-else if thay vì when
+    if (e is CloudFlareProtectedException) {
+        return resolveCF(e)
+    } 
+    
+    if (e is AuthRequiredException) {
+        return resolveAuthException(e.source)
+    } 
+    
+    if (e is SSLException || e is CertPathValidatorException) {
+        showSslErrorDialog()
+        return false
+    } 
+    
+    if (e is InteractiveActionRequiredException) {
+        return resolveBrowserAction(e)
+    } 
+    
+    if (e is ProxyConfigException) {
+        host.router.openProxySettings()
+        return false
+    } 
+    
+    if (e is NotFoundException) {
+        openInBrowser(e.url)
+        return false
+    } 
+    
+    if (e is EmptyMangaException) {
+        when (e.reason) {
+            EmptyMangaReason.NO_CHAPTERS -> openAlternatives(e.manga)
+            EmptyMangaReason.LOADING_ERROR -> Unit
+            EmptyMangaReason.RESTRICTED -> host.router.openBrowser(e.manga)
+            else -> Unit
         }
-    }.await()
+        return false
+    } 
+    
+    if (e is UnsupportedSourceException) {
+        e.manga?.let { openAlternatives(it) }
+        return false
+    } 
+    
+    if (e is ScrobblerAuthRequiredException) {
+        val authHelper = scrobblerAuthHelperProvider.get()
+        return if (authHelper.isAuthorized(e.scrobbler)) {
+            true
+        } else {
+            host.withContext {
+                authHelper.startAuth(this, e.scrobbler).onFailure(::showErrorDetails)
+            }
+            false
+        }
+    }
+
+    // else
+    return false
+}
 
     private suspend fun resolveBrowserAction(
         e: InteractiveActionRequiredException
