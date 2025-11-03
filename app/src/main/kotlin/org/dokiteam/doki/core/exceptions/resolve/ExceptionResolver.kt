@@ -63,36 +63,24 @@ class ExceptionResolver private constructor(
         host.router.showErrorDialog(e, url)
     }
 
-    // SỬA THÀNH:
-suspend fun resolve(e: Throwable): Boolean {
-    // Sử dụng if-else if thay vì when
-    if (e is CloudFlareProtectedException) {
-        return resolveCF(e)
-    } 
-    
-    if (e is AuthRequiredException) {
-        return resolveAuthException(e.source)
-    } 
+    suspend fun resolve(e: Throwable): Boolean {
+    // --- XỬ LÝ CÁC CASE NON-SUSPEND TRƯỚC ---
     
     if (e is SSLException || e is CertPathValidatorException) {
         showSslErrorDialog()
-        return false
-    } 
-    
-    if (e is InteractiveActionRequiredException) {
-        return resolveBrowserAction(e)
-    } 
-    
+        return false // Trả về trực tiếp
+    }
+
     if (e is ProxyConfigException) {
         host.router.openProxySettings()
         return false
-    } 
-    
+    }
+
     if (e is NotFoundException) {
         openInBrowser(e.url)
         return false
-    } 
-    
+    }
+
     if (e is EmptyMangaException) {
         when (e.reason) {
             EmptyMangaReason.NO_CHAPTERS -> openAlternatives(e.manga)
@@ -101,13 +89,13 @@ suspend fun resolve(e: Throwable): Boolean {
             else -> Unit
         }
         return false
-    } 
-    
+    }
+
     if (e is UnsupportedSourceException) {
         e.manga?.let { openAlternatives(it) }
         return false
-    } 
-    
+    }
+
     if (e is ScrobblerAuthRequiredException) {
         val authHelper = scrobblerAuthHelperProvider.get()
         return if (authHelper.isAuthorized(e.scrobbler)) {
@@ -120,7 +108,21 @@ suspend fun resolve(e: Throwable): Boolean {
         }
     }
 
-    // else
+    // --- XỬ LÝ CÁC CASE SUSPEND SAU CÙNG ---
+
+    if (e is CloudFlareProtectedException) {
+        return resolveCF(e) // Hàm suspend
+    }
+
+    if (e is AuthRequiredException) {
+        return resolveAuthException(e.source) // Hàm suspend
+    }
+
+    if (e is InteractiveActionRequiredException) {
+        return resolveBrowserAction(e) // Hàm suspend
+    }
+
+    // Mặc định
     return false
 }
 
