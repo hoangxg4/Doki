@@ -90,7 +90,7 @@ class DoHManager(
 			.build()
 
 		DoHProvider.NEXTDNS -> DnsOverHttps.Builder().client(bootstrapClient)
-			.url("https://dns.nextdns.io/7316f8".toHttpUrl())
+			.url("https://dns.nextdns.io".toHttpUrl())
 			.resolvePublicAddresses(true)
 			.build()
 	}
